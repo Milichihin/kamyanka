@@ -15,6 +15,7 @@ export const images = [
 ];
 
 export const closeButton = "http://localhost/img/circle-icon-cross.png";
+export const arrow = "http://localhost/img/arrow.png";
 
 export const imagesLinks = [
     "https://drive.google.com/uc?export=view&id=1mo1NQCjIHdEyeXS5obZf5DkGepQ2UEgP",
@@ -32,3 +33,4 @@ export const imagesLinks = [
 ];
 
 export const closeButtonLink = "https://drive.google.com/uc?export=view&id=12Zq0dnUzXz2tMG1_ZG9jelP66p__qBfE";
+
