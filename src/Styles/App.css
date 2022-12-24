@@ -3,4 +3,7 @@
   display: block;
   position: relative;
   align-items: center;
+  border: 10px;
+  border-top: 10px;
+  border-color: black;
 }
