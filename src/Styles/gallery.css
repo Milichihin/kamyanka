@@ -50,28 +50,6 @@
     width: 50px;
 }
 
-.previous-button {
-    height: 100px;
-    width: 30px;
-    color: white;
-    background-color: transparent;
-    border-color: white;
-    position: absolute;
-    left: 20px;
-    cursor: pointer;
-}
-
-.next-button {
-    height: 100px;
-    width: 30px;
-    color: white;
-    background-color: transparent;
-    border-color: white;
-    position: absolute;
-    right: 20px;
-    cursor: pointer;
-}
-
 .cross {
     position: absolute;
     top: 7%;

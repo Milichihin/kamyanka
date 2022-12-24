@@ -1,7 +1,6 @@
 import React from 'react';
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import '../Styles/gallery.css';
-//import { viewImage } from './logic.js';
 import { images } from '../Data/images.js';
 import { arrow } from '../Data/images.js'; 
 import { closeButton } from '../Data/images.js';
@@ -40,10 +39,8 @@ const Gallery = () => {
                         <div className='fullsize-wraper'>
                             <div className='fullsize-background' onClick={()=> changeImage()}/>
                             <img src={closeButton} className='cross' onClick={()=> changeImage()}/>
-                            {/* <button className='previous-button' onClick={()=> changeImage('prev-img')}></button> */}
                             <img src={arrow} className='previous-arrow'  onClick={()=> changeImage('prev-img')}/>
                             <img src={data.img} className='fullsize-img' />
-                            {/* <button className='next-button' onClick={()=> changeImage('next-img')}></button> */}
                             <img src={arrow} className='next-arrow'  onClick={()=> changeImage('next-img')}/>
                         </div>
                     </>
@@ -59,7 +56,6 @@ const Gallery = () => {
                                 key={i}
                                 src={image}
                                 className="gallery-img"
-                                //style={{ width: "100%", display: "block" }}
                                 alt=""
                                 onClick={() => viewImage(image, i)}
                             />
