@@ -30,27 +30,12 @@
 }
 
 .fullsize-img {
-    /* display: block; */
     width: auto;
     max-width: 90%;
     max-height: 90%;
 }
 
-
-.close-button {
-    color: white;
-    background-color: transparent;
-    border-color: white;
-    border-width: 5px;
-    position: absolute;
-    top: 7%;
-    left: calc(50% - 25px);
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-}
-
-.cross {
+.closeCross {
     position: absolute;
     top: 7%;
     left: calc(50% - 25px);

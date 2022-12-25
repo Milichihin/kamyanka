@@ -1,9 +1,9 @@
 import React from 'react';
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import '../Styles/gallery.css';
-import { images } from '../Data/images.js';
-import { arrow } from '../Data/images.js';
-import { closeButton } from '../Data/images.js';
+import './gallery.css';
+import { images } from '../../Data/images.js';
+import { arrow } from '../../Data/images.js';
+import { closeButton } from '../../Data/images.js';
 import { useState } from 'react';
 
 
@@ -45,7 +45,7 @@ const Gallery = () => {
                     <>
                         <div className='fullsize-wraper'>
                             <div className='fullsize-background' onClick={() => changeImage2()} />
-                            <img src={closeButton} className='cross' onClick={() => changeImage2()} />
+                            <img src={closeButton} className='closeCross' onClick={() => changeImage2()} />
                             <img src={arrow} className='previous-arrow' onClick={() => changeImage2('prev-img')} />
                             <img src={picLink} className='fullsize-img'/>
                             <img src={arrow} className='next-arrow' onClick={() => changeImage2('next-img')} />
