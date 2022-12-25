@@ -30,13 +30,12 @@
 }
 
 .fullsize-img {
-    display: block;
+    /* display: block; */
     width: auto;
     max-width: 90%;
     max-height: 90%;
-    opacity: 0;
-    transition: all 1s;
 }
+
 
 .close-button {
     color: white;
