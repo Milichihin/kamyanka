@@ -10,23 +10,32 @@ import { useState } from 'react';
 
 const Gallery = () => {
 
-    const [data, setData] = useState({ img: '', i: 0 });
+    const [pic, setPic] = useState("");
+    const [opacity, setOpacity] = useState({ opacity: 0, display: "none" });
 
-    const viewImage = (img, i) => {
-        console.log(img, i);
-        setData({ img, i });
+    const viewImage2 = (image) => {
+        setPic(image);
+        setOpacity({ opacity: 1, display: "block" });
     };
 
-    const changeImage = (action) => {
-        let i = data.i;
+    const changeImage2 = (action) => {
+
+        let i = images.indexOf(pic);
+
         if (action === 'next-img') {
-            setData({ img: images[i + 1], i: [i + 1] });
+            setPic(images[i + 1]);
+            if (i === images.length-1) {
+                setPic(images[0]);
+            }
         }
         if (action === 'prev-img') {
-            setData({ img: images[i - 1], i: [i - 1] });
+            setPic(images[i - 1]);
+            if (i === 0) {
+                setPic(images[images.length-1]);
+            }
         }
         if (!action) {
-            setData({ img: '', i: 0 });
+            setPic("");
         }
     };
 
@@ -34,21 +43,24 @@ const Gallery = () => {
         <div className='gallery' >
             <>
                 {
-                    data.img &&
+                    pic &&
                     <>
                         <div className='fullsize-wraper'>
-                            <div className='fullsize-background' onClick={() => changeImage()} />
-                            <img src={closeButton} className='cross' onClick={() => changeImage()} />
-                            <img src={arrow} className='previous-arrow' onClick={() => changeImage('prev-img')} />
-                            <img src={data.img} className='fullsize-img' />
-                            <img src={arrow} className='next-arrow' onClick={() => changeImage('next-img')} />
+                            <div className='fullsize-background' onClick={() => changeImage2()} />
+                            <img src={closeButton} className='cross' onClick={() => changeImage2()} />
+                            <img src={arrow} className='previous-arrow' onClick={() => changeImage2('prev-img')} />
+                            <img src={pic}
+                                className='fullsize-img'
+                                style={opacity}
+                            />
+                            <img src={arrow} className='next-arrow' onClick={() => changeImage2('next-img')} />
                         </div>
                     </>
 
                 }
 
                 <ResponsiveMasonry
-                    columnsCountBreakPoints={{ 300: 1, 500: 2, 700: 3 }}
+                    columnsCountBreakPoints={{ 300: 1, 500: 2, 800: 3 }}
                 >
                     <Masonry gutter='15px'>
                         {images.map((image, i) => (
@@ -57,7 +69,7 @@ const Gallery = () => {
                                 src={image}
                                 className="gallery-img"
                                 alt=""
-                                onClick={() => viewImage(image, i)}
+                                onClick={() => viewImage2(image)}
                             />
                         ))}
                     </Masonry>
