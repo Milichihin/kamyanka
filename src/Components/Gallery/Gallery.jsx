@@ -63,7 +63,6 @@ const Gallery = () => {
                                 key={i}
                                 src={link}
                                 className="gallery-img"
-                                alt=""
                                 onClick={() => viewImage2(link)}
                             />
                         ))}

@@ -1,0 +1,42 @@
+.container {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+
+
+
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    width: inherit;
+    cursor: pointer;
+    align-items: center;
+    color: #7BC085;
+
+/* 
+    border-width: 1px;
+    border-style: solid;
+    border-color: black; */
+}
+
+.active {
+    background-color: #7BC085;
+    color: white;
+}
