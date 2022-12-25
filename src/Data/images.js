@@ -1,4 +1,7 @@
 
+// Gallery
+// localhost
+
 const imagesInitial = [
     "http://localhost/img/1.jpg",
     "http://localhost/img/2.jpg",
@@ -44,6 +47,10 @@ export const images = imagesInitial.sort((a, b) => 0.5 - Math.random()).slice(0,
 export const closeButton = "http://localhost/img/circle-icon-cross.png";
 export const arrow = "http://localhost/img/arrow.png";
 
+
+
+// GoogleDisc
+
 export const imagesLinks = [
     "https://drive.google.com/uc?export=view&id=1mo1NQCjIHdEyeXS5obZf5DkGepQ2UEgP",
     "https://drive.google.com/uc?export=view&id=16U-mTA5JDJhBLYP7hlQSNFB-MMBUKV5u",
@@ -60,4 +67,10 @@ export const imagesLinks = [
 ];
 
 export const closeButtonLink = "https://drive.google.com/uc?export=view&id=12Zq0dnUzXz2tMG1_ZG9jelP66p__qBfE";
+
+
+// Logo
+export const logo = "http://localhost/img/logo_kamyanka.png";
+
+
 

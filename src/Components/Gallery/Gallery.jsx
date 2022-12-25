@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 
 
-const Gallery = () => {
+function Gallery() {
 
     const [picLink, setPicLink] = useState("");
 
