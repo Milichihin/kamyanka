@@ -4,7 +4,7 @@ import { navArray } from '../../Data/navigation.js';
 
 function Navigation() {
 
-    const [active, setActive] = useState("Концепція");
+    const [active, setActive] = useState(navArray[0]);
 
     const activateItem = (menuItem) => {
         setActive(menuItem);
