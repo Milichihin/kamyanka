@@ -8,6 +8,7 @@ function Greating() {
         <div>
             <div className="wallpaper-wraper">
                 <img src={wallpaper} />
+                <div className="gradient"></div>
                 <div className="greating-slogan">{greatingText.slogan}</div>
                 <div className="greating-header">{greatingText.header}</div>
             </div>
