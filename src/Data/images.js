@@ -72,5 +72,7 @@ export const closeButtonLink = "https://drive.google.com/uc?export=view&id=12Zq0
 // Logo
 export const logo = "http://localhost/img/logo_kamyanka.png";
 
+// Greating
+export const wallpaper = "http://localhost/img/greating-wallpaper2.jpg";
 
 

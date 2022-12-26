@@ -8,12 +8,13 @@ import Conception from './Components/Conception/Conception.jsx';
 function App() {
   return (
     <div className="App">
-      <Logo/>
-      <Navigation/>
-      <Greating/>
-      <Gallery/>
-      <Conception/>
+      <Logo />
+      <Navigation />
+      <Greating />
+      <Gallery />
+      <Conception />
     </div>
+
   );
 }
 
