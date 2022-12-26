@@ -1,6 +1,6 @@
 
 // Gallery
-// localhost
+////////////////////   localhost  ////////////////////
 
 const imagesInitial = [
     "http://localhost/img/1.jpg",
@@ -45,11 +45,12 @@ const imagesInitial = [
 export const images = imagesInitial.sort((a, b) => 0.5 - Math.random()).slice(0, 12);
 
 export const closeButton = "http://localhost/img/circle-icon-cross.png";
+
 export const arrow = "http://localhost/img/arrow.png";
 
 
 
-// GoogleDisc
+////////////////////   GoogleDisc  ////////////////////
 
 export const imagesLinks = [
     "https://drive.google.com/uc?export=view&id=1mo1NQCjIHdEyeXS5obZf5DkGepQ2UEgP",
@@ -68,11 +69,10 @@ export const imagesLinks = [
 
 export const closeButtonLink = "https://drive.google.com/uc?export=view&id=12Zq0dnUzXz2tMG1_ZG9jelP66p__qBfE";
 
-
-// Logo
+////////////////////   Logo  ////////////////////
 export const logo = "http://localhost/img/logo_kamyanka.png";
 
-// Greating
+////////////////////   Greating  ////////////////////
 export const wallpaper = "http://localhost/img/greating-wallpaper2.jpg";
 
 

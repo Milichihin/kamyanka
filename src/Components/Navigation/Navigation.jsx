@@ -1,6 +1,6 @@
-import { useState } from 'react';
 import './navigation.css';
 import { navArray } from '../../Data/navigation.js';
+import { useState } from 'react';
 
 function Navigation() {
 
@@ -26,7 +26,6 @@ function Navigation() {
                 }
             </div>
         </>
-
     );
 }
 

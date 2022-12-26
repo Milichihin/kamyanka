@@ -8,10 +8,6 @@
     width: 100%;
     justify-content: space-around;
     align-items: center;
-
-
-
-
     /* border-width: 1px;
     border-style: solid;
     border-color: black; */
@@ -29,11 +25,6 @@
     cursor: pointer;
     align-items: center;
     color: #7BC085;
-
-/* 
-    border-width: 1px;
-    border-style: solid;
-    border-color: black; */
 }
 
 .active {

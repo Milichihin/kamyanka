@@ -10,8 +10,6 @@ function Conception() {
                 Conception
             </div>
         </>
-
-
     );
 }
 

@@ -6,8 +6,6 @@ import { arrow } from '../../Data/images.js';
 import { closeButton } from '../../Data/images.js';
 import { useState } from 'react';
 
-
-
 function Gallery() {
 
     const [picLink, setPicLink] = useState("");
@@ -26,12 +24,14 @@ function Gallery() {
                 setPicLink(images[0]);
             }
         }
+
         if (action === 'prev-img') {
             setPicLink(images[i - 1]);
             if (i === 0) {
                 setPicLink(images[images.length-1]);
             }
         }
+
         if (!action) {
             setPicLink("");
         }
@@ -51,7 +51,6 @@ function Gallery() {
                             <img src={arrow} className='next-arrow' onClick={() => changeImage2('next-img')} />
                         </div>
                     </>
-
                 }
 
                 <ResponsiveMasonry
@@ -69,9 +68,7 @@ function Gallery() {
                     </Masonry>
                 </ResponsiveMasonry>
             </>
-
         </div>
-
     )
 }
 
