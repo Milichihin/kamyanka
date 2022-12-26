@@ -3,7 +3,7 @@ import Logo from './Components/Logo/Logo.jsx';
 import Greating from './Components/Greating/Greating.jsx';
 import Gallery from './Components/Gallery/Gallery.jsx';
 import Navigation from './Components/Navigation/Navigation.jsx';
-import Conception from './Components/Conception/Conception.jsx';
+import Building from './Components/Building/Building.jsx';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Navigation />
       <Greating />
       <Gallery />
-      <Conception />
+      <Building />
     </div>
   );
 }

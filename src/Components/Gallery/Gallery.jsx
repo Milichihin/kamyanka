@@ -4,6 +4,7 @@ import './gallery.css';
 import { images } from '../../Data/images.js';
 import { arrow } from '../../Data/images.js';
 import { closeButton } from '../../Data/images.js';
+import { gallery } from '../../Data/text.js';
 import { useState } from 'react';
 
 function Gallery() {
@@ -47,7 +48,7 @@ function Gallery() {
 
     return (
         <div className='section-block' >
-        <h2>ГАЛЕРЕЯ</h2>
+        <h2>{gallery.header}</h2>
             <>
                 {
                     picLink &&
