@@ -47,6 +47,7 @@ function Gallery() {
 
     return (
         <div className='gallery' >
+        <h2>ГАЛЕРЕЯ</h2>
             <>
                 {
                     picLink &&

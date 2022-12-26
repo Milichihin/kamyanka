@@ -10,7 +10,7 @@ function Greating() {
                 <img src={wallpaper} />
                 <div className="gradient"></div>
                 <div className="greating-slogan">{greatingText.slogan}</div>
-                <div className="greating-header">{greatingText.header}</div>
+                <h1>{greatingText.header}</h1>
             </div>
             <div className="greating-text">
                 {greatingText.text}
