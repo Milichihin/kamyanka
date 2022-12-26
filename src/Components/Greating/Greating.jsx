@@ -5,13 +5,15 @@ import { greatingText } from '../../Data/greating.js';
 function Greating() {
 
     return (
-        <div className="greating-wraper">
-            <div>
+        <div>
+            <div className="wallpaper-wraper">
                 <img src={wallpaper} />
-                <div>{greatingText.text1}</div>
-                <div>{greatingText.text2}</div>
+                <div className="greating-slogan">{greatingText.slogan}</div>
+                <div className="greating-header">{greatingText.header}</div>
             </div>
-            <div>{greatingText.text3}</div>
+            <div className="greating-text">
+                {greatingText.text}
+            </div>
         </div>
     );
 }

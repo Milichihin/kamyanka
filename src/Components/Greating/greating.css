@@ -1,11 +1,13 @@
-.greating-wraper {
+.wallpaper-wraper {
     display: flex;
     flex-direction: column;
     height: 550px;
-    margin: 40px 0 40px 0;
+    margin: 40px 0 20px 0;
+    color: white;
+    justify-content: space-between
 }
 
-.greating-wraper img {
+.wallpaper-wraper img {
     position: absolute;
     left: -300px;
     width: 1400px;
@@ -13,4 +15,28 @@
     object-fit: cover;
     z-index: -1;
 }
+
+.greating-header{
+    display: flex;
+    margin: 0 0 10px 0;
+    font-size: xxx-large;
+    justify-self: end;
+    width: 70%;
+    font-weight: 900;
+}
+
+.greating-slogan{
+    display: flex;
+    width: 65%;
+    text-align: right;
+    align-self: flex-end;
+    margin: 20px 0 40px 0;
+    font-size: xx-large;
+}
+
+.greating-text{
+    margin: 0 0 40px 0;
+    font-size: x-large  ;
+}
+
 
