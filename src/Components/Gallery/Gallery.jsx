@@ -20,7 +20,7 @@ function Gallery() {
 
         if (action === 'next-img') {
             setPicLink(images[i + 1]);
-            if (i === images.length-1) {
+            if (i === images.length - 1) {
                 setPicLink(images[0]);
             }
         }
@@ -28,7 +28,7 @@ function Gallery() {
         if (action === 'prev-img') {
             setPicLink(images[i - 1]);
             if (i === 0) {
-                setPicLink(images[images.length-1]);
+                setPicLink(images[images.length - 1]);
             }
         }
 
@@ -36,6 +36,14 @@ function Gallery() {
             setPicLink("");
         }
     };
+    
+    document.body.addEventListener('keyup', function (e) {
+        var key = e.key;
+    
+        if (key == 27) {
+            setPicLink("");
+        };
+    }, false);
 
     return (
         <div className='gallery' >
@@ -47,7 +55,7 @@ function Gallery() {
                             <div className='fullsize-background' onClick={() => changeImage2()} />
                             <img src={closeButton} className='closeCross' onClick={() => changeImage2()} />
                             <img src={arrow} className='previous-arrow' onClick={() => changeImage2('prev-img')} />
-                            <img src={picLink} className='fullsize-img'/>
+                            <img src={picLink} className='fullsize-img' />
                             <img src={arrow} className='next-arrow' onClick={() => changeImage2('next-img')} />
                         </div>
                     </>
