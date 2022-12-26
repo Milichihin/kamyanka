@@ -16,3 +16,12 @@ h2{
   font-weight: 900;
 }
 
+.section-block {
+  margin: 20px 0 100px 0;
+}
+
+p {
+  margin: 0 0 40px 0;
+  font-size: x-large  ;
+}
+

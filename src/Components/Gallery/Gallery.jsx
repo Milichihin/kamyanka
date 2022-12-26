@@ -46,7 +46,7 @@ function Gallery() {
     }, false);
 
     return (
-        <div className='gallery' >
+        <div className='section-block' >
         <h2>ГАЛЕРЕЯ</h2>
             <>
                 {

@@ -10,10 +10,14 @@ function Greating() {
                 <img src={wallpaper} />
                 <div className="gradient"></div>
                 <div className="greating-slogan">{greatingText.slogan}</div>
-                <h1>{greatingText.header}</h1>
             </div>
-            <div className="greating-text">
-                {greatingText.text}
+            <div className="section-block" style={{ margin: '-170px 0 0 0' }}>
+                <h2 style={{ color: 'white', width: "70%" }}>
+                    {greatingText.header}
+                </h2>
+                <p style={{ marginTop: '40px' }}>
+                    {greatingText.text}
+                </p>
             </div>
         </div>
     );
