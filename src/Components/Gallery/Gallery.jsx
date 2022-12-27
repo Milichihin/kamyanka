@@ -39,7 +39,7 @@ function Gallery() {
     };
     
     document.body.addEventListener('keyup', function (e) {
-        var key = e.key;
+        var key = e.keyCode;
     
         if (key == 27) {
             setPicLink("");
