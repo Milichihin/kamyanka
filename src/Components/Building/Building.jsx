@@ -9,6 +9,7 @@ function Building() {
             <a name={navArray[0]} ></a>
             <div className="section-block">
                 <h2>{building.header}</h2>
+                <p>{building.mainText}</p>
             </div>
         </>
     );
