@@ -1,4 +1,5 @@
 import './App.css';
+import { navArray } from './Data/navigation.js';
 import Logo from './Components/Logo/Logo.jsx';
 import Greating from './Components/Greating/Greating.jsx';
 import Gallery from './Components/Gallery/Gallery.jsx';
@@ -13,12 +14,12 @@ function App() {
     <div className="App">
       <Logo />
       <Navigation />
-      <Greating />
+      <Greating anchor={navArray.Greating} />
       <Gallery />
-      <Building />
-      <Principle />
-      <Advantages />
-      <Contacts />
+      <Building anchor={navArray.Building} />
+      <Principle anchor={navArray.Principle} />
+      <Advantages anchor={navArray.Advantages} />
+      <Contacts anchor={navArray.Contacts} />
     </div>
   );
 }

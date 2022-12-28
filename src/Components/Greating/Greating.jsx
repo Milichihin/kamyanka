@@ -3,11 +3,12 @@ import { navArray } from '../../Data/navigation.js';
 import { wallpaper } from '../../Data/images.js';
 import { greating } from '../../Data/text.js';
 
-function Greating() {
+function Greating(props) {
 
     return (
         <div>
-            <a name={navArray[0]} ></a>
+            {/* <a name={navArray[0]} ></a> */}
+            <a name={props.anchor} ></a>
             <div className="wallpaper-wraper">
                 <img src={wallpaper} />
                 <div className="gradient"></div>

@@ -12,7 +12,7 @@ function Navigation() {
 
     return (
         <>
-            <div className="container">
+            <div className="nav-container">
                 {
                     navArray.map((menuItem, i) => (
                         <a
