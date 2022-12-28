@@ -1,4 +1,5 @@
 import './greating.css';
+import { navArray } from '../../Data/navigation.js';
 import { wallpaper } from '../../Data/images.js';
 import { greating } from '../../Data/text.js';
 
@@ -6,6 +7,7 @@ function Greating() {
 
     return (
         <div>
+            <a name={navArray[0]} ></a>
             <div className="wallpaper-wraper">
                 <img src={wallpaper} />
                 <div className="gradient"></div>
