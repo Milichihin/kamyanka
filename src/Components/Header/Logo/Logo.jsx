@@ -1,5 +1,5 @@
 import './logo.css';
-import { logo } from '../../Data/images.js';
+import { logo } from '../../../Data/images.js';
 
 function Logo() {
 

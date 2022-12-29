@@ -1,10 +1,9 @@
 import './navigation.css';
-import { navArray } from '../../Data/navigation.js';
 import { useState } from 'react';
 
-function Navigation() {
+function Navigation(props) {
 
-    const [active, setActive] = useState(navArray.Greating);
+    const [active, setActive] = useState(props.navArray.Greating);
 
     const activateItem = (menuItem) => {
         setActive(menuItem);
@@ -14,7 +13,7 @@ function Navigation() {
         <>
             <div className="nav-container">
                 {
-                    Object.values(navArray).map((menuItem, i) => (
+                    Object.values(props.navArray).map((menuItem, i) => (
                         <a
                             href={"#" + menuItem}
                             className={"item " + (menuItem === active ? "active" : "")}
