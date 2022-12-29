@@ -14,11 +14,11 @@ function App() {
     <div className="App">
       <Logo />
       <Navigation />
-      <Greating anchor={navArray.Greating} />
+      <Greating anchor={navArray.Greating}/>
       <Gallery />
       <Building anchor={navArray.Building} />
-      <Principle anchor={navArray.Principle} />
-      <Advantages anchor={navArray.Advantages} />
+      <Principle anchor={navArray.Principle}  />
+      <Advantages anchor={navArray.Advantages}  />
       <Contacts anchor={navArray.Contacts} />
     </div>
   );

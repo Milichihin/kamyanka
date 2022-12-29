@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 function Navigation() {
 
-    const [active, setActive] = useState(navArray[0]);
+    const [active, setActive] = useState(navArray.Greating);
 
     const activateItem = (menuItem) => {
         setActive(menuItem);
@@ -14,7 +14,7 @@ function Navigation() {
         <>
             <div className="nav-container">
                 {
-                    navArray.map((menuItem, i) => (
+                    Object.values(navArray).map((menuItem, i) => (
                         <a
                             href={"#" + menuItem}
                             className={"item " + (menuItem === active ? "active" : "")}
