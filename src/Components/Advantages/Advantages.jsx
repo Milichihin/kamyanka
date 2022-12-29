@@ -1,13 +1,18 @@
 import './advantages.css';
 import { advantages, advantagesArray } from '../../Data/text.js';
 import { useState } from 'react';
+import { async } from 'q';
 
 function Advantages(props) {
 
-    const [heading, setheading] = useState("");
+    const [heading, setHeading] = useState(Object.keys(advantagesArray)[0]);
+    const [opacity, setOpacity] = useState({ opacity: 1 });
 
-    const activateHead = (advantage) => {
-        setheading(advantage);
+    async function activateHead (advantage) {
+        setOpacity({ opacity: 0 });
+        await new Promise((resolve, reject) => setTimeout(resolve, 100));
+        setOpacity({ opacity: 1 });
+        setHeading(advantage);
     }
 
     return (
@@ -20,27 +25,18 @@ function Advantages(props) {
                     <div className='advantages'>
                         {
                             Object.keys(advantagesArray).map((advantage) => (
-                                <a
-                                    href={"#" + advantage}
-                                    className={"advantage" + (advantage === heading ? "active-advantage" : "")}
+                                <p
+                                    className={"advantage " + (advantage === heading ? "active-advantage" : "")}
                                     onClick={() => activateHead(advantage)}
                                 >
                                     {advantage}
-                                </a>
+                                </p>
                             ))
                         }
                     </div>
-                    <div className='description'>
-                        {
-                            Object.values(advantagesArray).map((description) => (
-                                <a
-                                    name=""
-                                >
-                                    {description}
-                                </a>
-                            ))
-                        }
-                    </div>
+                    <p className='description' style={opacity}>
+                        {advantagesArray[heading]}
+                    </p>
                 </div>
             </div>
 

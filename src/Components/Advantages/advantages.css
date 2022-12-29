@@ -1,5 +1,5 @@
 .advantage-container{
-    margin: 20px 0 20 px 0;
+    /* margin: 20px 0 20px 0; */
     position: relative;
     display: flex;
     flex-direction: row;
@@ -10,16 +10,24 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 350px;
+    min-height: 500px;
+    max-height: 700px;
     min-width: 40%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items:flex-start;
 }
 
-.advantages a {
-    text-decoration: none;
+.advantage {
+    cursor: pointer;
+    margin: 0;
+}
+
+.active-advantage {
+    color: brown;
+    text-decoration: underline;
 }
 
 .description {
-
+    margin-left: 40px;
+    transition: opacity 0.3s;
 }
