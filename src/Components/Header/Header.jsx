@@ -1,9 +1,9 @@
 import Logo from './Logo/Logo.jsx';
-import Navigation from '../../Components/Navigation/Navigation.jsx';
+import Navigation from './Navigation/Navigation.jsx';
 
 function Header(props) {
 
-    return (
+    return (    
         <div>
             <Logo  />
             <Navigation navArray={props.navArray}/>

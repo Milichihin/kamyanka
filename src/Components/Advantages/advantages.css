@@ -1,0 +1,25 @@
+.advantage-container{
+    margin: 20px 0 20 px 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.advantages{
+    margin: 20px 0 20 px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    min-width: 40%;
+    justify-content: space-around;
+    align-items:flex-start;
+}
+
+.advantages a {
+    text-decoration: none;
+}
+
+.description {
+
+}
