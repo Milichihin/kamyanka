@@ -6,59 +6,106 @@ import { arrow } from '../../../Data/images.js';
 import { closeButton } from '../../../Data/images.js';
 import { gallery } from '../../../Data/text.js';
 import { useState } from 'react';
+import { async } from 'q';
 
 function Gallery() {
 
     const [picLink, setPicLink] = useState("");
+    const [opacityBack, setOpacityBack] = useState({ opacity: 0 });
+    const [opacityPic, setOpacityPic] = useState({ opacity: 0 });
 
-    const viewImage2 = (link) => {
+    async function viewImage(link) {
         setPicLink(link);
+        setOpacityBack({ opacity: 0 });
+        setOpacityPic({ opacity: 0 });
+        await new Promise((resolve, reject) => setTimeout(resolve, 10));
+        setOpacityBack({ opacity: 0.85 });
+        setOpacityPic({ opacity: 1 });
     };
 
-    const changeImage2 = (action) => {
+    async function changeImage(action) {
 
         let i = images.indexOf(picLink);
 
         if (action === 'next-img') {
+
+            setOpacityPic({ opacity: 0 });
+            await new Promise((resolve, reject) => setTimeout(resolve, 100));
             setPicLink(images[i + 1]);
+            setOpacityPic({ opacity: 1 });
+
             if (i === images.length - 1) {
                 setPicLink(images[0]);
             }
         }
 
         if (action === 'prev-img') {
+            setOpacityPic({ opacity: 0 });
+            await new Promise((resolve, reject) => setTimeout(resolve, 100));
             setPicLink(images[i - 1]);
+            setOpacityPic({ opacity: 1 });
             if (i === 0) {
                 setPicLink(images[images.length - 1]);
             }
         }
 
         if (!action) {
+            setOpacityPic({ opacity: 0 });
+            setOpacityBack({ opacity: 0 });
+            await new Promise((resolve, reject) => setTimeout(resolve, 200));
             setPicLink("");
         }
     };
-    
+
+    // function closeWin() {
+
+    //     document.body.addEventListener('keyup', async function (e) {
+    //         var key = e.keyCode;
+
+    //         if (key == 27) {
+    //             setOpacityPic({ opacity: 0 });
+    //             await new Promise((resolve, reject) => setTimeout(resolve, 1000));
+    //             setPicLink("");
+    //         };
+    //     }, false);
+    // }
+
+    // closeWin();
+
+
     document.body.addEventListener('keyup', function (e) {
         var key = e.keyCode;
-    
+
         if (key == 27) {
+            // setOpacityPic({ opacity: 0 });
+            // setOpacityBack({ opacity: 0 });
             setPicLink("");
         };
     }, false);
 
     return (
         <div className='section-block' >
-        <h2>{gallery.header}</h2>
+            <h2>{gallery.header}</h2>
             <>
                 {
                     picLink &&
                     <>
                         <div className='fullsize-wraper'>
-                            <div className='fullsize-background' onClick={() => changeImage2()} />
-                            <img src={closeButton} className='closeCross' onClick={() => changeImage2()} />
-                            <img src={arrow} className='previous-arrow' onClick={() => changeImage2('prev-img')} />
-                            <img src={picLink} className='fullsize-img' />
-                            <img src={arrow} className='next-arrow' onClick={() => changeImage2('next-img')} />
+                            <div className='fullsize-background' style={opacityBack} onClick={() => changeImage()} />
+
+                            <img src={picLink} className='fullsize-img' style={opacityPic} />
+
+                            <div className='cross-container' onClick={() => changeImage()}>
+                                <img src={closeButton} className='closeCross' />
+                            </div>
+
+                            <div className='previous-arrow-container' onClick={() => changeImage('prev-img')}>
+                                <img src={arrow} className='previous-arrow' />
+                            </div>
+
+                            <div className='next-arrow-container' onClick={() => changeImage('next-img')}>
+                                <img src={arrow} className='next-arrow' />
+                            </div>
                         </div>
                     </>
                 }
@@ -72,7 +119,7 @@ function Gallery() {
                                 key={i}
                                 src={link}
                                 className="gallery-img"
-                                onClick={() => viewImage2(link)}
+                                onClick={() => viewImage(link)}
                             />
                         ))}
                     </Masonry>

@@ -20,30 +20,57 @@
     width: 100%;
     height: 100vh;
     background: black;
-    opacity: 0.85;
+    /* opacity: 0.85; */
     position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     z-index: -1;
+    transition: opacity 0.3s;
 }
 
 .fullsize-img {
     width: auto;
     max-width: 90%;
     max-height: 90%;
+    transition: opacity 0.4s;
+}
+
+.cross-container{
+    position: absolute;
+    display: flex;
+    top: 7%;
+    left: calc(50% - 45px);
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+
+.cross-container:hover{
+    background-color: rgba(0, 0, 0, 0.449);
+    transition: background-color 0.3s;
 }
 
 .closeCross {
     position: absolute;
-    top: 7%;
-    left: calc(50% - 25px);
-    height: 50px;
-    width: 50px;
+    opacity: 0.8;
+    left: calc(50% - 20px);
+    height: 40px;
+    width: 40px;
     cursor: pointer;
+    transition: 0.3s ease;
     -webkit-filter: drop-shadow(0px 2px 1px rgb(161, 161, 161));
     filter: drop-shadow(0px 2px 1px rgb(161, 161, 161));
+}
+
+.cross-container:hover .closeCross{
+    opacity: 1;
+    transition: opacity all linear 0.3s;
 }
 
 .previous-arrow {
@@ -62,8 +89,39 @@
     transform: rotate(270deg);
 }
 
-/* .gallery h2{
-    margin: 30px 0 20px 0;
-    font-size: xxx-large;
-    font-weight: 900;
-} */
+.previous-arrow-container{
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 10%;
+    min-width: 100px;
+    left: 0;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.previous-arrow-container:hover{
+    background-color: rgba(0, 0, 0, 0.449);
+    transition: background-color 0.3s;
+}
+
+
+.next-arrow-container{
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 10%;
+    min-width: 100px;
+    right: 0;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.next-arrow-container:hover{
+    background-color: rgba(0, 0, 0, 0.449);
+    transition: background-color 0.3s;
+}
