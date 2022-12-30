@@ -57,22 +57,6 @@ function Gallery() {
         }
     };
 
-    // function closeWin() {
-
-    //     document.body.addEventListener('keyup', async function (e) {
-    //         var key = e.keyCode;
-
-    //         if (key == 27) {
-    //             setOpacityPic({ opacity: 0 });
-    //             await new Promise((resolve, reject) => setTimeout(resolve, 1000));
-    //             setPicLink("");
-    //         };
-    //     }, false);
-    // }
-
-    // closeWin();
-
-
     document.body.addEventListener('keyup', function (e) {
         var key = e.keyCode;
 
