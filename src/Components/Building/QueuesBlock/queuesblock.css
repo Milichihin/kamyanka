@@ -1,0 +1,52 @@
+.queue-container {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.select {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    width: inherit;
+    cursor: pointer;
+    align-items: center;
+    color: #7BC085;
+}
+
+.active-select {
+    background-color: #7BC085;
+    color: white;
+}
+
+.queue-wraper img {
+    width: 100%;
+}
+
+.queue-description {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 10px;
+    color: white;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.queue-description p {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: larger;
+    
+}
+
+.details p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
