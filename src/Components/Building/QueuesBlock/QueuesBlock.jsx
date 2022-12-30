@@ -31,6 +31,21 @@ function QueuesBlock() {
                         <p>{item}</p>
                     ))
                 }
+                <img src={queue.photo}/>
+                {/* {
+                    (Object.values(queue).splice(1)).map((value) => {
+                        if(value.includes("http")){
+                            <img src={value}/>
+                        } else if(Array.isArray(value)){
+                            value.map((el)=>(
+                                <p>{el}</p>
+                            ))
+                        } else {
+                            <p>{value}</p>
+                        }
+
+                })
+                } */}
             </div>
         </>
     );

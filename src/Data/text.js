@@ -20,7 +20,8 @@ export const queuesArray = [
         type: "Тип 1",
         number: "7 будинків",
         description: "",
-        details: []
+        details: [],
+        photo: "http://localhost/img/1.jpg"
     },
     {
         header: "друга черга",
@@ -28,7 +29,8 @@ export const queuesArray = [
         type: "Тип 2",
         number: "19 будинків",
         description: "розташованих на достатній відстані один від одного, щоб присутність інших мешканців практично була практично не відчутною",
-        details: []
+        details: [],
+        photo: "http://localhost/img/2.jpg"
     },
     {
         header: "третя черга",
@@ -48,7 +50,8 @@ export const queuesArray = [
             "оглядові тераси",
             "дитячий майданчик",
             "мотузковий парк"
-        ]
+        ],
+        photo: "http://localhost/img/3.jpg"
     }
 ];
 

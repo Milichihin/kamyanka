@@ -76,3 +76,5 @@ export const logo = "http://localhost/img/logo_kamyanka.png";
 export const wallpaper = "http://localhost/img/greating-wallpaper2.jpg";
 
 
+
+
