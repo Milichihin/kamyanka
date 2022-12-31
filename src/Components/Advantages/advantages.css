@@ -3,6 +3,7 @@
     position: relative;
     display: flex;
     flex-direction: row;
+    min-height: 550px;
     z-index: 1;
 }
 

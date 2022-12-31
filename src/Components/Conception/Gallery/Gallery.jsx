@@ -1,6 +1,7 @@
 import React from 'react';
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import './gallery.css';
+import '../../../index.css';
 import { images } from '../../../Data/images.js';
 import { arrow } from '../../../Data/images.js';
 import { closeButton } from '../../../Data/images.js';

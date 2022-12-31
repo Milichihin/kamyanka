@@ -9,17 +9,23 @@
 
 .wallpaper-wraper img {
     position: absolute;
-    left: -300px;
+    display: flex;
+    align-self: center;
+    /* left: -300px; */
     width: 1400px;
     height: 550px;
     object-fit: cover;
-    z-index: -2;
+    z-index: -2;    
+    max-width: 97vw;
 }
 
 .gradient {
     position: absolute;
-    left: -300px;
+    display: flex;
+    align-self: center;
+    /* left: -300px; */
     width: 1400px;
+    max-width: 97vw;
     height: 550px;
     background: linear-gradient(90deg, rgba(255,255,255,0) 20%, rgba(0,0,0,0.3508753843334209) 43%, rgba(0,0,0,0.45451684091605393) 57%, rgba(0,0,0,0.5749650201877626) 75%, rgba(0,0,0,0.6533963927367823) 90%);
     z-index: -1;

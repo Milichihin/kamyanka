@@ -15,12 +15,12 @@ function QueuesBlock() {
         <>
             <div className='queue-container'>
                 {queuesArray.map(item => (
-                    <div
+                    <p
                         className={"select " + (item.header === queue.header ? "active-select" : "")}
                         onClick={() => chooseQueue(item)}
                     >
                         {item.header}
-                    </div>
+                    </p>
                 ))}
             </div>
             <div className='queue-wraper'>

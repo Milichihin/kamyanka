@@ -1,0 +1,23 @@
+.button-wrap p {
+    margin: 0;
+}
+
+.button-wrap {
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;    
+    width: 300px;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    height: 50px;
+    
+}
+
+.principle-wrap {
+    display: flex;
+    justify-content: space-between;
+}

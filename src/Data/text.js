@@ -21,7 +21,7 @@ export const queuesArray = [
         number: "7 будинків",
         description: "",
         details: [],
-        photo: "http://localhost/img/1.jpg"
+        photo: "http://localhost/img/12.jpg"
     },
     {
         header: "друга черга",
