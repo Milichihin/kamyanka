@@ -30,10 +30,18 @@ function Slides(props) {
         }
 
         if (action === 'prev-img') {
+
             setOpacityPic({ opacity: 0 });
             await new Promise((resolve, reject) => setTimeout(resolve, 100));
-            setPicLink(images[i - 1]);
-            setOpacityPic({ opacity: 1 });
+
+            if(images[i - 1]){
+                setPicLink(images[i - 1]);
+                setOpacityPic({ opacity: 1 });
+            } else {
+                setPicLink(images[images.length - 1]);
+                setOpacityPic({ opacity: 1 });
+            }
+            
             if (i === 0) {
                 setPicLink(images[images.length - 1]);
             }

@@ -1,42 +1,33 @@
 import './queuesblock.css';
+import './arrows.css';
 import '../../Conception/Gallery/gallery.css';
 import { queuesArray } from '../../../Data/text.js';
 import { useState } from 'react';
 import { images } from '../../../Data/images.js';
 import { arrow } from '../../../Data/images.js';
 import { closeButton } from '../../../Data/images.js';
-import Slides from './Slides';
+// import Slides from './Slides';
 
 function QueuesBlock() {
 
 
     const [queue, setQueue] = useState(queuesArray[0]);
     const [opacityPic, setOpacityPic] = useState({ opacity: 1 });
+    const [picLink, setPicLink] = useState(queue.photos[0]);
 
     async function chooseQueue(item) {
-
-        console.log("current queue 0", queue);
-
         if (item !== queue) {
             setOpacityPic({ opacity: 0 });
-            await new Promise((resolve, reject) => setTimeout(resolve, 150));
+            await new Promise((resolve, reject) => setTimeout(resolve, 100));
+            setPicLink(item.photos[0]);
             setQueue(item);
             setOpacityPic({ opacity: 1 });
         }
     }
 
-    //////////////////////////////////////
-    const [picLink, setPicLink] = useState(queue.photos[0]);
-    // const [opacityPic, setOpacityPic] = useState({ opacity: 1 });
-
     async function changeImage(action) {
 
         let i = queue.photos.indexOf(picLink);
-
-        console.log("current queue", queue);
-        console.log("current IMG", queue.photos[i]);
-        console.log("prev IMG", queue.photos[i-1]);
-        console.log("next IMG", queue.photos[i+1]);
 
         if (action === 'next-img') {
 

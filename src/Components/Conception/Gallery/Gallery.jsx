@@ -21,6 +21,8 @@ function Gallery() {
         await new Promise((resolve, reject) => setTimeout(resolve, 10));
         setOpacityBack({ opacity: 0.85 });
         setOpacityPic({ opacity: 1 });
+
+        // document.body.style.overflow = 'hidden';
     };
 
     async function changeImage(action) {
@@ -54,6 +56,7 @@ function Gallery() {
             setOpacityBack({ opacity: 0 });
             await new Promise((resolve, reject) => setTimeout(resolve, 200));
             setPicLink("");
+            // document.body.style.overflow = 'auto';
         }
     };
 
@@ -61,8 +64,6 @@ function Gallery() {
         var key = e.keyCode;
 
         if (key == 27) {
-            // setOpacityPic({ opacity: 0 });
-            // setOpacityBack({ opacity: 0 });
             setPicLink("");
         };
     }, false);

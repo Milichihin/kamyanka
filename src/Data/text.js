@@ -10,7 +10,9 @@ export const gallery = {
 
 export const building = {
     header: "ПЛАНУВАННЯ БУДІВНИЦТВА",
-    mainText: "Згідно з проєктом, на території передбачене розташування 23 будинків"
+    mainText1: "Згідно з проєктом, на території передбачене розташування",
+    mainText2: "23",
+    mainText3: "будинків"
 };
 
 export const queuesArray = [
@@ -74,7 +76,15 @@ export const queuesArray = [
 
 export const howItWorks = {
     header: "ЯК ЦЕ ПРАЦЮЄ?",
-    button: "домовитися про зустріч"
+    button: "домовитися про зустріч",
+    form: {
+        header: "Залиште, будь ласка, будь-які свої контактні дані і ми зв'яжимося з вами",
+        namePlaceholder: "Ваше ім'я",
+        emailPlaceholder: "Ваш імейл або телефон",
+        textareaPlaceholder: "Напишіть, якому каналу комунікації Ви віддаєте перевагу? \n(Email, Telegram, Viber, Whatsup, Skype, Голосовий телефонний зв'язок)",
+        buttonValue: "НАДІСЛАТИ",
+        ps: "Або напишіть нам, коли Вам буде зручно. Наші контакти - в самому кінці сайту"
+    }
 };
 
 export const advantages = {

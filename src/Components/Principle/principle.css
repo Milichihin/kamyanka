@@ -7,17 +7,104 @@
     justify-content: center;
     margin-left: 20px;
     border-width: 3px;
-    border-style: solid;
-    border-color: black;    
     width: 300px;
     justify-content: center;
     align-self: center;
     text-align: center;
-    height: 50px;
-    
+    min-height: 50px;
+    align-items: center;
+    background-color: #7BC085;
+    color: white;
+    cursor: pointer;
+    transition-property: all;
+    transition: all ease 0.51s;
+}
+
+.button-wrap p{
+    color: white;
+}
+
+.button-wrap:hover{
+    background-color: #857f59;
 }
 
 .principle-wrap {
     display: flex;
     justify-content: space-between;
+}
+
+.principle-wrap h2{
+    margin: 0;
+}
+
+.fullsize-background {
+    width: 100%;
+    height: 100vh;
+    background: black;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: -1;
+    transition-property: all;
+    transition: opacity 0.4s;
+}
+
+.principle-wrap h2{
+    margin: 0;
+}
+
+.modal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    /* background-color: #867f52; */
+    background-color: #EFEBD4;
+    /* color: white; */
+    color: #867f52;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    transition-property: all;
+    transition: opacity 0.4s;
+}
+
+.cross-container{
+    position: absolute;
+    display: flex;
+    top: 7%;
+    left: calc(50% - 45px);
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+
+.cross-container:hover{
+    background-color: rgba(0, 0, 0, 0.449);
+    transition: background-color 0.3s;
+}
+
+.closeCross {
+    position: absolute;
+    opacity: 0.8;
+    left: calc(50% - 20px);
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    -webkit-filter: drop-shadow(0px 2px 1px rgb(161, 161, 161));
+    filter: drop-shadow(0px 2px 1px rgb(161, 161, 161));
+}
+
+.cross-container:hover .closeCross{
+    opacity: 1;
+    transition: opacity all linear 0.3s;
 }

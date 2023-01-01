@@ -14,12 +14,17 @@
     cursor: pointer;
     font-weight: 400;
     text-decoration-color: transparent;
+    text-decoration-line: overline;
+    text-decoration-color: #7bc08500;
+    transition-property: all;
+    transition: text-decoration-color 0.3s;
 }
 
 .active-select {
     text-decoration-line: overline;
     text-decoration-color: #7BC085;
-    transition: text-decoration-color 0.5s;
+    transition-property: all;
+    transition: text-decoration-color 0.3s;
 }
 
 .queue-wraper {
@@ -39,6 +44,9 @@
     position: absolute;
     left: 10px;
     margin: 20px 40px 0 40px;
+}
+
+.queue-description p{
     color: white;
 }
 

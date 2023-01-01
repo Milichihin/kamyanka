@@ -9,9 +9,13 @@ function Building(props) {
             <a name={props.anchor} ></a>
             <div className="section-block">
                 <h2>{building.header}</h2>
-                <p>{building.mainText}</p>
+                <div className="subtitle" >
+                    <p>{building.mainText1}</p>
+                    <p>{building.mainText2}</p>
+                    <p>{building.mainText3}</p>
+                </div>
+                <QueuesBlock />
             </div>
-            <QueuesBlock />
         </>
     );
 }

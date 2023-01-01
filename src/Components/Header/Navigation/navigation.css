@@ -18,6 +18,7 @@
 }
 
 .item {
+    background-color: #7bc08500;
     display: flex;
     justify-content: center;
     height: 30px;
@@ -27,7 +28,21 @@
     color: #7BC085;
 }
 
+.item:hover{
+    background-color: #95c29c4a;
+    transition: background-color 0.3s;
+}
+
 .active {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    width: inherit;
+    cursor: pointer;
+    align-items: center;
+    color: #7BC085;
     background-color: #7BC085;
     color: white;
+    transition-property: all;
+    transition: background-color 0.3s;
 }

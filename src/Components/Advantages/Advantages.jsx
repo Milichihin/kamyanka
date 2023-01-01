@@ -8,7 +8,7 @@ function Advantages(props) {
     const [heading, setHeading] = useState(Object.keys(advantagesArray)[0]);
     const [opacity, setOpacity] = useState({ opacity: 1 });
 
-    async function activateHead (advantage) {
+    async function activateHead(advantage) {
         setOpacity({ opacity: 0 });
         await new Promise((resolve, reject) => setTimeout(resolve, 100));
         setOpacity({ opacity: 1 });
@@ -20,7 +20,7 @@ function Advantages(props) {
             <a name={props.anchor} ></a>
             <div className="section-block">
                 <h2>{advantages.header}</h2>
-                <p>{advantages.subHeader}</p>
+                <p className="subtitle">{advantages.subHeader}</p>
                 <div className='advantage-container'>
                     <div className='advantages'>
                         {

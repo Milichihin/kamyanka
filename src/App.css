@@ -5,23 +5,23 @@
   position: relative;
   max-width: 800px;
   align-items: center;
-  /* border-width: 3px;
-  border-style: solid;
-  border-color: black; */
 }
 
 h2{
   margin: 30px 0 20px 0;
   font-size: xxx-large;
   font-weight: 900;
+  color: rgb(82, 82, 82)
 }
 
 .section-block {
   margin: 20px 0 100px 0;
+  position: relative;
 }
 
 p {
   margin: 0 0 40px 0;
-  font-size: x-large  ;
+  color: rgb(82, 82, 82);
+  font-size: x-large;
 }
 

@@ -16,7 +16,7 @@ function Navigation(props) {
                     Object.values(props.navArray).map((menuItem, i) => (
                         <a
                             href={"#" + menuItem}
-                            className={"item " + (menuItem === active ? "active" : "")}
+                            className={(menuItem === active ? "active" : "item")}
                             onClick={() => activateItem(menuItem)}
                         >
                             {menuItem}
