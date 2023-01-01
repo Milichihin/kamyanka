@@ -21,7 +21,13 @@ export const queuesArray = [
         number: "7 будинків",
         description: "",
         details: [],
-        photo: "http://localhost/img/12.jpg"
+        photo: "http://localhost/img/12.jpg",
+        photos: [
+            "http://localhost/img/12.jpg",
+            "http://localhost/img/1.jpg",
+            "http://localhost/img/3.jpg",
+            "http://localhost/img/4.jpg"
+        ]
     },
     {
         header: "друга черга",
@@ -30,7 +36,13 @@ export const queuesArray = [
         number: "19 будинків",
         description: "розташованих на достатній відстані один від одного, щоб присутність інших мешканців практично була практично не відчутною",
         details: [],
-        photo: "http://localhost/img/2.jpg"
+        photo: "http://localhost/img/2.jpg",
+        photos: [
+            "http://localhost/img/2.jpg",
+            "http://localhost/img/5.jpg",
+            "http://localhost/img/6.jpg",
+            "http://localhost/img/7.jpg"
+        ]
     },
     {
         header: "третя черга",
@@ -39,19 +51,24 @@ export const queuesArray = [
         number: "",
         description: "Оптимальна інфраструктура забезпечить привабливість відпочинкового комплексу як для індивідуальних клієнтів (пари, родини, групи друзів), так і для туристичних, корпоративних і спортивних груп",
         details: [
-            "ресторан",
-            "конференц-центр",
-            "басейн з відпочинковою зоною",
-            "сауна на березі гірської річки",
-            "рецепція",
-            "зони паркування",
-            "мангальна зона",
-            "альтанки",
-            "оглядові тераси",
-            "дитячий майданчик",
-            "мотузковий парк"
+            ['http://localhost/img/ekobag-organic-svgrepo-com(1).svg', "ресторан"],
+            ['http://localhost/img/ekobag-organic-svgrepo-com(1).svg', "конференц-центр"],
+            ['http://localhost/img/ekobag-organic-svgrepo-com(1).svg', "басейн з відпочинковою зоною"],
+            ['http://localhost/img/ekobag-organic-svgrepo-com(1).svg', "сауна на березі гірської річки"],
+            ['http://localhost/img/ekobag-organic-svgrepo-com(1).svg', "зони паркування"],
+            ['http://localhost/img/ekobag-organic-svgrepo-com(1).svg', "мангальна зона"],
+            ['http://localhost/img/ekobag-organic-svgrepo-com(1).svg', "альтанки"],
+            ['http://localhost/img/ekobag-organic-svgrepo-com(1).svg', "оглядові тераси"],
+            ['http://localhost/img/ekobag-organic-svgrepo-com(1).svg', "дитячий майданчик"],
+            ['http://localhost/img/ekobag-organic-svgrepo-com(1).svg', "мотузковий парк"]
         ],
-        photo: "http://localhost/img/3.jpg"
+        photo: "http://localhost/img/3.jpg",
+        photos: [
+            "http://localhost/img/3.jpg",
+            "http://localhost/img/10.jpg",
+            "http://localhost/img/11.jpg",
+            "http://localhost/img/8.jpg"
+        ]
     }
 ];
 

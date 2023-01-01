@@ -1,0 +1,53 @@
+
+.previous-arrow {
+    height: 30px;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+.next-arrow {
+    height: 30px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    transform: rotate(270deg);
+}
+
+.previous-arrow-container{
+    position: absolute;
+    display: flex;
+    height: 700px;
+    width: 50px;
+    min-width: 20px;
+    left: 0;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.previous-arrow-container:hover{
+    background-color: rgba(0, 0, 0, 0.449);
+    transition: background-color 0.3s;
+}
+
+
+.next-arrow-container{
+    position: absolute;
+    display: flex;
+    height: 700px;
+    width: 50px;
+    min-width: 20px;
+    right: 0;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.next-arrow-container:hover{
+    background-color: rgba(0, 0, 0, 0.449);
+    transition: background-color 0.3s;
+}
