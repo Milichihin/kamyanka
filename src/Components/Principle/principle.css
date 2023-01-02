@@ -33,7 +33,7 @@
     justify-content: space-between;
 }
 
-.principle-wrap h2{
+.principle-wrap .principle-p{
     margin: 0;
 }
 
@@ -49,10 +49,6 @@
     z-index: -1;
     transition-property: all;
     transition: opacity 0.4s;
-}
-
-.principle-wrap h2{
-    margin: 0;
 }
 
 .modal {

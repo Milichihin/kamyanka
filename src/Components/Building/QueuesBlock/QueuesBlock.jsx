@@ -83,6 +83,12 @@ function QueuesBlock() {
             <div className='queue-wraper'>
                 <>
                     <img className='queue-image' src={picLink} style={opacityPic} />
+                    {
+                        (queue !== queuesArray[0]) &&
+                        <div className="blacking" style={discriptionOpacity}></div>
+                    }
+
+                    
 
                     <div className='previous-arrow-container' onClick={() => changeImage('prev-img')}>
                         <img src={arrow} className='previous-arrow' />

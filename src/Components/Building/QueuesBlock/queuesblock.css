@@ -64,6 +64,12 @@
     margin-bottom: 0;
 }
 
+.queue-description p:nth-child(4) {
+    margin-top: 45px;
+    margin-bottom: 0;
+}
+
+
 .details {
     margin-top: 50px;
     margin-left: 50px;
@@ -85,4 +91,11 @@
     height: 35px;
     fill: white;
     margin-right: 5px;
+}
+
+.blacking {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.497);
+    height: 700px;
+    width: 100%;
 }

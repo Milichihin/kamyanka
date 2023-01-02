@@ -33,7 +33,7 @@ function Principle(props) {
         <>
             <a name={props.anchor} ></a>
             <div className={`${"section-block"} ${"principle-wrap"}`}>
-                <h2>{howItWorks.header}</h2>
+                <h2 className='principle-p' >{howItWorks.header}</h2>
                 <div
                     className='button-wrap'
                     onClick={() => showModal()}
