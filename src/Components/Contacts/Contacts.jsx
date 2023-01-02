@@ -6,7 +6,6 @@ function Contacts(props) {
     return (
         <>
             <a name={props.anchor} ></a>
-            {/* <div className={`${"section-block"} ${"contacts"}`}> */}
             <div className="contacts-wrap">
                 <div>
                     <h2>{contacts.header}</h2>

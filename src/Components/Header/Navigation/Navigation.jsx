@@ -8,6 +8,7 @@ function Navigation(props) {
     const activateItem = (menuItem) => {
         setActive(menuItem);
     }
+    // console.log(props.fixNav);
 
     return (
         <>
@@ -24,6 +25,26 @@ function Navigation(props) {
                     ))
                 }
             </div>
+
+            {/* {
+                props.fixNav &&
+                <>
+                    <div className={`${"nav-container"} ${"fix"}`}>
+                        {
+                            Object.values(props.navArray).map((menuItem, i) => (
+                                <a
+                                    href={"#" + menuItem}
+                                    className={(menuItem === active ? "active" : "item")}
+                                    onClick={() => activateItem(menuItem)}
+                                >
+                                    {menuItem}
+                                </a>
+                            ))
+                        }
+                    </div>
+                </>
+
+            } */}
         </>
     );
 }

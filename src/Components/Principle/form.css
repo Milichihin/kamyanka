@@ -29,23 +29,20 @@ textarea {
 }
 
 .modal form{
-    
     border-style: none;
 }
 
 input {
     background-color: #e9e1b5;
-    height: 20px;
-    /* box-shadow: inset 0 0 0 50px #e9e1b5; */
+    height: 30px;
     box-shadow: inset 0 0 0 50px #e9e1b5;
 
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    /* color: rgba(255, 255, 255, 0.414); */
-    color: #867f52;
-    opacity: 1; /* Firefox */
-    font-size: small;
+::placeholder {
+    color: #d5cc91;
+    opacity: 1;
+    font-size: medium;
 }
 
   form {

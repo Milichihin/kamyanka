@@ -9,10 +9,8 @@ import Contacts from './Components/Contacts/Contacts.jsx';
 
 function App() {
 
-
   return (
     <div className="App">
-      <div id='qwer'>hello</div>
       <Header navArray={navArray} />
       <Conception anchor={navArray.Greating} />
       <Building anchor={navArray.Building} />
