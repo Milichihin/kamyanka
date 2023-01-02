@@ -2,6 +2,46 @@
 // Gallery
 ////////////////////   localhost  ////////////////////
 
+const imagesInitial0 = [
+    "http://localhost/img/1.jpg",
+    "http://localhost/img/2.jpg",
+    "http://localhost/img/3.jpg",
+    "http://localhost/img/4.jpg",
+    "http://localhost/img/5.jpg",
+    "http://localhost/img/6.jpg",
+    "http://localhost/img/7.jpg",
+    "http://localhost/img/8.jpg",
+    "http://localhost/img/9.jpg",
+    "http://localhost/img/10.jpg",
+    // "http://localhost/img/11.jpg",
+    // "http://localhost/img/12.jpg",
+    "http://localhost/img/13.jpg",
+    // "http://localhost/img/14.jpg",
+    "http://localhost/img/15.jpg",
+    "http://localhost/img/16.jpg",
+    "http://localhost/img/17.jpg",
+    // "http://localhost/img/18.jpg",
+    "http://localhost/img/19.jpg",
+    "http://localhost/img/20.jpg",
+    // "http://localhost/img/21.jpg",
+    "http://localhost/img/22.jpg",
+    "http://localhost/img/23.jpg",
+    "http://localhost/img/24.jpg",
+    "http://localhost/img/25.jpg",
+    "http://localhost/img/26.jpg",
+    "http://localhost/img/27.jpg",
+    "http://localhost/img/28.jpg",
+    "http://localhost/img/29.jpg",
+    // "http://localhost/img/30.jpg",
+    "http://localhost/img/31.jpg",
+    "http://localhost/img/32.jpg",
+    // "http://localhost/img/33.jpg",
+    // "http://localhost/img/34.jpg",
+    // "http://localhost/img/35.jpg",
+    "http://localhost/img/36.jpg",
+    "http://localhost/img/37.jpg"
+];
+
 const imagesInitial = [
     "http://localhost/img/1.jpg",
     "http://localhost/img/2.jpg",
