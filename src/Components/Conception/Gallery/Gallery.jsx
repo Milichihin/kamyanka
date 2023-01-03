@@ -78,7 +78,7 @@ function Gallery() {
                         <div className='fullsize-wraper'>
                             <div className='fullsize-background' style={opacityBack} onClick={() => changeImage()} />
 
-                            <img src={picLink} className='fullsize-img' style={opacityPic} />
+                            <img src={picLink} className='fullsize-img' style={opacityPic} /> 
 
                             <div className='cross-container' onClick={() => changeImage()}>
                                 <img src={closeButton} className='closeCross' />
