@@ -3,11 +3,11 @@ body {
   min-width: 350px;
   margin-left: auto;
   margin-right: auto;
-  font-family: -apple-system, 'Inter', 'Arial', 'Roboto', 'Segoe UI',  'Oxygen',
+  /* font-family: -apple-system, 'Inter', 'Arial', 'Roboto', 'Segoe UI',  'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 
-    sans-serif;
-    
+    sans-serif; */
   /* font-family:'Inter', sans-serif; */
+  font-family:'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
