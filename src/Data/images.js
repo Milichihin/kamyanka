@@ -3,60 +3,59 @@
 ////////////////////   localhost  ////////////////////
 
 
-const imagesInitial0 = [
-    "http://localhost/img/1.jpg",
-    "http://localhost/img/2.jpg",
-    "http://localhost/img/3.jpg",
-    "http://localhost/img/4.jpg",
-    "http://localhost/img/5.jpg",
-    "http://localhost/img/6.jpg",
-    "http://localhost/img/7.jpg",
-    "http://localhost/img/8.jpg",
-    "http://localhost/img/9.jpg",
-    "http://localhost/img/10.jpg",
-    // "http://localhost/img/11.jpg",
-    // "http://localhost/img/12.jpg",
-    "http://localhost/img/13.jpg",
-    // "http://localhost/img/14.jpg",
-    "http://localhost/img/15.jpg",
-    "http://localhost/img/16.jpg",
-    "http://localhost/img/17.jpg",
-    // "http://localhost/img/18.jpg",
-    "http://localhost/img/19.jpg",
-    "http://localhost/img/20.jpg",
-    // "http://localhost/img/21.jpg",
-    "http://localhost/img/22.jpg",
-    "http://localhost/img/23.jpg",
-    "http://localhost/img/24.jpg",
-    "http://localhost/img/25.jpg",
-    "http://localhost/img/26.jpg",
-    "http://localhost/img/27.jpg",
-    "http://localhost/img/28.jpg",
-    "http://localhost/img/29.jpg",
-    // "http://localhost/img/30.jpg",
-    "http://localhost/img/31.jpg",
-    "http://localhost/img/32.jpg",
-    // "http://localhost/img/33.jpg",
-    // "http://localhost/img/34.jpg",
-    // "http://localhost/img/35.jpg",
-    "http://localhost/img/36.jpg",
-    "http://localhost/img/37.jpg"
+const imagesInitial = [
+    "./images/1.jpg",
+    "./images/2.jpg",
+    "./images/3.jpg",
+    "./images/4.jpg",
+    "./images/5.jpg",
+    "./images/6.jpg",
+    "./images/7.jpg",
+    "./images/8.jpg",
+    "./images/9.jpg",
+    "./images/10.jpg",
+    // "./images/11.jpg",
+    // "./images/12.jpg",
+    "./images/13.jpg",
+    // "./images/14.jpg",
+    "./images/15.jpg",
+    "./images/16.jpg",
+    "./images/17.jpg",
+    // "./images/18.jpg",
+    "./images/19.jpg",
+    "./images/20.jpg",
+    // "./images/21.jpg",
+    "./images/22.jpg",
+    "./images/23.jpg",
+    "./images/24.jpg",
+    "./images/25.jpg",
+    "./images/26.jpg",
+    "./images/27.jpg",
+    "./images/28.jpg",
+    "./images/29.jpg",
+    // "./images/30.jpg",
+    "./images/31.jpg",
+    "./images/32.jpg",
+    // "./images/33.jpg",
+    // "./images/34.jpg",
+    // "./images/35.jpg",
+    "./images/36.jpg",
+    "./images/37.jpg"
 ];
 
 
-// export const closeButton = "http://localhost/img/circle-icon-cross.png";
+export const closeButton = "./images/circle-icon-cross.png";
 
-// export const arrow = "http://localhost/img/arrow.png";
+export const arrow = "./images/arrow.png";
 
-// export const logo = "http://localhost/img/logo_kamyanka.png";
+export const logo = "./images/logo_kamyanka.png";
 
-// export const wallpaper = "http://localhost/img/greating-wallpaper2.jpg";
-
+export const wallpaper = "./images/greating-wallpaper2.jpg";
 
 
 ////////////////////   GoogleDisc  ////////////////////
 
-const imagesInitial = [
+const imagesInitial0 = [
     "https://drive.google.com/uc?export=view&id=1mo1NQCjIHdEyeXS5obZf5DkGepQ2UEgP",
     "https://drive.google.com/uc?export=view&id=16U-mTA5JDJhBLYP7hlQSNFB-MMBUKV5u",
     "https://drive.google.com/uc?export=view&id=1s4Bfq4doEd6A6iXeOtL0hRsZ-WJABKv0",
@@ -98,13 +97,13 @@ const imagesInitial = [
 
 
 
-export const arrow = "https://drive.google.com/uc?export=view&id=1-dy6PERTtvnMX3CN__Slp6u43UU6E2p8";
+// export const arrow = "https://drive.google.com/uc?export=view&id=1-dy6PERTtvnMX3CN__Slp6u43UU6E2p8";
 
-export const logo = "https://drive.google.com/uc?export=view&id=1iHM6K0o5ZG_lehzfcfa7RsS8Z3_4n9Cm";
+// export const logo = "https://drive.google.com/uc?export=view&id=1iHM6K0o5ZG_lehzfcfa7RsS8Z3_4n9Cm";
 
-export const wallpaper = "https://drive.google.com/uc?export=view&id=1kmLfubnsoEoKyhWH26RBm15hoFY-YMVN";
+// export const wallpaper = "https://drive.google.com/uc?export=view&id=1kmLfubnsoEoKyhWH26RBm15hoFY-YMVN";
 
-export const closeButton = "https://drive.google.com/uc?export=view&id=15UbCiaSvZqj5ICFpZdZDL_zzh6atR4jk";
+// export const closeButton = "https://drive.google.com/uc?export=view&id=15UbCiaSvZqj5ICFpZdZDL_zzh6atR4jk";
 
 
 

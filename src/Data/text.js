@@ -23,16 +23,16 @@ export const queuesArray = [
         number: "7 будинків",
         description: "",
         details: [],
-        photo: "http://localhost/img/12.jpg",
+        photo: "./images/12.jpg",
         photos: [
-            // "http://localhost/img/12.jpg",
-            // "http://localhost/img/1.jpg",
-            // "http://localhost/img/3.jpg",
-            // "http://localhost/img/4.jpg",
-            "https://drive.google.com/uc?export=view&id=1mo1NQCjIHdEyeXS5obZf5DkGepQ2UEgP",
-            "https://drive.google.com/uc?export=view&id=16U-mTA5JDJhBLYP7hlQSNFB-MMBUKV5u",
-            "https://drive.google.com/uc?export=view&id=1s4Bfq4doEd6A6iXeOtL0hRsZ-WJABKv0",
-            "https://drive.google.com/uc?export=view&id=1ptyLlgtnojJQDEntd-may3EffzjvyhCE"
+            "./images/12.jpg",
+            "./images/1.jpg",
+            "./images/3.jpg",
+            "./images/4.jpg",
+            // "https://drive.google.com/uc?export=view&id=1mo1NQCjIHdEyeXS5obZf5DkGepQ2UEgP",
+            // "https://drive.google.com/uc?export=view&id=16U-mTA5JDJhBLYP7hlQSNFB-MMBUKV5u",
+            // "https://drive.google.com/uc?export=view&id=1s4Bfq4doEd6A6iXeOtL0hRsZ-WJABKv0",
+            // "https://drive.google.com/uc?export=view&id=1ptyLlgtnojJQDEntd-may3EffzjvyhCE"
         ]
     },
     {
@@ -42,16 +42,16 @@ export const queuesArray = [
         number: "19 будинків",
         description: "розташованих на достатній відстані один від одного, щоб присутність інших мешканців практично була практично не відчутною",
         details: [],
-        photo: "http://localhost/img/2.jpg",
+        photo: "./images/2.jpg",
         photos: [
-            // "http://localhost/img/2.jpg",
-            // "http://localhost/img/5.jpg",
-            // "http://localhost/img/6.jpg",
-            // "http://localhost/img/7.jpg",
-            "https://drive.google.com/uc?export=view&id=1WNDMklIcSzPl7ksvwCZZB44G5CZcOyr9",
-            "https://drive.google.com/uc?export=view&id=140yJCkoYnjYFGRxV4oPRbgIKGtfPHkd_",
-            "https://drive.google.com/uc?export=view&id=1VThEEVuS-UTEDPri5hmtwGJdWqLvitts",
-            "https://drive.google.com/uc?export=view&id=1SueuCbfDetyoXgbha6N0aZXFNPiF7a76",
+            "./images/2.jpg",
+            "./images/5.jpg",
+            "./images/6.jpg",
+            "./images/7.jpg",
+            // "https://drive.google.com/uc?export=view&id=1WNDMklIcSzPl7ksvwCZZB44G5CZcOyr9",
+            // "https://drive.google.com/uc?export=view&id=140yJCkoYnjYFGRxV4oPRbgIKGtfPHkd_",
+            // "https://drive.google.com/uc?export=view&id=1VThEEVuS-UTEDPri5hmtwGJdWqLvitts",
+            // "https://drive.google.com/uc?export=view&id=1SueuCbfDetyoXgbha6N0aZXFNPiF7a76",
         ]
     },
     {
@@ -61,27 +61,27 @@ export const queuesArray = [
         number: "",
         description: "Оптимальна інфраструктура забезпечить привабливість відпочинкового комплексу як для індивідуальних клієнтів (пари, родини, групи друзів), так і для туристичних, корпоративних і спортивних груп",
         details: [
-            ['http://localhost/img/ekobag-organic-svgrepo-com(1).svg', "ресторан"],
-            ['http://localhost/img/ekobag-organic-svgrepo-com(1).svg', "конференц-центр"],
-            ['http://localhost/img/ekobag-organic-svgrepo-com(1).svg', "басейн з відпочинковою зоною"],
-            ['http://localhost/img/ekobag-organic-svgrepo-com(1).svg', "сауна на березі гірської річки"],
-            ['http://localhost/img/ekobag-organic-svgrepo-com(1).svg', "зони паркування"],
-            ['http://localhost/img/ekobag-organic-svgrepo-com(1).svg', "мангальна зона"],
-            ['http://localhost/img/ekobag-organic-svgrepo-com(1).svg', "альтанки"],
-            ['http://localhost/img/ekobag-organic-svgrepo-com(1).svg', "оглядові тераси"],
-            ['http://localhost/img/ekobag-organic-svgrepo-com(1).svg', "дитячий майданчик"],
-            ['http://localhost/img/ekobag-organic-svgrepo-com(1).svg', "мотузковий парк"]
+            ['./images/ekobag-organic-svgrepo-com(1).svg', "ресторан"],
+            ['./images/ekobag-organic-svgrepo-com(1).svg', "конференц-центр"],
+            ['./images/ekobag-organic-svgrepo-com(1).svg', "басейн з відпочинковою зоною"],
+            ['./images/ekobag-organic-svgrepo-com(1).svg', "сауна на березі гірської річки"],
+            ['./images/ekobag-organic-svgrepo-com(1).svg', "зони паркування"],
+            ['./images/ekobag-organic-svgrepo-com(1).svg', "мангальна зона"],
+            ['./images/ekobag-organic-svgrepo-com(1).svg', "альтанки"],
+            ['./images/ekobag-organic-svgrepo-com(1).svg', "оглядові тераси"],
+            ['./images/ekobag-organic-svgrepo-com(1).svg', "дитячий майданчик"],
+            ['./images/ekobag-organic-svgrepo-com(1).svg', "мотузковий парк"]
         ],
-        photo: "http://localhost/img/3.jpg",
+        photo: "./images/3.jpg",
         photos: [
-            // "http://localhost/img/3.jpg",
-            // "http://localhost/img/10.jpg",
-            // "http://localhost/img/11.jpg",
-            // "http://localhost/img/8.jpg",
-            "https://drive.google.com/uc?export=view&id=14c6ML-U_Om66h4cETIoHcrJRnXkobSMm",
-            "https://drive.google.com/uc?export=view&id=1tai4baYSvA1AKIX5Sd665R4aln4g4K5u",
-            "https://drive.google.com/uc?export=view&id=1tAQZypXr1EvwdcdUOqZ8GNB4jP3nQjAA",
-            "https://drive.google.com/uc?export=view&id=1bQJJ-cUd0fdHNXTRjvRwFD57m4eljKPC"
+            "./images/3.jpg",
+            "./images/10.jpg",
+            "./images/11.jpg",
+            "./images/8.jpg",
+            // "https://drive.google.com/uc?export=view&id=14c6ML-U_Om66h4cETIoHcrJRnXkobSMm",
+            // "https://drive.google.com/uc?export=view&id=1tai4baYSvA1AKIX5Sd665R4aln4g4K5u",
+            // "https://drive.google.com/uc?export=view&id=1tAQZypXr1EvwdcdUOqZ8GNB4jP3nQjAA",
+            // "https://drive.google.com/uc?export=view&id=1bQJJ-cUd0fdHNXTRjvRwFD57m4eljKPC"
         ]
     }
 ];
