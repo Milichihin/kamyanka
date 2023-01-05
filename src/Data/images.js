@@ -4,43 +4,43 @@
 
 
 const imagesInitial = [
-    "./images/1.jpg",
-    "./images/2.jpg",
-    "./images/3.jpg",
-    "./images/4.jpg",
-    "./images/5.jpg",
-    "./images/6.jpg",
-    "./images/7.jpg",
-    "./images/8.jpg",
-    "./images/9.jpg",
-    "./images/10.jpg",
-    // "./images/11.jpg",
-    // "./images/12.jpg",
-    "./images/13.jpg",
-    // "./images/14.jpg",
-    "./images/15.jpg",
-    "./images/16.jpg",
-    "./images/17.jpg",
-    // "./images/18.jpg",
-    "./images/19.jpg",
-    "./images/20.jpg",
-    // "./images/21.jpg",
-    "./images/22.jpg",
-    "./images/23.jpg",
-    "./images/24.jpg",
-    "./images/25.jpg",
-    "./images/26.jpg",
-    "./images/27.jpg",
-    "./images/28.jpg",
-    "./images/29.jpg",
-    // "./images/30.jpg",
-    "./images/31.jpg",
-    "./images/32.jpg",
-    // "./images/33.jpg",
-    // "./images/34.jpg",
-    // "./images/35.jpg",
-    "./images/36.jpg",
-    "./images/37.jpg"
+    "./images/1.webp",
+    "./images/2.webp",
+    "./images/3.webp",
+    "./images/4.webp",
+    "./images/5.webp",
+    "./images/6.webp",
+    "./images/7.webp",
+    "./images/8.webp",
+    "./images/9.webp",
+    "./images/10.webp",
+    // "./images/11.webp",
+    // "./images/12.webp",
+    "./images/13.webp",
+    // "./images/14.webp",
+    "./images/15.webp",
+    "./images/16.webp",
+    "./images/17.webp",
+    // "./images/18.webp",
+    "./images/19.webp",
+    "./images/20.webp",
+    // "./images/21.webp",
+    "./images/22.webp",
+    "./images/23.webp",
+    "./images/24.webp",
+    "./images/25.webp",
+    "./images/26.webp",
+    "./images/27.webp",
+    "./images/28.webp",
+    "./images/29.webp",
+    // "./images/30.webp",
+    "./images/31.webp",
+    "./images/32.webp",
+    // "./images/33.webp",
+    // "./images/34.webp",
+    // "./images/35.webp",
+    "./images/36.webp",
+    "./images/37.webp"
 ];
 
 
@@ -50,7 +50,7 @@ export const arrow = "./images/arrow.png";
 
 export const logo = "./images/logo_kamyanka.png";
 
-export const wallpaper = "./images/greating-wallpaper2.jpg";
+export const wallpaper = "./images/greating-wallpaper2.webp";
 
 
 ////////////////////   GoogleDisc  ////////////////////
