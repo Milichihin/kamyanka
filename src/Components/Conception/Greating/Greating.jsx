@@ -9,7 +9,6 @@ function Greating(props) {
             <a name={props.anchor} ></a>
             <div className="wallpaper-wraper">
                 <img src={wallpaper} />
-                {/* <img src={require(wallpaper).default} /> */}
                 
                 <div className="gradient"></div>
                 <div className="greating-slogan">{greating.slogan}</div>
