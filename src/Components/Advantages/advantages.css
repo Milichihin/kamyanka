@@ -47,7 +47,8 @@
 }
 
 .subtitle {
-    font-size: xx-large;
+    /* font-size: xx-large; */
+    font-size: 2em;
     margin-bottom: 40px;
 }
 

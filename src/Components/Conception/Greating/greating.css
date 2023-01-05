@@ -31,15 +31,6 @@
     z-index: -1;
 }
 
-.wallpaper-wraper h1{
-    display: flex;
-    margin: 0 0 10px 0;
-    font-size: xxx-large;
-    justify-self: end;
-    width: 70%;
-    font-weight: 900;
-}
-
 .greating-slogan{
     display: flex;
     width: 70%;

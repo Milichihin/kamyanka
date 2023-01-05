@@ -11,13 +11,15 @@
  
 .contacts-wrap h2{
     margin: 25px 0 25px 0;
-    font-size: medium;
+    /* font-size: medium; */
+    font-size: 1em;
     font-weight: 500;
 }
 
 .contacts-wrap p{
     margin: 7px 0 7px 0;
-    font-size: medium;
+    /* font-size: medium; */
+    font-size: 1em;
     font-weight: 500;
 }
 
