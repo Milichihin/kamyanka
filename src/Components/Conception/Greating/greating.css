@@ -11,7 +11,6 @@
     position: absolute;
     display: flex;
     align-self: center;
-    /* left: -300px; */
     width: 1400px;
     height: 550px;
     object-fit: cover;
@@ -23,7 +22,6 @@
     position: absolute;
     display: flex;
     align-self: center;
-    /* left: -300px; */
     width: 1400px;
     max-width: 97vw;
     height: 550px;

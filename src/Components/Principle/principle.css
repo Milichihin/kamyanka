@@ -16,6 +16,8 @@
     background-color: #7BC085;
     color: white;
     cursor: pointer;
+    -webkit-transition-property: all;
+    -webkit-transition: all ease 0.51s;
     transition-property: all;
     transition: all ease 0.51s;
 }
@@ -47,6 +49,8 @@
     align-items: center;
     overflow: hidden;
     z-index: -1;
+    -webkit-transition-property: all;
+    -webkit-transition: opacity 0.4s;
     transition-property: all;
     transition: opacity 0.4s;
 }
@@ -58,13 +62,13 @@
     padding: 20px;
     width: 50%;
     height: 50%;
-    /* background-color: #867f52; */
     background-color: #EFEBD4;
-    /* color: white; */
     color: #867f52;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    -webkit-transition-property: all;
+    -webkit-transition: opacity 0.4s;
     transition-property: all;
     transition: opacity 0.4s;
 }
@@ -79,12 +83,14 @@
     width: 90px;
     align-items: center;
     cursor: pointer;
+    -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
 
 }
 
 .cross-container:hover{
     background-color: rgba(0, 0, 0, 0.449);
+    -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
 }
 
@@ -102,5 +108,6 @@
 
 .cross-container:hover .closeCross{
     opacity: 1;
+    -webkit-transition: opacity all linear 0.3s;
     transition: opacity all linear 0.3s;
 }

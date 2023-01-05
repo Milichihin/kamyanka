@@ -9,16 +9,6 @@
     z-index: 2;
     max-width: 100vw;
     object-fit: cover;
-
-    /* position: absolute;
-    display: flex;
-    align-self: center;
-    width: 1400px;
-    height: 550px;
-    object-fit: cover;
-    z-index: -2;
-    max-width: 97vw; */
-
 }
 
 .nav-container {
@@ -80,6 +70,7 @@
 
 .item:hover{
     background-color: #95c29c4a;
+    -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
 }
 
@@ -93,6 +84,8 @@
     color: #7BC085;
     background-color: #7BC085;
     color: white;
+    -webkit-transition-property: all;
+    -webkit-transition: background-color 0.3s;
     transition-property: all;
     transition: background-color 0.3s;
 }

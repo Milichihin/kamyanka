@@ -15,14 +15,20 @@
     font-weight: 400;
     text-decoration-color: transparent;
     text-decoration-line: overline;
+    -webkit-text-decoration-color: #7bc08500;
     text-decoration-color: #7bc08500;
+    -webkit-transition-property: all;
+    -webkit-transition: text-decoration-color 0.3s;
     transition-property: all;
     transition: text-decoration-color 0.3s;
 }
 
 .active-select {
     text-decoration-line: overline;
+    -webkit-text-decoration-color: #7BC085;
     text-decoration-color: #7BC085;
+    -webkit-transition-property: all;
+    -webkit-transition: text-decoration-color 0.3s;
     transition-property: all;
     transition: text-decoration-color 0.3s;
 }
@@ -35,6 +41,7 @@
     width: 100%;
     height: 700px;
     object-fit: cover;    
+   -webkit-transition: opacity 1s ease ;
     transition: opacity 1s ease ;
 }
 
@@ -53,7 +60,6 @@
 .boldFont{
     background-color: #7BC085;
     font-weight: 700;
-    /* font-size: xx-large; */
     font-size: 2em;
     width: 250px;
     padding-left: 10px;

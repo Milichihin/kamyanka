@@ -23,7 +23,10 @@
     margin: 0;
     color: #b7ad72;
     border-bottom-style: solid;
+    -webkit-border-color: rgba(0, 0, 0, 0);
     border-color: rgba(0, 0, 0, 0);
+    -webkit-transition-property: all;
+    -webkit-transition: border-color 0.5s;
     transition-property: all;
     transition: border-color 0.5s;
 }
@@ -31,7 +34,10 @@
 .active-advantage {
     border-width: 3px;
     border-bottom-style: solid;
+    -webkit-border-color: rgb(82, 82, 82);
     border-color: rgb(82, 82, 82);
+    -webkit-transition-property: all;
+    -webkit-transition: border-color 0.5s;
     transition-property: all;
     transition: border-color 0.5s;
     color: rgb(82, 82, 82);
@@ -43,11 +49,11 @@
 
 .description {
     margin-left: 40px;
+    -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
 }
 
 .subtitle {
-    /* font-size: xx-large; */
     font-size: 2em;
     margin-bottom: 40px;
 }

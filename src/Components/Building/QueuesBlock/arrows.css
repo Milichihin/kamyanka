@@ -29,6 +29,8 @@
 
 .previous-arrow-container:hover{
     background-color: rgba(0, 0, 0, 0.449);
+    -webkit-background-color: rgba(0, 0, 0, 0.449);
+    -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
 }
 
@@ -43,10 +45,13 @@
     justify-content: flex-end;
     align-items: center;
     cursor: pointer;
+    -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
 }
 
 .next-arrow-container:hover{
+    -webkit-background-color: rgba(0, 0, 0, 0.449);
     background-color: rgba(0, 0, 0, 0.449);
+    -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
 }
