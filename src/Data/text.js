@@ -25,10 +25,18 @@ export const queuesArray = [
         details: [],
         photo: "./images/12.webp",
         photos: [
-            "./images/original/12.webp",
-            "./images/original/1.webp",
-            "./images/original/3.webp",
-            "./images/original/4.webp",
+            ((document.documentElement.scrollWidth >= 700)
+                ? "./images/original/35.webp"
+                : "./images/700w/35.webp"),
+            ((document.documentElement.scrollWidth >= 700)
+                    ? "./images/original/1.webp"
+                    : "./images/700w/1.webp"),
+            ((document.documentElement.scrollWidth >= 700)
+                    ? "./images/original/3.webp"
+                    : "./images/700w/3.webp"),
+            ((document.documentElement.scrollWidth >= 700)
+                    ? "./images/original/4.webp"
+                    : "./images/700w/4.webp")
             // "https://drive.google.com/uc?export=view&id=1mo1NQCjIHdEyeXS5obZf5DkGepQ2UEgP",
             // "https://drive.google.com/uc?export=view&id=16U-mTA5JDJhBLYP7hlQSNFB-MMBUKV5u",
             // "https://drive.google.com/uc?export=view&id=1s4Bfq4doEd6A6iXeOtL0hRsZ-WJABKv0",
@@ -44,10 +52,18 @@ export const queuesArray = [
         details: [],
         photo: "./images/2.webp",
         photos: [
-            "./images/original/2.webp",
-            "./images/original/5.webp",
-            "./images/original/6.webp",
-            "./images/original/7.webp",
+            ((document.documentElement.scrollWidth >= 700)
+                    ? "./images/original/2.webp"
+                    : "./images/700w/2.webp"),
+            ((document.documentElement.scrollWidth >= 700)
+                    ? "./images/original/5.webp"
+                    : "./images/w70700w0/5.webp"),
+            ((document.documentElement.scrollWidth >= 700)
+                    ? "./images/original/6.webp"
+                    : "./images/700w/6.webp"),
+            ((document.documentElement.scrollWidth >= 700)
+                    ? "./images/original/7.webp"
+                    : "./images/700w/7.webp")
             // "https://drive.google.com/uc?export=view&id=1WNDMklIcSzPl7ksvwCZZB44G5CZcOyr9",
             // "https://drive.google.com/uc?export=view&id=140yJCkoYnjYFGRxV4oPRbgIKGtfPHkd_",
             // "https://drive.google.com/uc?export=view&id=1VThEEVuS-UTEDPri5hmtwGJdWqLvitts",
@@ -74,10 +90,18 @@ export const queuesArray = [
         ],
         photo: "./images/3.webp",
         photos: [
-            "./images/original/3.webp",
-            "./images/original/10.webp",
-            "./images/original/11.webp",
-            "./images/original/8.webp",
+            ((document.documentElement.scrollWidth >= 700)
+                    ? "./images/original/3.webp"
+                    : "./images/700w/3.webp"),
+            ((document.documentElement.scrollWidth >= 700)
+                    ? "./images/original/10.webp"
+                    : "./images/700w/10.webp"),
+            ((document.documentElement.scrollWidth >= 700)
+                    ? "./images/original/11.webp"
+                    : "./images/700w/11.webp"),
+            ((document.documentElement.scrollWidth >= 700)
+                    ? "./images/original/8.webp"
+                    : "./images/700w/8.webp")
             // "https://drive.google.com/uc?export=view&id=14c6ML-U_Om66h4cETIoHcrJRnXkobSMm",
             // "https://drive.google.com/uc?export=view&id=1tai4baYSvA1AKIX5Sd665R4aln4g4K5u",
             // "https://drive.google.com/uc?export=view&id=1tAQZypXr1EvwdcdUOqZ8GNB4jP3nQjAA",
