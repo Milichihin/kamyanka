@@ -37,10 +37,6 @@ export const queuesArray = [
             ((document.documentElement.scrollWidth >= 700)
                     ? "./images/original/4.webp"
                     : "./images/700w/4.webp")
-            // "https://drive.google.com/uc?export=view&id=1mo1NQCjIHdEyeXS5obZf5DkGepQ2UEgP",
-            // "https://drive.google.com/uc?export=view&id=16U-mTA5JDJhBLYP7hlQSNFB-MMBUKV5u",
-            // "https://drive.google.com/uc?export=view&id=1s4Bfq4doEd6A6iXeOtL0hRsZ-WJABKv0",
-            // "https://drive.google.com/uc?export=view&id=1ptyLlgtnojJQDEntd-may3EffzjvyhCE"
         ]
     },
     {
@@ -64,10 +60,6 @@ export const queuesArray = [
             ((document.documentElement.scrollWidth >= 700)
                     ? "./images/original/7.webp"
                     : "./images/700w/7.webp")
-            // "https://drive.google.com/uc?export=view&id=1WNDMklIcSzPl7ksvwCZZB44G5CZcOyr9",
-            // "https://drive.google.com/uc?export=view&id=140yJCkoYnjYFGRxV4oPRbgIKGtfPHkd_",
-            // "https://drive.google.com/uc?export=view&id=1VThEEVuS-UTEDPri5hmtwGJdWqLvitts",
-            // "https://drive.google.com/uc?export=view&id=1SueuCbfDetyoXgbha6N0aZXFNPiF7a76",
         ]
     },
     {
@@ -102,10 +94,6 @@ export const queuesArray = [
             ((document.documentElement.scrollWidth >= 700)
                     ? "./images/original/8.webp"
                     : "./images/700w/8.webp")
-            // "https://drive.google.com/uc?export=view&id=14c6ML-U_Om66h4cETIoHcrJRnXkobSMm",
-            // "https://drive.google.com/uc?export=view&id=1tai4baYSvA1AKIX5Sd665R4aln4g4K5u",
-            // "https://drive.google.com/uc?export=view&id=1tAQZypXr1EvwdcdUOqZ8GNB4jP3nQjAA",
-            // "https://drive.google.com/uc?export=view&id=1bQJJ-cUd0fdHNXTRjvRwFD57m4eljKPC"
         ]
     }
 ];

@@ -19,3 +19,8 @@ html {
   scroll-behavior: smooth;
 }
 
+.anchor-padding{
+  display: block;
+  height: 20px;
+}
+

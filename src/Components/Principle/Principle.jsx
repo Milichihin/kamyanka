@@ -31,7 +31,7 @@ function Principle(props) {
 
     return (
         <>
-            <a name={props.anchor} ></a>
+            <a className='anchor-padding' name={props.anchor} ></a>
             <div className={`${"section-block"} ${"principle-wrap"}`}>
                 <h2 className='principle-p' >{howItWorks.header}</h2>
                 <div

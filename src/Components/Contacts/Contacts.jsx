@@ -5,7 +5,7 @@ function Contacts(props) {
 
     return (
         <>
-            <a name={props.anchor} ></a>
+            <a className='anchor-padding' name={props.anchor} ></a>
             <div className="contacts-wrap">
                 <div>
                     <h2>{contacts.header}</h2>

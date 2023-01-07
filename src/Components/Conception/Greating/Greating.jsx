@@ -6,7 +6,7 @@ function Greating(props) {
 
     return (
         <div>
-            <a name={props.anchor} ></a>
+            <a className='anchor-padding' name={props.anchor} ></a>
             <div className="wallpaper-wraper">
                 <img src={wallpaper} />
                 
