@@ -29,6 +29,7 @@
 
 .header{
     position: relative;
+    margin: 0 20px;
 }
 
 .header-fix {
@@ -98,6 +99,7 @@
 
 .fix-wrap .nav-container {
     max-width: 800px;
+    margin: 0 20px 0 20px;
     /* border-color: #4caf50;
     border-bottom-style: solid; */
     box-shadow: -1px 26px 28px -23px rgba(0,0,0,1);

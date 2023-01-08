@@ -24,3 +24,21 @@ html {
   height: 20px;
 }
 
+@media (max-height: 450px) { 
+
+  .queue-image, 
+  .previous-arrow-container, 
+  .next-arrow-container,
+  .blacking {
+      height: 250px;
+  }
+  
+  .wallpaper-wraper img,
+  .gradient {
+      height: 400px;
+  }
+
+  .greating-slogan{
+      font-size: 1.6em;
+  }
+}

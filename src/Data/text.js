@@ -53,7 +53,7 @@ export const queuesArray = [
                     : "./images/700w/2.webp"),
             ((document.documentElement.scrollWidth >= 700)
                     ? "./images/original/5.webp"
-                    : "./images/w70700w0/5.webp"),
+                    : "./images/700w/5.webp"),
             ((document.documentElement.scrollWidth >= 700)
                     ? "./images/original/6.webp"
                     : "./images/700w/6.webp"),
