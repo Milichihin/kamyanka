@@ -17,7 +17,7 @@
 .previous-arrow-container{
     position: absolute;
     display: flex;
-    height: 700px;
+    height: 600px;
     width: 50px;
     min-width: 20px;
     left: 0;
@@ -38,7 +38,7 @@
 .next-arrow-container{
     position: absolute;
     display: flex;
-    height: 700px;
+    height: 600px;
     width: 50px;
     min-width: 20px;
     right: 0;

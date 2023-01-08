@@ -25,3 +25,9 @@ p {
   font-size: x-large;
 }
 
+@media (max-height: 450px) { 
+  .section-block {
+    margin-bottom: 45px;
+  }
+}
+
