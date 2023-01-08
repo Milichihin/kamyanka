@@ -12,7 +12,7 @@ function Greating(props) {
                 
                 <div className="gradient"></div>
                 <div className="greating-slogan">{greating.slogan}</div>
-                <h2 style={{ color: 'white', width: "70%" }}>
+                <h2>
                     {greating.header}
                 </h2>
             </div>

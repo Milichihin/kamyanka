@@ -135,4 +135,8 @@
     .queue-description {
         flex-direction: row;
     }
+
+    .boldFont {
+        width: 190px;
+    }
 }

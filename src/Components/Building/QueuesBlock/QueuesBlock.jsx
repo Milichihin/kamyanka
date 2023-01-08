@@ -87,9 +87,7 @@ function QueuesBlock() {
                         (queue !== queuesArray[0]) &&
                         <div className="blacking" style={discriptionOpacity}></div>
                     }
-
-
-
+                    
                     <div className='previous-arrow-container' onClick={() => changeImage('prev-img')}>
                         <img src={arrow} className='previous-arrow' />
                     </div>
