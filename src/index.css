@@ -42,3 +42,9 @@ html {
       font-size: 1.6em;
   }
 }
+
+@media (max-width: 450px) {
+  .anchor-padding{
+    height: 60px;
+  }
+}

@@ -84,7 +84,7 @@ export const closeButton = "./images/circle-icon-cross.png";
 export const arrow = "./images/arrow.png";
 
 export const logo = "./images/logo_kamyanka.png";
-export const logomonochrome = "./images/logo_vertical_white.png";
+export const logomonochrome = "./images/logo_vertical_white_low.png";
 
 export const wallpaper = ((document.documentElement.scrollWidth >= 700)
     ? "./images/original/greating-wallpaper2.webp"

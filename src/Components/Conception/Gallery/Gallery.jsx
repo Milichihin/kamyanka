@@ -96,7 +96,7 @@ function Gallery() {
                 }
 
                 <ResponsiveMasonry
-                    columnsCountBreakPoints={{ 300: 1, 500: 2, 800: 3 }}
+                    columnsCountBreakPoints={{ 450: 2, 500: 3, 800: 4 }}
                 >
                     <Masonry gutter='10px'>
                         {images.map((link, i) => (

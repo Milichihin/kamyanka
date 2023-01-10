@@ -7,7 +7,7 @@
     justify-content: space-between
 }
 
-.wallpaper-wraper h2{
+.wallpaper-wraper h2 {
     color: white;
     width: 70%;
 }
@@ -19,7 +19,7 @@
     width: 1400px;
     height: 550px;
     object-fit: cover;
-    z-index: -2;    
+    z-index: -2;
     max-width: 97vw;
 }
 
@@ -30,11 +30,11 @@
     width: 1400px;
     max-width: 97vw;
     height: 550px;
-    background: linear-gradient(90deg, rgba(255,255,255,0) 20%, rgba(0,0,0,0.3508753843334209) 43%, rgba(0,0,0,0.45451684091605393) 57%, rgba(0,0,0,0.5749650201877626) 75%, rgba(0,0,0,0.6533963927367823) 90%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 20%, rgba(0, 0, 0, 0.3508753843334209) 43%, rgba(0, 0, 0, 0.45451684091605393) 57%, rgba(0, 0, 0, 0.5749650201877626) 75%, rgba(0, 0, 0, 0.6533963927367823) 90%);
     z-index: -1;
 }
 
-.greating-slogan{
+.greating-slogan {
     display: flex;
     width: 70%;
     text-align: right;
@@ -43,22 +43,33 @@
     font-size: 2em;
 }
 
-@media (max-height: 450px) { 
+@media (max-height: 450px) {
+
     .wallpaper-wraper img,
     .gradient {
         height: 400px;
     }
 
-    .greating-slogan{
+    .greating-slogan {
         font-size: 1.6em;
     }
-    
+
     .wallpaper-wraper {
         height: auto;
     }
-    
-    .wallpaper-wraper h2{
+
+    .wallpaper-wraper h2 {
         width: auto;
     }
- }
+}
 
+@media (max-width: 450px) {
+    .greating-slogan {
+        margin: 60px 49px -146px 0;
+        font-size: 1.6em;
+    }
+
+    h2 {
+        margin: 30px 0 20px 53px;
+    }
+}

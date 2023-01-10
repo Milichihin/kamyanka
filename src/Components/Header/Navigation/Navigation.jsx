@@ -59,10 +59,9 @@ function Navigation(props) {
                 <div className='fix-wrap'>
                     <Logo fixNav={props.fixNav} />
                     <div className='burger-icon' onClick={() => setBurger()} >&#9776;</div>
-
                     {
-                        
-                        <div className="nav-container"  style={showBurger? {left: 0} :{left: "200%"} }>
+                        // <div className="nav-container"  style={showBurger? {left: 0} :{left: "100%"} }>
+                        <div className="nav-container"  style={showBurger? {top: 0} :{top: "-100%"} }>
                             <img src={logomonochrome} />
                             <div className='cross-container' onClick={() => setBurger()}>
                                 <img src={closeButton} className='closeCross' />

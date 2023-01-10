@@ -134,3 +134,20 @@
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
 }
+
+@media (max-width: 450px) {
+    /* .fullsize-background{
+        height: 130%;
+    } */
+
+    .previous-arrow-container,
+    .next-arrow-container {
+        min-width: 15px;
+        height: 100%;
+    }
+
+    .fullsize-wraper,
+    .fullsize-background{
+        min-height: 130vh;
+    }
+}
