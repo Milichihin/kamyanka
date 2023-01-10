@@ -2,6 +2,8 @@ import './navigation.css';
 import './burgernav.css';
 import { useState } from 'react';
 import Logo from '../Logo/Logo.jsx';
+import { closeButton } from '../../../Data/images.js';
+import { logomonochrome } from '../../../Data/images.js';
 
 function Navigation(props) {
 
@@ -59,8 +61,12 @@ function Navigation(props) {
                     <div className='burger-icon' onClick={() => setBurger()} >&#9776;</div>
 
                     {
-                        showBurger &&
-                        <div className="nav-container">
+                        
+                        <div className="nav-container"  style={showBurger? {left: 0} :{left: "200%"} }>
+                            <img src={logomonochrome} />
+                            <div className='cross-container' onClick={() => setBurger()}>
+                                <img src={closeButton} className='closeCross' />
+                            </div>
                             {
                                 Object.values(props.navArray).map((menuItem, i) => (
                                     <a
