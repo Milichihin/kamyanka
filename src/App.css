@@ -39,10 +39,12 @@ p {
 
   .section-block {
     margin-bottom: 20px;
+    width: auto;
   }
 
   .App {
     position: absolute;
+    width: 100vw;
   }
 }
 

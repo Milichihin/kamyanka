@@ -87,14 +87,8 @@ function QueuesBlock() {
                         (queue !== queuesArray[0]) &&
                         <div className="blacking" style={discriptionOpacity}></div>
                     }
-                    
-                    <div className='previous-arrow-container' onClick={() => changeImage('prev-img')}>
-                        <img src={arrow} className='previous-arrow' />
-                    </div>
 
-                    <div className='next-arrow-container' onClick={() => changeImage('next-img')}>
-                        <img src={arrow} className='next-arrow' />
-                    </div>
+
                 </>
 
                 <div className='queue-description'>
@@ -117,6 +111,14 @@ function QueuesBlock() {
                             }
                         </div>
                     </div>
+                </div>
+                
+                <div className='previous-arrow-container' onClick={() => changeImage('prev-img')}>
+                    <img src={arrow} className='previous-arrow' />
+                </div>
+
+                <div className='next-arrow-container' onClick={() => changeImage('next-img')}>
+                    <img src={arrow} className='next-arrow' />
                 </div>
             </div>
         </>

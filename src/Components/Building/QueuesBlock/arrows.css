@@ -57,6 +57,7 @@
 }
 
 @media (max-height: 450px) { 
+    
     .queue-wraper .previous-arrow-container, 
     .queue-wraper .next-arrow-container {
         height: 250px;
