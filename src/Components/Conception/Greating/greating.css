@@ -65,11 +65,17 @@
 
 @media (max-width: 450px) {
     .greating-slogan {
-        margin: 60px 49px -146px 0;
+        margin: 60px 20px -146px 0;
         font-size: 1.6em;
     }
 
     h2 {
-        margin: 30px 0 20px 53px;
+        margin: 30px 0 20px 0;
     }
+
+    .wallpaper-wraper img,
+    .gradient{
+        max-width: 100%;
+    }
+
 }
