@@ -60,6 +60,7 @@ function Navigation(props) {
                     <Logo fixNav={props.fixNav} />
                     <div className='burger-icon' onClick={() => setBurger()} >&#9776;</div>
                     {
+                        // swithBurger &&
                         // <div className="nav-container"  style={showBurger? {left: 0} :{left: "100%"} }>
                         <div className="nav-container"  style={showBurger? {top: 0} :{top: "-100%"} }>
                             <img src={logomonochrome} />

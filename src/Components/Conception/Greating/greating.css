@@ -63,9 +63,9 @@
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 700px) {
     .greating-slogan {
-        margin: 60px 20px -146px 0;
+        margin: 80px 20px -146px 0;
         font-size: 1.6em;
     }
 
@@ -76,6 +76,17 @@
     .wallpaper-wraper img,
     .gradient{
         max-width: 100%;
+    }
+
+    @media(max-height: 450px) {
+
+        h2 {
+            margin: 170px 0 20px 0;
+        }
+
+        .greating-slogan {
+            margin: 50px 20px -146px 0;
+        }
     }
 
 }
