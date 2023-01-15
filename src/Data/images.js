@@ -94,5 +94,5 @@ export const wallpaper = ((document.documentElement.scrollWidth >= 700)
 export const images = ((document.documentElement.scrollWidth >= 700)
     ? imagesInitialOriginal
     : imagesInitial700w)
-    .sort((a, b) => 0.5 - Math.random())
+    // .sort((a, b) => 0.5 - Math.random())
     .slice(0, 12);

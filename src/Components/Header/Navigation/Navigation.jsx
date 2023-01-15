@@ -62,25 +62,27 @@ function Navigation(props) {
                     {
                         // swithBurger &&
                         // <div className="nav-container"  style={showBurger? {left: 0} :{left: "100%"} }>
-                        <div className="nav-container"  style={showBurger? {top: 0} :{top: "-100%"} }>
-                            <img src={logomonochrome} />
+                        <div className="nav-container" style={showBurger ? { top: 0 } : { top: "-100%" }}>
                             <div className='cross-container' onClick={() => setBurger()}>
                                 <img src={closeButton} className='closeCross' />
                             </div>
-                            {
-                                Object.values(props.navArray).map((menuItem, i) => (
-                                    <a
-                                        href={"#" + menuItem}
-                                        className={(menuItem === active ? "active" : "item")}
-                                        onClick={() => activateItem(menuItem)}
-                                    >
-                                        {menuItem}
-                                    </a>
-                                ))
-                            }
+                            <div className='open-burger-menu-wrap'>
+
+                                <img src={logomonochrome} />
+                                {
+                                    Object.values(props.navArray).map((menuItem, i) => (
+                                        <a
+                                            href={"#" + menuItem}
+                                            className={(menuItem === active ? "active" : "item")}
+                                            onClick={() => activateItem(menuItem)}
+                                        >
+                                            {menuItem}
+                                        </a>
+                                    ))
+                                }
+                            </div>
                         </div>
                     }
-
                 </div>
             </div>
         </>

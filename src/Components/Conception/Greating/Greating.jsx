@@ -17,14 +17,15 @@ function Greating(props) {
                 </h2>
             </div>
             <div 
-                className="section-block" 
+                className="section-block"
                 // style={{ marginTop: '-170px' }}
             >
                 {/* <h2 style={{ color: 'white', width: "70%" }}>
                     {greating.header}
                 </h2> */}
                 <p style={{ marginTop: '40px' }}>
-                    {greating.text}
+                    {/* <b>{greating.boldText}</b>{greating.text} */}
+                    <span style={{ fontWeight: '700', fontSize: "1.1em"}}>{greating.boldText}</span>{greating.text}
                 </p>
             </div>
         </div>
