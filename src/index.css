@@ -3,8 +3,7 @@
 body {
   max-width: 1400px;
   min-width: 350px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   font-family:'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -21,7 +20,7 @@ html {
 
 .anchor-padding{
   display: block;
-  height: 20px;
+  height: 30px;
 }
 
 @media (max-height: 450px) { 

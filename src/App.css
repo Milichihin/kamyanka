@@ -15,7 +15,7 @@ h2{
 }
 
 .section-block {
-  margin: 20px 20px 100px 20px;
+  margin: 20px 20px 50px 20px;
   position: relative;
 }
 
@@ -27,13 +27,13 @@ p {
 
 @media (max-width: 700px) and (max-height: 450px) {
   .section-block {
-    margin-top: 75px;
+    margin-top: 45px;
   }
 }
 
 @media (max-height: 450px) { 
   .section-block {
-    margin-bottom: 45px;
+    margin-bottom: 0;
   }
 }
 

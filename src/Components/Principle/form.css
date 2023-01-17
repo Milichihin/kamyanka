@@ -2,7 +2,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 100%;
     background-color: #EFEBD4;
     justify-content: space-evenly;
     align-items: center;
@@ -36,7 +36,9 @@ input {
 }
 
 ::placeholder {
-    color: #d5cc91;
+    /* color: #d5cc91; */
+    
+    color: #b1ad8e;
     opacity: 1;
     font-size: 1em
 }

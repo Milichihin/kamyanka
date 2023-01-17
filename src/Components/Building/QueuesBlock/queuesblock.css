@@ -38,7 +38,7 @@
 
 .queue-image {
     width: 100%;
-    height: 600px;
+    height: 500px;
     object-fit: cover;
     -webkit-transition: opacity 1s ease;
     transition: opacity 1s ease;
@@ -47,7 +47,7 @@
 .blacking {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.497);
-    height: 600px;
+    height: 500px;
     width: 100%;
 }
 
@@ -95,7 +95,7 @@
 .details {
     margin-top: 25px;
     margin-left: 50px;
-    min-height: 290px;
+    min-height: 220px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
@@ -152,7 +152,6 @@
     }
 }
 
-/* @media (max-width: 550px) {  ......... was 450px*/ 
 @media (max-width: 650px) {
 
     .subtitle p:nth-child(3) {
@@ -174,16 +173,17 @@
         margin-top: 20px;
         margin-bottom: 20px;
         width: 80%;
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
 
     .details {
         margin: 20px 0;
+        min-height: auto;
     }
     
     .queue-subdescription .picto p {
         margin: 0;
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
 }

@@ -24,20 +24,26 @@ export const queuesArray = [
         number: "7 будинків",
         description: "",
         details: [],
-        photo: "./images/12.webp",
+        photo: "./images/36.webp",
         photos: [
             ((document.documentElement.scrollWidth >= 700)
-                ? "./images/original/35.webp"
-                : "./images/700w/35.webp"),
+                ? "./images/original/33.webp"
+                : "./images/700w/33.webp"),
             ((document.documentElement.scrollWidth >= 700)
-                    ? "./images/original/1.webp"
-                    : "./images/700w/1.webp"),
+                ? "./images/original/36.webp"
+                : "./images/700w/36.webp"),
             ((document.documentElement.scrollWidth >= 700)
-                    ? "./images/original/3.webp"
-                    : "./images/700w/3.webp"),
+                ? "./images/original/1.webp"
+                : "./images/700w/1.webp"),
             ((document.documentElement.scrollWidth >= 700)
-                    ? "./images/original/4.webp"
-                    : "./images/700w/4.webp")
+                ? "./images/original/2.webp"
+                : "./images/700w/2.webp"),
+            ((document.documentElement.scrollWidth >= 700)
+                ? "./images/original/8.webp"
+                : "./images/700w/8.webp"),
+            ((document.documentElement.scrollWidth >= 700)
+                ? "./images/original/6.webp"
+                : "./images/700w/6.webp")
         ]
     },
     {
@@ -47,20 +53,26 @@ export const queuesArray = [
         number: "19 будинків",
         description: "розташованих на достатній відстані один від одного, щоб присутність інших мешканців практично була практично не відчутною, а також зони паркування, рецепції, ресторану, конференц-центру, басейну з відпочинковою зоною, сауною на березі гірської річки, мангальної зони, альтанок, оглядових терас, дитячого майданчика і мотузкового парку. Така оптимальна інфраструктура забезпечить привабливість відпочинкового комплексу як для індивідуальних клієнтів (пари, родини, групи друзів), так і для туристичних, корпоративних і спортивних груп",
         details: [],
-        photo: "./images/2.webp",
+        photo: "./images/35.webp",
         photos: [
             ((document.documentElement.scrollWidth >= 700)
-                    ? "./images/original/2.webp"
-                    : "./images/700w/2.webp"),
+                ? "./images/original/35.webp"
+                : "./images/700w/35.webp"),
             ((document.documentElement.scrollWidth >= 700)
-                    ? "./images/original/5.webp"
-                    : "./images/700w/5.webp"),
+                ? "./images/original/9.webp"
+                : "./images/700w/9.webp"),
             ((document.documentElement.scrollWidth >= 700)
-                    ? "./images/original/6.webp"
-                    : "./images/700w/6.webp"),
+                ? "./images/original/4.webp"
+                : "./images/700w/4.webp"),
             ((document.documentElement.scrollWidth >= 700)
-                    ? "./images/original/7.webp"
-                    : "./images/700w/7.webp")
+                ? "./images/original/3.webp"
+                : "./images/700w/3.webp"),
+            ((document.documentElement.scrollWidth >= 700)
+                ? "./images/original/5.webp"
+                : "./images/700w/5.webp"),
+            ((document.documentElement.scrollWidth >= 700)
+                ? "./images/original/30.webp"
+                : "./images/700w/30.webp")
         ]
     },
     {
@@ -81,20 +93,26 @@ export const queuesArray = [
             ['./images/ekobag-organic-svgrepo-com(1).svg', "дитячий майданчик"],
             ['./images/ekobag-organic-svgrepo-com(1).svg', "мотузковий парк"]
         ],
-        photo: "./images/3.webp",
+        photo: "./images/13.webp",
         photos: [
             ((document.documentElement.scrollWidth >= 700)
-                    ? "./images/original/3.webp"
-                    : "./images/700w/3.webp"),
+                ? "./images/original/13.webp"
+                : "./images/700w/13.webp"),
             ((document.documentElement.scrollWidth >= 700)
-                    ? "./images/original/10.webp"
-                    : "./images/700w/10.webp"),
+                ? "./images/original/12.webp"
+                : "./images/700w/12.webp"),
             ((document.documentElement.scrollWidth >= 700)
-                    ? "./images/original/11.webp"
-                    : "./images/700w/11.webp"),
+                ? "./images/original/23.webp"
+                : "./images/700w/23.webp"),
             ((document.documentElement.scrollWidth >= 700)
-                    ? "./images/original/8.webp"
-                    : "./images/700w/8.webp")
+                ? "./images/original/27.webp"
+                : "./images/700w/27.webp"),
+            ((document.documentElement.scrollWidth >= 700)
+                ? "./images/original/17.webp"
+                : "./images/700w/17.webp"),
+            ((document.documentElement.scrollWidth >= 700)
+                ? "./images/original/20.webp"
+                : "./images/700w/20.webp")
         ]
     }
 ];
