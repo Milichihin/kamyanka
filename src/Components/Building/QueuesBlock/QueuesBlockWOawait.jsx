@@ -3,41 +3,20 @@ import './arrows.css';
 import '../../Conception/Gallery/gallery.css';
 import { queuesArray } from '../../../Data/text.js';
 import { useState } from 'react';
-import { images } from '../../../Data/images.js';
 import { arrow } from '../../../Data/images.js';
-import { closeButton } from '../../../Data/images.js';
-// import Slides from './Slides';
 
-function QueuesBlock() {
+function QueuesBlockWOawait() {
 
 
     const [queue, setQueue] = useState(queuesArray[0]);
-    const [opacityPic, setOpacityPic] = useState({ opacity: 1 });
-
-    // const [opacityModal, setOpacityModal] = useState({ opacity: 1 });
-    // const [opacityBack, setOpacityBack] = useState({ opacity: 0 });
 
     const [picLink, setPicLink] = useState(queue.photos[0]);
     const [discriptionOpacity, setDiscriptionOpacity] = useState({ opacity: 1 });
 
-
-    // async function showPictures() {
-    //     setOpacityBack({ opacity: 0 });
-    //     setOpacityModal({ opacity: 0 });
-    //     await new Promise((resolve, reject) => setTimeout(resolve, 10));
-    //     setOpacityBack({ opacity: 0.85 });
-    //     setOpacityModal({ opacity: 1 });
-
-    //     // document.body.style.overflow = 'hidden';
-    // };
-
-    async function chooseQueue(item) {
+    function chooseQueue(item) {
         if (item !== queue) {
-            setOpacityPic({ opacity: 0 });
-            await new Promise((resolve, reject) => setTimeout(resolve, 100));
             setPicLink(item.photos[0]);
             setQueue(item);
-            setOpacityPic({ opacity: 1 });
             setDiscriptionOpacity({ opacity: 1 })
         }
     }
@@ -47,11 +26,7 @@ function QueuesBlock() {
         let i = queue.photos.indexOf(picLink);
 
         if (action === 'next-img') {
-
-            setOpacityPic({ opacity: 0 });
-            await new Promise((resolve, reject) => setTimeout(resolve, 100));
             setPicLink(queue.photos[i + 1]);
-            setOpacityPic({ opacity: 1 });
             setDiscriptionOpacity({ opacity: 0 })
 
             if (i === queue.photos.length - 1) {
@@ -61,17 +36,13 @@ function QueuesBlock() {
         }
 
         if (action === 'prev-img') {
-            setOpacityPic({ opacity: 0 });
-            await new Promise((resolve, reject) => setTimeout(resolve, 100));
 
 
             if (queue.photos[i - 1]) {
                 setPicLink(queue.photos[i - 1]);
-                setOpacityPic({ opacity: 1 });
                 setDiscriptionOpacity({ opacity: 0 })
             } else {
                 setPicLink(queue.photos[queue.photos.length - 1]);
-                setOpacityPic({ opacity: 1 });
             }
             if (i === 0) {
                 setPicLink(queue.photos[queue.photos.length - 1]);
@@ -81,14 +52,6 @@ function QueuesBlock() {
                 setDiscriptionOpacity({ opacity: 1 })
             }
         }
-        
-        // if (!action) {
-        //     setOpacityPic({ opacity: 0 });
-        //     setOpacityBack({ opacity: 0 });
-        //     await new Promise((resolve, reject) => setTimeout(resolve, 200));
-        //     setPicLink("");
-        //     // document.body.style.overflow = 'auto';
-        // }
     };
 
 
@@ -106,30 +69,8 @@ function QueuesBlock() {
                 ))}
             </div>
             <div className='queue-wraper'>
-                {/* {
-                    picLink &&
-                    <>
-                        <div className='fullsize-wraper'>
-                            <div className='fullsize-background' style={opacityBack} onClick={() => changeImage()} />
-
-                            <img src={picLink} className='fullsize-img' style={opacityModal} />
-
-                            <div className='cross-container' onClick={() => changeImage()}>
-                                <img src={closeButton} className='closeCross' />
-                            </div>
-
-                            <div className='previous-arrow-container' onClick={() => changeImage('prev-img')}>
-                                <img src={arrow} className='previous-arrow' />
-                            </div>
-
-                            <div className='next-arrow-container' onClick={() => changeImage('next-img')}>
-                                <img src={arrow} className='next-arrow' />
-                            </div>
-                        </div>
-                    </>
-                } */}
                 <>
-                    <img className='queue-image' src={picLink} style={opacityPic} />
+                    <img className='queue-image' src={picLink} />
                     {
                         (queue !== queuesArray[0]) &&   
                         <div className="blacking" style={discriptionOpacity}></div>
@@ -170,4 +111,4 @@ function QueuesBlock() {
     );
 }
 
-export default QueuesBlock;
+export default QueuesBlockWOawait;
