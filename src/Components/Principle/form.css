@@ -19,7 +19,7 @@ textarea {
   outline: none;
   border-width: 3px;
   border-color: #b8ae71;
-  border-radius: 0%;
+  border-radius: 0px;
 }
 
 textarea {
@@ -59,6 +59,7 @@ form {
   font-size: 1.2em;
   background: #b8ae71;
   border-style: none;
+  border-radius: 0px;
   -webkit-box-shadow: 0px 0px 24px -7px rgba(0,0,0,0.42);
   -moz-box-shadow: 0px 0px 24px -7px rgba(0,0,0,0.42);
   box-shadow: 0px 0px 24px -7px rgba(0,0,0,0.42);
