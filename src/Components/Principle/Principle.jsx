@@ -68,6 +68,7 @@ function Principle(props) {
 
                                         </input>
                                         <textarea
+                                            type="text"
                                             rows="5" cols="21"
                                             placeholder={howItWorks.form.textareaPlaceholder}
                                             name="message"

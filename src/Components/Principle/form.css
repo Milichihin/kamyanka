@@ -16,10 +16,10 @@ textarea {
   transition: opacity 0.4s;
   font-size: 0.9em;
   border-style: none;
-  /* outline: none;
+  outline: none;
   border-width: 3px;
   border-color: #b8ae71;
-  border-radius: 0%; */
+  border-radius: 0%;
 }
 
 textarea {
