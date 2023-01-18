@@ -1,5 +1,5 @@
 .modal form,
-input[type=text],
+input,
 textarea {
   position: relative;
   display: flex;
