@@ -13,14 +13,17 @@ function Gallery() {
     const [picLink, setPicLink] = useState("");
     const [opacityBack, setOpacityBack] = useState({ opacity: 0 });
     const [opacityPic, setOpacityPic] = useState({ opacity: 0 });
+    const [opacityButtons, setOpacityButtons] = useState({ opacity: 0 });
 
     async function viewImage(link) {
         setPicLink(link);
         setOpacityBack({ opacity: 0 });
         setOpacityPic({ opacity: 0 });
+        setOpacityButtons({ opacity: 0 });
         await new Promise((resolve, reject) => setTimeout(resolve, 10));
         setOpacityBack({ opacity: 0.85 });
         setOpacityPic({ opacity: 1 });
+        setOpacityButtons({ opacity: 1 });
 
         // document.body.style.overflow = 'hidden';
     };
@@ -91,7 +94,7 @@ function Gallery() {
                             <div 
                                 className='cross-container' 
                                 onClick={() => changeImage()}
-                                style={opacityPic} 
+                                style={opacityButtons} 
                                 >
                                 <img   
                                     src={closeButton} 
@@ -102,7 +105,7 @@ function Gallery() {
                             <div 
                                 className='previous-arrow-container' 
                                 onClick={() => changeImage('prev-img')}
-                                style={opacityPic} 
+                                style={opacityButtons} 
                                 >
                                 <img 
                                     src={arrow} 
@@ -113,7 +116,7 @@ function Gallery() {
                             <div 
                                 className='next-arrow-container' 
                                 onClick={() => changeImage('next-img')}
-                                style={opacityPic} 
+                                style={opacityButtons} 
                                 >
                                 <img 
                                     src={arrow} 

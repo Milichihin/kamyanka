@@ -9,6 +9,7 @@ function Principle(props) {
     const [modal, setModal] = useState(false);
     const [opacityBack, setOpacityBack] = useState({ opacity: 0 });
     const [opacityPic, setOpacityPic] = useState({ opacity: 0 });
+    
 
     async function showModal() {
         setModal(!modal);
@@ -18,6 +19,8 @@ function Principle(props) {
         setOpacityBack({ opacity: 0.85 });
         setOpacityPic({ opacity: 1 });
         document.body.style.overflow = modal ? 'auto' : 'hidden';
+        document.body.style.paddingRight = modal ? '0px' : '17px';
+        document.getElementById("fix-menu").style.paddingRight = modal ? '0px' : '17px';
     };
 
     async function hideModal() {
@@ -28,6 +31,8 @@ function Principle(props) {
         setOpacityPic({ opacity: 0 });
         setModal(!modal);
         document.body.style.overflow = modal ? 'auto' : 'hidden';
+        document.body.style.paddingRight = modal ? '0px' : '17px';
+        document.getElementById("fix-menu").style.paddingRight = modal ? '0px' : '17px';
     };
 
     return (

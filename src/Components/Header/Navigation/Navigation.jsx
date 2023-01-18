@@ -39,7 +39,7 @@ function Navigation(props) {
             </div>
             <div className='desktop-menu-fix' >
                 <div className='fix-wrap' style={props.fixNav ? { top: 0, opacity: 1 } : { top: -50, opacity: 0 }} >
-                    <div className="nav-container">
+                    <div  id='fix-menu' className="nav-container">
                         <Logo fixNav={props.fixNav} />
                         {
                             Object.values(props.navArray).map((menuItem, i) => (
