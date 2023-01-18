@@ -17,7 +17,7 @@ function Principle(props) {
         await new Promise((resolve, reject) => setTimeout(resolve, 10));
         setOpacityBack({ opacity: 0.85 });
         setOpacityPic({ opacity: 1 });
-        document.body.style.overflow = modal ? 'auto': 'hidden';
+        document.body.style.overflow = modal ? 'auto' : 'hidden';
     };
 
     async function hideModal() {
@@ -27,7 +27,7 @@ function Principle(props) {
         setOpacityBack({ opacity: 0 });
         setOpacityPic({ opacity: 0 });
         setModal(!modal);
-        document.body.style.overflow = modal ? 'auto': 'hidden';
+        document.body.style.overflow = modal ? 'auto' : 'hidden';
     };
 
     return (
@@ -46,7 +46,10 @@ function Principle(props) {
                     <>
                         <div className={`${"fullsize-wraper"} ${"modal-form"}`}>
                             <div className='fullsize-background' style={opacityBack} />
-                            <div className="modal" style={opacityPic}>
+                            <div
+                                className="modal"
+                                style={opacityPic}
+                                >
                                 <>
                                     <h3>{howItWorks.form.header}</h3>
                                     <form method="post" action="https://formspree.io/milichihin@gmail.com" target="_blank">
@@ -78,10 +81,14 @@ function Principle(props) {
 
                                         </input>
                                     </form>
-                                    <h3 style={{fontWeight: '300'}}>{howItWorks.form.ps} </h3>
+                                    <h3 style={{ fontWeight: '300' }}>{howItWorks.form.ps} </h3>
                                 </>
                             </div>
-                            <div className='cross-container' onClick={() => hideModal()}>
+                            <div 
+                                className='cross-container' 
+                                style={opacityPic} 
+                                onClick={() => hideModal()}
+                                >
                                 <img src={closeButton} className='closeCross' />
                             </div>
                         </div>
