@@ -76,20 +76,49 @@ function Gallery() {
                     picLink &&
                     <>
                         <div className='fullsize-wraper'>
-                            <div className='fullsize-background' style={opacityBack} onClick={() => changeImage()} />
+                            <div 
+                                className='fullsize-background'     
+                                style={opacityBack} 
+                                onClick={() => changeImage()} 
+                                />
 
-                            <img src={picLink} className='fullsize-img' style={opacityPic} /> 
+                            <img 
+                                src={picLink} 
+                                className='fullsize-img' 
+                                style={opacityPic} 
+                                /> 
 
-                            <div className='cross-container' onClick={() => changeImage()}>
-                                <img src={closeButton} className='closeCross' />
+                            <div 
+                                className='cross-container' 
+                                onClick={() => changeImage()}
+                                style={opacityPic} 
+                                >
+                                <img   
+                                    src={closeButton} 
+                                    className='closeCross' 
+                                    />
                             </div>
 
-                            <div className='previous-arrow-container' onClick={() => changeImage('prev-img')}>
-                                <img src={arrow} className='previous-arrow' />
+                            <div 
+                                className='previous-arrow-container' 
+                                onClick={() => changeImage('prev-img')}
+                                style={opacityPic} 
+                                >
+                                <img 
+                                    src={arrow} 
+                                    className='previous-arrow' 
+                                    />
                             </div>
 
-                            <div className='next-arrow-container' onClick={() => changeImage('next-img')}>
-                                <img src={arrow} className='next-arrow' />
+                            <div 
+                                className='next-arrow-container' 
+                                onClick={() => changeImage('next-img')}
+                                style={opacityPic} 
+                                >
+                                <img 
+                                    src={arrow} 
+                                    className='next-arrow' 
+                                    />
                             </div>
                         </div>
                     </>
