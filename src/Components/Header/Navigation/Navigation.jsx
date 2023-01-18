@@ -3,7 +3,7 @@ import './burgernav.css';
 import { useState } from 'react';
 import Logo from '../Logo/Logo.jsx';
 import { closeButton } from '../../../Data/images.js';
-import { logomonochrome } from '../../../Data/images.js';
+import { logovertical } from '../../../Data/images.js';
 
 function Navigation(props) {
 
@@ -68,7 +68,7 @@ function Navigation(props) {
                             </div>
                             <div className='open-burger-menu-wrap'>
 
-                                <img src={logomonochrome} />
+                                <img src={logovertical} />
                                 {
                                     Object.values(props.navArray).map((menuItem, i) => (
                                         <a
