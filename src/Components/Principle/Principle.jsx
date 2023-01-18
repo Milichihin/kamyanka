@@ -53,26 +53,28 @@ function Principle(props) {
                                         <input
                                             type="text"
                                             name="name"
-                                            placeholder={howItWorks.form.namePlaceholder}>
+                                            placeholder={howItWorks.form.namePlaceholder}
+                                            className="input-field">
 
                                         </input>
                                         <input
                                             type="text"
                                             name="email"
-                                            placeholder={howItWorks.form.emailPlaceholder}>
+                                            placeholder={howItWorks.form.emailPlaceholder}
+                                            className="input-field">
 
                                         </input>
                                         <textarea
-                                            className="textarea"
                                             rows="5" cols="21"
                                             placeholder={howItWorks.form.textareaPlaceholder}
-                                            name="message">
+                                            name="message"
+                                            className={`${"textarea"} ${"input-field"}`}>
 
                                         </textarea>
                                         <input
                                             type="submit"
-                                            className="button"
-                                            value={howItWorks.form.buttonValue}>
+                                            value={howItWorks.form.buttonValue}
+                                            className="button">
 
                                         </input>
                                     </form>
