@@ -80,10 +80,10 @@
     position: absolute;
     display: flex;
     top: 7%;
-    left: calc(50% - 45px);
+    left: calc(50% - 35px);
     border-radius: 50%;
-    height: 90px;
-    width: 90px;
+    height: 70px;
+    width: 70px;
     align-items: center;
     cursor: pointer;
     -webkit-transition: 0.3s ease;
@@ -160,11 +160,11 @@
     }
 
     .modal form {
-        height: 30%;
+        height: 40%;
         width: 100%;
     }
 
     .cross-container{
-        top: 1%;
+        top: 5px;
     }
 }
