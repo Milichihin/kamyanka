@@ -20,9 +20,9 @@
     -moz-box-shadow: -1px 26px 28px -23px rgba(0, 0, 0, 1);
     cursor: pointer;
     -webkit-transition-property: all;
-    -webkit-transition: all ease 0.51s;
+    -webkit-transition: all ease 0.5s;
     transition-property: all;
-    transition: all ease 0.51s;
+    transition: all ease 0.5s;
 }
 
 .button-wrap p {
