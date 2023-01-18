@@ -1,31 +1,37 @@
 import React from 'react';
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import './gallery.css';
-// import '../../../index.css';
 import { images } from '../../../Data/images.js';
-import { arrow } from '../../../Data/images.js';
-import { closeButton } from '../../../Data/images.js';
 import { gallery } from '../../../Data/text.js';
 import { useState } from 'react';
+import PreviousArrow from '../../Controls/PreviousArrow.jsx';
+import NextArrow from '../../Controls/NextArrow.jsx';
+import CloseCross from '../../Controls/CloseCross.jsx';
 
 function Gallery() {
 
+    const [modal, setModal] = useState(false);
     const [picLink, setPicLink] = useState("");
     const [opacityBack, setOpacityBack] = useState({ opacity: 0 });
     const [opacityPic, setOpacityPic] = useState({ opacity: 0 });
     const [opacityButtons, setOpacityButtons] = useState({ opacity: 0 });
+    
+    const screenHeight = window.screen.height;
 
     async function viewImage(link) {
+        setModal(!modal);
         setPicLink(link);
         setOpacityBack({ opacity: 0 });
         setOpacityPic({ opacity: 0 });
         setOpacityButtons({ opacity: 0 });
-        await new Promise((resolve, reject) => setTimeout(resolve, 10));
+        if (screenHeight > 650) await new Promise((resolve, reject) => setTimeout(resolve, 10));
         setOpacityBack({ opacity: 0.85 });
         setOpacityPic({ opacity: 1 });
         setOpacityButtons({ opacity: 1 });
 
-        // document.body.style.overflow = 'hidden';
+        document.body.style.overflow = modal ? 'auto' : 'hidden';
+        document.body.style.paddingRight = modal ? '0px' : '17px';
+        document.getElementById("fix-menu").style.paddingRight = modal ? '0px' : '17px';
     };
 
     async function changeImage(action) {
@@ -57,19 +63,32 @@ function Gallery() {
         if (!action) {
             setOpacityPic({ opacity: 0 });
             setOpacityBack({ opacity: 0 });
-            await new Promise((resolve, reject) => setTimeout(resolve, 200));
+            setOpacityButtons({ opacity: 0 });
+            setModal(!modal);
+            if (screenHeight > 650) await new Promise((resolve, reject) => setTimeout(resolve, 200));
             setPicLink("");
-            // document.body.style.overflow = 'auto';
+
+            document.body.style.overflow = modal ? 'auto' : 'hidden';
+            document.body.style.paddingRight = modal ? '0px' : '17px';
+            document.getElementById("fix-menu").style.paddingRight = modal ? '0px' : '17px';
         }
     };
 
-    document.body.addEventListener('keyup', function (e) {
-        var key = e.keyCode;
+    // document.body.addEventListener('keyup', function (e) {
 
-        if (key == 27) {
-            setPicLink("");
-        };
-    }, false);
+    //     setModal(!modal);
+
+    //     var key = e.keyCode;
+
+    //         if (key == 27) {
+    //             setPicLink("");
+    //         };
+
+    //     document.body.style.overflow = modal ? 'auto' : 'hidden';
+    //     document.body.style.paddingRight = modal ? '0px' : '17px';
+    //     document.getElementById("fix-menu").style.paddingRight = modal ? '0px' : '17px';
+
+    // }, false);
 
     return (
         <div className='section-block' >
@@ -79,50 +98,20 @@ function Gallery() {
                     picLink &&
                     <>
                         <div className='fullsize-wraper'>
-                            <div 
-                                className='fullsize-background'     
-                                style={opacityBack} 
-                                onClick={() => changeImage()} 
-                                />
-
-                            <img 
-                                src={picLink} 
-                                className='fullsize-img' 
-                                style={opacityPic} 
-                                /> 
-
-                            <div 
-                                className='cross-container' 
+                            <div
+                                className='fullsize-background'
+                                style={opacityBack}
                                 onClick={() => changeImage()}
-                                style={opacityButtons} 
-                                >
-                                <img   
-                                    src={closeButton} 
-                                    className='closeCross' 
-                                    />
-                            </div>
+                            />
 
-                            <div 
-                                className='previous-arrow-container' 
-                                onClick={() => changeImage('prev-img')}
-                                style={opacityButtons} 
-                                >
-                                <img 
-                                    src={arrow} 
-                                    className='previous-arrow' 
-                                    />
-                            </div>
-
-                            <div 
-                                className='next-arrow-container' 
-                                onClick={() => changeImage('next-img')}
-                                style={opacityButtons} 
-                                >
-                                <img 
-                                    src={arrow} 
-                                    className='next-arrow' 
-                                    />
-                            </div>
+                            <img
+                                src={picLink}
+                                className='fullsize-img'
+                                style={opacityPic}
+                            />
+                            <CloseCross onClick={changeImage} styles={opacityButtons} />
+                            <PreviousArrow onClick={changeImage} styles={opacityButtons} />
+                            <NextArrow onClick={changeImage} styles={opacityButtons} />
                         </div>
                     </>
                 }

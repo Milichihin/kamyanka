@@ -1,4 +1,4 @@
-.queue-container {
+.queue-list {
     margin: 0;
     padding: 0;
     display: flex;
@@ -32,7 +32,7 @@
     transition: border-color 0.3s;
 }
 
-.queue-wraper {
+.queue-window {
     display: flex;
 }
 
@@ -63,7 +63,7 @@
     color: white;
 }
 
-.boldFont {
+.title-pad {
     background-color: #7BC085;
     font-weight: 700;
     font-size: 2em;
@@ -104,12 +104,12 @@
     margin: 0 50px 0 0;
 }
 
-.picto {
+.detaile-item {
     display: flex;
     margin-right: 5px;
 }
 
-/* .picto img {
+/* .detaile-item img {
     height: 35px;
     fill: white;
     margin-right: 5px;
@@ -132,7 +132,7 @@
         margin: 10px 20px 5px 15px;
     }
 
-    .details .picto p {
+    .details .detaile-item p {
         margin: 0 0 3px 0;
         font-size: 0.8em;
     }
@@ -147,7 +147,7 @@
         flex-direction: row;
     }
 
-    .boldFont {
+    .title-pad {
         width: 190px;
     }
 }
@@ -165,7 +165,7 @@
     .select{
         margin: 0 20px;
     }
-    .queue-container{
+    .queue-list{
         margin-bottom: 20px;
     }
 
@@ -181,7 +181,7 @@
         min-height: auto;
     }
     
-    .queue-subdescription .picto p {
+    .queue-subdescription .detaile-item p {
         margin: 0;
         font-size: 0.8em;
     }

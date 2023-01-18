@@ -1,21 +1,24 @@
 import './principle.css';
-import './form.css';
 import { howItWorks } from '../../Data/text.js';
 import { closeButton } from '../../Data/images.js';
 import { useState } from 'react';
+import ModalForm from './ModalForm.jsx'
 
 function Principle(props) {
 
     const [modal, setModal] = useState(false);
     const [opacityBack, setOpacityBack] = useState({ opacity: 0 });
     const [opacityPic, setOpacityPic] = useState({ opacity: 0 });
+
+    // const screenWidth = window.screen.width;
+    const screenHeight = window.screen.height;
     
 
     async function showModal() {
         setModal(!modal);
         setOpacityBack({ opacity: 0 });
         setOpacityPic({ opacity: 0 });
-        await new Promise((resolve, reject) => setTimeout(resolve, 10));
+        if (screenHeight > 650) await new Promise((resolve, reject) => setTimeout(resolve, 10));
         setOpacityBack({ opacity: 0.85 });
         setOpacityPic({ opacity: 1 });
         document.body.style.overflow = modal ? 'auto' : 'hidden';
@@ -26,7 +29,7 @@ function Principle(props) {
     async function hideModal() {
         setOpacityBack({ opacity: 0.85 });
         setOpacityPic({ opacity: 1 });
-        await new Promise((resolve, reject) => setTimeout(resolve, 10));
+        if (screenHeight > 650) await new Promise((resolve, reject) => setTimeout(resolve, 10));
         setOpacityBack({ opacity: 0 });
         setOpacityPic({ opacity: 0 });
         setModal(!modal);
@@ -49,55 +52,12 @@ function Principle(props) {
                 {
                     modal &&
                     <>
-                        <div className={`${"fullsize-wraper"} ${"modal-form"}`}>
-                            <div className='fullsize-background' style={opacityBack} />
-                            <div
-                                className="modal"
-                                style={opacityPic}
-                                >
-                                <>
-                                    <h3>{howItWorks.form.header}</h3>
-                                    <form method="post" action="https://formspree.io/milichihin@gmail.com" target="_blank">
-                                        <input
-                                            type="text"
-                                            name="name"
-                                            placeholder={howItWorks.form.namePlaceholder}
-                                            className="input-field">
-
-                                        </input>
-                                        <input
-                                            type="text"
-                                            name="email"
-                                            placeholder={howItWorks.form.emailPlaceholder}
-                                            className="input-field">
-
-                                        </input>
-                                        <textarea
-                                            type="text"
-                                            rows="5" cols="21"
-                                            placeholder={howItWorks.form.textareaPlaceholder}
-                                            name="message"
-                                            className={`${"textarea"} ${"input-field"}`}>
-
-                                        </textarea>
-                                        <input
-                                            type="submit"
-                                            value={howItWorks.form.buttonValue}
-                                            className="button">
-
-                                        </input>
-                                    </form>
-                                    <h3 style={{ fontWeight: '300' }}>{howItWorks.form.ps} </h3>
-                                </>
-                            </div>
-                            <div 
-                                className='cross-container' 
-                                style={opacityPic} 
-                                onClick={() => hideModal()}
-                                >
-                                <img src={closeButton} className='closeCross' />
-                            </div>
-                        </div>
+                        <ModalForm
+                            opacityPic={opacityPic}
+                            opacityBack={opacityBack}
+                            howItWorks={howItWorks}
+                            hideModal={hideModal}
+                        />
                     </>
                 }
             </div>

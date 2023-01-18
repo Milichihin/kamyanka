@@ -16,7 +16,7 @@ export const building = {
     mainText3: "модульних будинків"
 };
 
-export const queuesArray = [
+export const queuesDescription = [
     {
         header: "перша черга",
         deadline: "Весна 2023",
@@ -130,12 +130,12 @@ export const howItWorks = {
     }
 };
 
-export const advantages = {
+export const advantagesTitles = {
     header: "ПЕРЕВАГИ НАШОГО ПРОЄКТУ",
     subHeader: "або чому варто інвестувати"
 };
 
-export const advantagesArray = {
+export const advantagesList = {
     "Cтабільний пасивний прибуток": "Купуючи будинок в SCANDIC ECOTOWN KAMYANKA Ви отримаєте прибуткову інвестицію із дохідністю близько 15 % річних у поєднанні з якісним відпочинком. Рівномірний розподіл прибутковості, високу рентабельність та завантаження протягом усього року забезпечує керуюча компанія.",
 
     "Швидкість старту проекту": "Запуск відпочинкового комплексу заплановано навесні 2023 року, тому Вам не потрібно чекати роками, поки ваша інвестиція «почне працювати»",

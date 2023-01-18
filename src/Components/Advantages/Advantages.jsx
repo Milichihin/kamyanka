@@ -1,11 +1,10 @@
 import './advantages.css';
-import { advantages, advantagesArray } from '../../Data/text.js';
+import { advantagesTitles, advantagesList } from '../../Data/text.js';
 import { useState } from 'react';
-import { async } from 'q';
 
 function Advantages(props) {
 
-    const [heading, setHeading] = useState(Object.keys(advantagesArray)[0]);
+    const [heading, setHeading] = useState(Object.keys(advantagesList)[0]);
     const [opacity, setOpacity] = useState({ opacity: 1 });
 
     async function activateHead(advantage) {
@@ -19,12 +18,12 @@ function Advantages(props) {
         <>
             <a className='anchor-padding' name={props.anchor} ></a>
             <div className="section-block">
-                <h2>{advantages.header}</h2>
-                <p className="subtitle">{advantages.subHeader}</p>
+                <h2>{advantagesTitles.header}</h2>
+                <p className="subtitle">{advantagesTitles.subHeader}</p>
                 <div className='advantage-container'>
                     <div className='advantages'>
                         {
-                            Object.keys(advantagesArray).map((advantage) => (
+                            Object.keys(advantagesList).map((advantage) => (
                                 <p
                                     className={"advantage " + (advantage === heading ? "active-advantage" : "")}
                                     onClick={() => activateHead(advantage)}
@@ -35,12 +34,10 @@ function Advantages(props) {
                         }
                     </div>
                     <p className='description' style={opacity}>
-                        {advantagesArray[heading]}
+                        {advantagesList[heading]}
                     </p>
                 </div>
             </div>
-
-
         </>
     );
 }
