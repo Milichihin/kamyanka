@@ -15,11 +15,11 @@ textarea {
   transition-property: all;
   transition: opacity 0.4s;
   font-size: 0.9em;
-  border-style: unset;
-  outline: none;
+  border-style: none;
+  /* outline: none;
   border-width: 3px;
   border-color: #b8ae71;
-  border-radius: 0%;
+  border-radius: 0%; */
 }
 
 textarea {
@@ -89,9 +89,9 @@ form {
   }
 
   .button{
-    border-style: unset;
-    outline: none;
+    border-style: none;
+    /* outline: none;
     border-width: 3px;
-    border-radius: 0%;
+    border-radius: 0%; */
   }
 }
