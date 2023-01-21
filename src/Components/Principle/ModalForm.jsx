@@ -9,7 +9,7 @@ function ModalForm(props) {
                 <div className='fullsize-background' style={props.opacityBack} />
                 <div
                     className="modal"
-                    style={props.opacityPic}
+                    style={props.modalStyle}    
                 >
                     <>
                         <h3>{props.howItWorks.form.header}</h3>

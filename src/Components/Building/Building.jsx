@@ -1,8 +1,30 @@
 import './building.css';
 import { building } from '../../Data/text.js';
 import QueuesBlock from './QueuesBlock/QueuesBlock.jsx';
+import MinQueuesBlock from './MinQueuesBlock/MinQueuesBlock.jsx';
+import { useEffect, useState } from 'react';
 
 function Building(props) {
+
+    const [screenHeight, setScreenHeight] = useState(window.outerHeight);
+    const [screenWidth, setScreenWidth] = useState(window.outerWidth);
+
+    let queueBlock;
+
+    window.addEventListener('resize',(e) => {
+        setScreenHeight(window.outerHeight)
+        setScreenWidth(window.outerWidth)
+    });
+
+
+    if (window.outerHeight < 450) {
+        queueBlock = <MinQueuesBlock />;
+    } else if (window.outerWidth < 450) {
+        queueBlock = <MinQueuesBlock />;
+    } else {
+        queueBlock = <QueuesBlock />;
+    }
+
 
     return (
         <>
@@ -14,7 +36,10 @@ function Building(props) {
                     <p>{building.mainText2}</p>
                     <p>{building.mainText3}</p>
                 </div>
-                <QueuesBlock />
+                <>
+                    <QueuesBlock />
+                    {/* {queueBlock} */}
+                </>
             </div>
         </>
     );

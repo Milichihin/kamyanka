@@ -65,15 +65,17 @@
     padding: 20px;
     width: 50%;
     height: 50%;
+    max-width: 800px;
+    max-height: 650px;
     background-color: #EFEBD4;
     color: #867f52;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
     -webkit-transition-property: all;
-    -webkit-transition: opacity 0.4s;
+    -webkit-transition: all 0.4s;
     transition-property: all;
-    transition: opacity 0.4s;
+    transition: all 0.4s;
 }
 
 @media (max-height: 450px) {
