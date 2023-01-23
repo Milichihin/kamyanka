@@ -59,9 +59,6 @@
     margin: 20px 40px 0 40px;
 }
 
-.queue-description p {
-    color: white;
-}
 
 .title-pad {
     background-color: #7BC085;
@@ -70,20 +67,14 @@
     width: 250px;
     padding-left: 10px;
     padding-right: 10px;
-
 }
 
 .queue-description p {
+    color: white;
     margin-top: 10px;
     margin-bottom: 0;
-    width: fit-content;
+    width: fit-content; 
 }
-
-/* 
-.queue-description p:nth-child(4) {
-    margin-top: 45px;
-    margin-bottom: 0;
-} */
 
 .queue-subdescription p {
     margin-top: 25px;

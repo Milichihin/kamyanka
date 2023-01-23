@@ -131,7 +131,7 @@ function Gallery(props) {
             <PicGrid
                 images={images}
                 viewImage={viewImage}
-                isItQueue={props.isItQueue}
+                // isItQueue={props.isItQueue}
             />
         </>
     )

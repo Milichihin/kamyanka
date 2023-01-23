@@ -9,7 +9,7 @@
 
 
 .advantage-container p{
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 .advantages{
@@ -60,6 +60,10 @@
     transition: opacity 0.3s;
 }
 
+.description p{
+    margin-bottom: 10px;
+}
+
 .subtitle {
     font-size: 2em;
     margin-bottom: 40px;
@@ -77,10 +81,15 @@
 
     .advantage-container{
         min-height: auto;
+        margin-top: 50px;
     }
 
     .advantage-container p{
         font-size: 1.1em;
+    }
+
+    .section-block h2 {
+        margin: 0;
     }
  }
 
@@ -94,7 +103,7 @@
     }
 
     .advantage-container .description {
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
     .advantage-container{
@@ -105,4 +114,5 @@
         margin-top: 10px;
         margin-bottom: 70px;
     }
+    
 }

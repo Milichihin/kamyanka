@@ -5,7 +5,7 @@ import { mainGallery } from '../../Data/images.js';
 
 function Conception(props) {
 
-    const isItQueue = false;
+    // const isItQueue = false;
 
     return (
         <div>
@@ -18,7 +18,7 @@ function Conception(props) {
                 <>
                     <Gallery
                         images={mainGallery}
-                        isItQueue={isItQueue}
+                        // isItQueue={isItQueue}
                     />
                 </>
             </div>

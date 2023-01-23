@@ -14,6 +14,9 @@ function Advantages(props) {
         setHeading(advantage);
     }
 
+    console.log("advantagesList[heading]");
+    console.log(advantagesList[heading]);
+
     return (
         <>
             <a className='anchor-padding' name={props.anchor} ></a>
@@ -28,13 +31,22 @@ function Advantages(props) {
                                     className={"advantage " + (advantage === heading ? "active-advantage" : "")}
                                     onClick={() => activateHead(advantage)}
                                 >
-                                    {advantage}
+                                    {advantage} 
                                 </p>
                             ))
                         }
                     </div>
-                    <p className='description' style={opacity}>
+                    {/* <p className='description' style={opacity}>
                         {advantagesList[heading]}
+                    </p> */}
+                    <p className='description' style={opacity}>
+                        {
+                            advantagesList[heading].map((paragraph) => (
+                                <p>
+                                    {paragraph}
+                                </p>
+                            ))
+                        }
                     </p>
                 </div>
             </div>
