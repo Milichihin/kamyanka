@@ -42,7 +42,7 @@ function MinQueuesBlock() {
         setOpacityBack({ opacity: 1 });
         setOpacityPic({ opacity: 1 });
         setModalStyle({ left: "0" });
-        await new Promise((resolve, reject) => setTimeout(resolve, 10));
+        await new Promise((resolve, reject) => setTimeout(resolve, 500));
         setOpacityBack({ opacity: 0 });
         setOpacityPic({ opacity: 0 });
         setModalStyle({ left: "100vw" });
