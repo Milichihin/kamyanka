@@ -9,21 +9,21 @@ function Building(props) {
     const [screenHeight, setScreenHeight] = useState(window.outerHeight);
     const [screenWidth, setScreenWidth] = useState(window.outerWidth);
 
-    let queueBlock;
+    // let queueBlock;
 
-    window.addEventListener('resize',(e) => {
-        setScreenHeight(window.outerHeight)
-        setScreenWidth(window.outerWidth)
-    });
+    // window.addEventListener('resize',(e) => {
+    //     setScreenHeight(window.outerHeight)
+    //     setScreenWidth(window.outerWidth)
+    // });
 
 
-    if (window.outerHeight < 450) {
-        queueBlock = <MinQueuesBlock />;
-    } else if (window.outerWidth < 450) {
-        queueBlock = <MinQueuesBlock />;
-    } else {
-        queueBlock = <QueuesBlock />;
-    }
+    // if (window.outerHeight < 450) {
+    //     queueBlock = <MinQueuesBlock />;
+    // } else if (window.outerWidth < 450) {
+    //     queueBlock = <MinQueuesBlock />;
+    // } else {
+    //     queueBlock = <QueuesBlock />;
+    // }
 
 
     return (
@@ -37,7 +37,8 @@ function Building(props) {
                     <p>{building.mainText3}</p>
                 </div>
                 <>
-                    {queueBlock}
+                    {/* {queueBlock} */}
+                    <MinQueuesBlock />
                 </>
             </div>
         </>
