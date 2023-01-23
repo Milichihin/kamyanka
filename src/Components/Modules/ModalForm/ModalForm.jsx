@@ -1,5 +1,5 @@
 import './form.css';
-import CloseCross from '../Controls/CloseCross.jsx';
+import CloseCross from '../../Controls/CloseCross.jsx';
 
 function ModalForm(props) {
 

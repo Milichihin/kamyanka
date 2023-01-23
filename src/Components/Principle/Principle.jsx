@@ -1,8 +1,7 @@
 import './principle.css';
 import { howItWorks } from '../../Data/text.js';
-import { closeButton } from '../../Data/images.js';
 import { useState } from 'react';
-import ModalForm from './ModalForm.jsx'
+import ModalForm from '../Modules/ModalForm/ModalForm.jsx';
 
 function Principle(props) {
 
@@ -25,9 +24,6 @@ function Principle(props) {
             setIsMobile(false);
         }
     });
-
-
-    console.log(isMobile);
     
 
     async function showModal() {

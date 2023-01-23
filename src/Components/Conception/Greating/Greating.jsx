@@ -1,8 +1,10 @@
 import './greating.css';
 import { wallpaper } from '../../../Data/images.js';
-import { greating } from '../../../Data/text.js';
+// import { greating } from '../../../Data/text.js';
 
 function Greating(props) {
+
+    const greating = props.greating;
 
     return (
         <div>

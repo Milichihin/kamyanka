@@ -1,5 +1,4 @@
 import './queuesblock.css';
-import '../../Conception/Gallery/gallery.css';
 import { queuesDescription } from '../../../Data/text.js';
 import { useState } from 'react';
 import PreviousArrow from '../../Controls/PreviousArrow.jsx';
@@ -87,7 +86,7 @@ function QueuesBlock() {
                             {
                                 currentQueue.details &&
                                 currentQueue.details.map((item) => (
-                                    <div className='detaile-item'>
+                                    <div className='detail-item'>
                                         <p>- {item[1]}</p>
                                     </div>
 

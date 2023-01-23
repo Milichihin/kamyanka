@@ -1,22 +1,19 @@
 import React from 'react';
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import './gallery.css';
-import { images } from '../../../Data/images.js';
-import { gallery } from '../../../Data/text.js';
 import { useState } from 'react';
-import PreviousArrow from '../../Controls/PreviousArrow.jsx';
-import NextArrow from '../../Controls/NextArrow.jsx';
-import CloseCross from '../../Controls/CloseCross.jsx';
+import ModalGallery from './ModalGallery.jsx'
+import PicGrid from './PicGrid.jsx'
 
-function Gallery() {
+function Gallery(props) {
 
     const [modal, setModal] = useState(false);
     const [picLink, setPicLink] = useState("");
     const [opacityBack, setOpacityBack] = useState({ opacity: 0 });
     const [opacityPic, setOpacityPic] = useState({ opacity: 0 });
     const [opacityButtons, setOpacityButtons] = useState({ opacity: 0 });
-
     const [isLoading, setIsLoading] = useState(false);
+
+    const images = props.images;
 
     const handleFetch = (link) => {
         setIsLoading(true);
@@ -25,7 +22,6 @@ function Gallery() {
                 setIsLoading(false)
             });
     };
-
 
     const screenHeight = window.screen.height;
 
@@ -115,57 +111,29 @@ function Gallery() {
     // }, false);
 
     return (
-        <div className='section-block' >
-            <h2>{gallery.header}</h2>
-            <>
-                {
-                    picLink &&
-                    <>
-                        <div className='fullsize-wraper'>
-                            <div
-                                className='fullsize-background'
-                                style={opacityBack}
-                                onClick={() => changeImage()}
-                            />
-                            {
-                                isLoading &&
-                                <h1 style={{ color: 'white' }}>.....</h1>
-                                // <img
-                                //     src='./spinner.gif'
-                                //     style={{height: '100px', width: '100px'}}
-                                // />
-                            }
-                            {
-                                !isLoading &&
-                                <img
-                                    src={picLink}
-                                    className='fullsize-img'
-                                    style={opacityPic}
-                                />
-                            }
-                            <CloseCross onClick={changeImage} styles={opacityButtons} />
-                            <PreviousArrow onClick={changeImage} styles={opacityButtons} />
-                            <NextArrow onClick={changeImage} styles={opacityButtons} />
-                        </div>
-                    </>
-                }
+        <>
+            {
+                modal &&
+                <>
+                    <ModalGallery
+                        changeImage={changeImage}
+                        // images={images}
+                        modal={modal}
+                        picLink={picLink}
+                        opacityBack={opacityBack}
+                        opacityPic={opacityPic}
+                        opacityButtons={opacityButtons}
+                        isLoading={isLoading}
 
-                <ResponsiveMasonry
-                    columnsCountBreakPoints={{ 450: 2, 500: 3, 800: 4 }}
-                >
-                    <Masonry gutter='10px'>
-                        {images.map((link, i) => (
-                            <img
-                                key={i}
-                                src={link}
-                                className="gallery-img"
-                                onClick={() => viewImage(link)}
-                            />
-                        ))}
-                    </Masonry>
-                </ResponsiveMasonry>
-            </>
-        </div>
+                    />
+                </>
+            }
+            <PicGrid
+                images={images}
+                viewImage={viewImage}
+                isItQueue={props.isItQueue}
+            />
+        </>
     )
 }
 

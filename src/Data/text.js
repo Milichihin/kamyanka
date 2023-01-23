@@ -1,17 +1,21 @@
-export const greating = {
-    header: "SCANDIC ECOTOWN KAMYANKA",
-    slogan: "Відтепер будинок у Карпатах – це не дача, не розкіш і не затратна мрія, а прибуткова інвестиція із дохідністю близько 15% річних у поєднанні з якісним відпочинком",
-    boldText: "SCANDIC ECOTOWN KAMYANKA",
-    text: " передбачає створення туристично привабливого відпочинкового комплексу з розвинутою інфраструктурою всього лише в 100 км від Львова, який межує із Національним парком «Сколівські Бескиди» та водоспадом Кам’янка. Унікальність його розташування у заповідній лісовій зоні поряд з річкою зацікавить людей які шукають безпосереднє спілкування з природою, неповторні гірські та природні краєвиди, психологічного відновлення і перебування у «місці сили»."
-}
+import {firstQueue, secondQueue, thirdQueue} from './images.js';
 
-export const gallery = {
-    header: "ГАЛЕРЕЯ"
+export const conception = {
+    greating: {
+        header: "SCANDIC ECOTOWN KAMYANKA",
+        slogan: "Відтепер будинок у Карпатах – це не дача, не розкіш і не примарна мрія, а прибуткова інвестиція з дохідністю близько 15 % річних у поєднанні з якісним відпочинком",
+        boldText: "SCANDIC ECOTOWN KAMYANKA",
+        text: " передбачає створення туристично привабливого відпочинкового комплексу з розвинутою інфраструктурою усього лише за 100 км від Львова, який межує з Національним парком «Сколівські Бескиди» та водоспадом Кам’янка. Унікальність розташування комплексу   у заповідній лісовій зоні поряд з річкою зацікавить людей, які шукають безпосереднього спілкування з природою, неповторний гірськіх та природних краєвидів, психологічного відновлення та перебування у «місці сили»."
+    },
+    gallery: {
+        header: "ГАЛЕРЕЯ"
+    }
 };
+
 
 export const building = {
     header: "ПЛАНУВАННЯ БУДІВНИЦТВА",
-    mainText1: "Згідно з проєктом, на території передбачене розташування",
+    mainText1: "Згідно з проектом, на території передбачене розташування",
     mainText2: "23",
     mainText3: "модульних будинків"
 };
@@ -24,96 +28,39 @@ export const queuesDescription = [
         number: "7 будинків",
         description: "",
         details: [],
-        photo: "./images/36.webp",
-        photos: [
-            ((document.documentElement.scrollWidth >= 700)
-                ? "./images/original/33.webp"
-                : "./images/700w/33.webp"),
-            ((document.documentElement.scrollWidth >= 700)
-                ? "./images/original/36.webp"
-                : "./images/700w/36.webp"),
-            ((document.documentElement.scrollWidth >= 700)
-                ? "./images/original/1.webp"
-                : "./images/700w/1.webp"),
-            ((document.documentElement.scrollWidth >= 700)
-                ? "./images/original/2.webp"
-                : "./images/700w/2.webp"),
-            ((document.documentElement.scrollWidth >= 700)
-                ? "./images/original/8.webp"
-                : "./images/700w/8.webp"),
-            ((document.documentElement.scrollWidth >= 700)
-                ? "./images/original/6.webp"
-                : "./images/700w/6.webp")
-        ]
+        photo: firstQueue[0],
+        photos: firstQueue
     },
     {
         header: "друга черга",
         deadline: "Весна 2024",
         type: "Тип 2",
         number: "19 будинків",
-        description: "розташованих на достатній відстані один від одного, щоб присутність інших мешканців практично була практично не відчутною, а також зони паркування, рецепції, ресторану, конференц-центру, басейну з відпочинковою зоною, сауною на березі гірської річки, мангальної зони, альтанок, оглядових терас, дитячого майданчика і мотузкового парку. Така оптимальна інфраструктура забезпечить привабливість відпочинкового комплексу як для індивідуальних клієнтів (пари, родини, групи друзів), так і для туристичних, корпоративних і спортивних груп",
+        description: "які містяться на достатній відстані один від одного, щоб присутність інших мешканців  була практично не відчутною. Також передбачене розташування зон паркування, рецепції, ресторану, конференц-центру, басейну з відпочинковою зоною, сауною на березі гірської річки, мангальної зони, альтанок, оглядових терас, дитячого майданчика таі мотузкового парку. Така оптимальна інфраструктура забезпечить привабливість відпочинкового комплексу, як для індивідуальних клієнтів (пари, родини, групи друзів), так і для туристичних, корпоративних і спортивних груп",
         details: [],
-        photo: "./images/35.webp",
-        photos: [
-            ((document.documentElement.scrollWidth >= 700)
-                ? "./images/original/35.webp"
-                : "./images/700w/35.webp"),
-            ((document.documentElement.scrollWidth >= 700)
-                ? "./images/original/9.webp"
-                : "./images/700w/9.webp"),
-            ((document.documentElement.scrollWidth >= 700)
-                ? "./images/original/4.webp"
-                : "./images/700w/4.webp"),
-            ((document.documentElement.scrollWidth >= 700)
-                ? "./images/original/3.webp"
-                : "./images/700w/3.webp"),
-            ((document.documentElement.scrollWidth >= 700)
-                ? "./images/original/5.webp"
-                : "./images/700w/5.webp"),
-            ((document.documentElement.scrollWidth >= 700)
-                ? "./images/original/30.webp"
-                : "./images/700w/30.webp")
-        ]
+        photo: secondQueue[0],
+        photos: secondQueue
     },
     {
         header: "третя черга",
         deadline: "Весна 2025",
-        type: "",
+        type: "Реалізація інфраструктурних проектів",
         number: "",
-        description: "Оптимальна інфраструктура забезпечить привабливість відпочинкового комплексу як для індивідуальних клієнтів (пари, родини, групи друзів), так і для туристичних, корпоративних і спортивних груп",
+        description: "а саме:",
         details: [
             ['./images/ekobag-organic-svgrepo-com(1).svg', "ресторан"],
-            ['./images/ekobag-organic-svgrepo-com(1).svg', "конференц-центр"],
+            ['./images/ekobag-organic-svgrepo-com(1).svg', "конференц зал"],
             ['./images/ekobag-organic-svgrepo-com(1).svg', "басейн з відпочинковою зоною"],
-            ['./images/ekobag-organic-svgrepo-com(1).svg', "сауна на березі гірської річки"],
-            ['./images/ekobag-organic-svgrepo-com(1).svg', "зони паркування"],
-            ['./images/ekobag-organic-svgrepo-com(1).svg', "мангальна зона"],
-            ['./images/ekobag-organic-svgrepo-com(1).svg', "альтанки"],
-            ['./images/ekobag-organic-svgrepo-com(1).svg', "оглядові тераси"],
-            ['./images/ekobag-organic-svgrepo-com(1).svg', "дитячий майданчик"],
-            ['./images/ekobag-organic-svgrepo-com(1).svg', "мотузковий парк"]
+            ['./images/ekobag-organic-svgrepo-com(1).svg', "сауна"],
+            ['./images/ekobag-organic-svgrepo-com(1).svg', "рецепція"],
+            ['./images/ekobag-organic-svgrepo-com(1).svg', "та інше"],
+            // ['./images/ekobag-organic-svgrepo-com(1).svg', "альтанки"],
+            // ['./images/ekobag-organic-svgrepo-com(1).svg', "оглядові тераси"],
+            // ['./images/ekobag-organic-svgrepo-com(1).svg', "дитячий майданчик"],
+            // ['./images/ekobag-organic-svgrepo-com(1).svg', "мотузковий парк"]
         ],
-        photo: "./images/13.webp",
-        photos: [
-            ((document.documentElement.scrollWidth >= 700)
-                ? "./images/original/13.webp"
-                : "./images/700w/13.webp"),
-            ((document.documentElement.scrollWidth >= 700)
-                ? "./images/original/12.webp"
-                : "./images/700w/12.webp"),
-            ((document.documentElement.scrollWidth >= 700)
-                ? "./images/original/23.webp"
-                : "./images/700w/23.webp"),
-            ((document.documentElement.scrollWidth >= 700)
-                ? "./images/original/27.webp"
-                : "./images/700w/27.webp"),
-            ((document.documentElement.scrollWidth >= 700)
-                ? "./images/original/17.webp"
-                : "./images/700w/17.webp"),
-            ((document.documentElement.scrollWidth >= 700)
-                ? "./images/original/20.webp"
-                : "./images/700w/20.webp")
-        ]
+        photo: thirdQueue[0],
+        photos: thirdQueue
     }
 ];
 

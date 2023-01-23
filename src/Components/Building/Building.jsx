@@ -37,8 +37,7 @@ function Building(props) {
                     <p>{building.mainText3}</p>
                 </div>
                 <>
-                    <QueuesBlock />
-                    {/* {queueBlock} */}
+                    {queueBlock}
                 </>
             </div>
         </>

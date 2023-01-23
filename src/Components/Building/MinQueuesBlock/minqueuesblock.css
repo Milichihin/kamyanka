@@ -26,7 +26,11 @@
 }
 
 .min-queue-list p {
+    display: flex;
+    align-items: center;
+    justify-items: center;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 .active-select {
@@ -36,6 +40,21 @@
     -webkit-transition: all 0.3s;
     transition-property: all;
     transition: all 0.3s;
+}
+
+.min-detail-picactive-select{
+    background-position: center;
+    background-size: cover;
+    background-color: #5b563e;
+    background-blend-mode: overlay;
+    -webkit-transition-property: all;
+    -webkit-transition: all 0.3s;
+    transition-property: all;
+    transition: all 0.3s;
+}
+
+.min-detail-picactive-select {
+    color: white;
 }
 
 .min-queue {
@@ -49,17 +68,34 @@
     display: flex;
     margin: 0;
     align-items: center;
+    background-color: #7BC085;
+    opacity: 1;
+    -webkit-transition-property: all;
+    -webkit-transition: all 0.5s;
+    transition-property: all;
+    transition: all 0.5s;
+}
+
+.min-detail-pic::after{
+    opacity: 0;
+}
+
+.min-queue p:nth-child(2) {
+    color: white;
 }
 
 .min-queue p {
     height: 50px;
 }
 
+
 .min-queue-list p{
     margin: 10px;
     width: 150px;
     justify-content: center;
 }
+
+
 
 
 @media (max-width: 450px) {
@@ -69,24 +105,24 @@
     }
 
     .min-queue-list{
-        margin: 120px 0 20px 0;
+        margin: 140px 0 20px 0;
         font-size: 1em;
     }
 
     .min-queue-list p{
         font-size: 1em;
-        width: 100px;
+        width: 100%;
     }
-
-    
-    
-
 }
 
 @media (max-height: 450px) {
 
     .min-queue-list{
-        margin: 70px 0 40px 0;
+        margin: 90px 0 40px 0;
+    }
+
+    .min-queue-list p{
+        width: 30%;
     }
 
 
