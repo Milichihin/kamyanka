@@ -117,7 +117,6 @@ function Gallery(props) {
                 <>
                     <ModalGallery
                         changeImage={changeImage}
-                        // images={images}
                         modal={modal}
                         picLink={picLink}
                         opacityBack={opacityBack}
@@ -131,7 +130,7 @@ function Gallery(props) {
             <PicGrid
                 images={images}
                 viewImage={viewImage}
-                // isItQueue={props.isItQueue}
+                isItQueue={props.isItQueue}
             />
         </>
     )
