@@ -24,6 +24,7 @@
     z-index: 3;
     width: 100vw;
     justify-content: space-between;
+    /* justify-content: space-around; */
     background-color: white;
     height: var(--menu-height);
     align-items: center;
@@ -36,7 +37,7 @@
 .fullsize-content {
     position: absolute;
     background-color: rgb(255, 255, 255);
-    margin-top: var(--menu-height);
+    /* margin-top: var(--menu-height); */
     width: 100vw;
     height: auto;
     z-index: 2;
@@ -47,23 +48,23 @@
 }
 
 .fullsize-details-background {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.716);
+    /* background-color: rgba(0, 0, 0, 0.716); */
     height: 100vh;
     width: -webkit-fill-available;
     z-index: 1;
-    -webkit-transition-property: all;
-    -webkit-transition: all 0.3s;
-    transition-property: all;
-    transition: all 0.3s;
+    -webkit-transition-property: opacity;
+    -webkit-transition: opacity 0.5s;
+    transition-property: opacity;
+    transition: opacity 0.5s;
 }
 
 .queue-description-mini {
     display: flex;
     flex-direction: column;
-    margin: 25px;
+    margin: 90px 25px 25px 25px;
 }
 
 .queue-description-mini h2 {
@@ -109,9 +110,6 @@
     justify-content: center;
     height: 30px;
     margin-left: 25px;
-    /* border-style: solid; */
-    /* -webkit-border-color: rgba(0, 0, 0, 0);
-    border-color: rgb(0, 0, 0); */
     border-radius: 3px;
     width: 80px;
     
@@ -136,6 +134,10 @@
 .back-button p {
     margin: 0;
     font-size: 1.2em;
+}
+
+.rigth-description{
+    margin-bottom: 70px;
 }
 
 

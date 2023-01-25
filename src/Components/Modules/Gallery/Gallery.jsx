@@ -23,11 +23,11 @@ function Gallery(props) {
             });
     };
 
-    const screenHeight = window.screen.height;
+    // const screenHeight = window.screen.height;
 
-    window.screen.addEventListener("orientationchange", function () {
-        screenHeight = window.screen.height;
-    });
+    // window.screen.addEventListener("orientationchange", function () {
+    //     screenHeight = window.screen.height;
+    // });
 
     async function viewImage(link) {
         setModal(!modal);
@@ -85,7 +85,8 @@ function Gallery(props) {
             setOpacityBack({ opacity: 0 });
             setOpacityButtons({ opacity: 0 });
             setModal(!modal);
-            if (screenHeight > 650) await new Promise((resolve, reject) => setTimeout(resolve, 200));
+            // if (screenHeight > 650) await new Promise((resolve, reject) => setTimeout(resolve, 200));
+            await new Promise((resolve, reject) => setTimeout(resolve, 200));
             setPicLink("");
 
             // document.body.style.overflow = modal ? 'auto' : 'hidden';

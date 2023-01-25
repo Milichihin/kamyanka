@@ -7,44 +7,38 @@ function MinQueuesBlock() {
 
     const [currentQueue, setCurrentQueue] = useState(queuesDescription[0]);
     const [toggleWindow, setToggleWindow] = useState(false);
-    const [picture, setPicture] = useState(currentQueue.photos[0]);
-    const [discriptionOpacity, setDiscriptionOpacity] = useState({ opacity: 1 });
-    const [opacityBack, setOpacityBack] = useState({ opacity: 0 });
-    const [opacityPic, setOpacityPic] = useState({ opacity: 0 });
+    const [opacityBack, setOpacityBack] = useState({ opacity: 0, backgroundColor: "rgba(0, 0, 0, 0.716)" });
     const [modalStyle, setModalStyle] = useState({ left: "100vw"});
 
     function chooseQueue(item) {
         if (item !== currentQueue) {
-            setPicture(item.photos[0]);
             setCurrentQueue(item);
-            setDiscriptionOpacity({ opacity: 1 })
         }
     }
 
     async function showDetails(){
-        setOpacityBack({ opacity: 0});
-        setOpacityPic({ opacity: 0});
+        setOpacityBack({ opacity: 0, backgroundColor: "rgba(0, 0, 0, 0.716)"});
         setModalStyle({ left: "100vw"});
         setToggleWindow(true);
         await new Promise((resolve, reject) => setTimeout(resolve, 10));
-        setOpacityBack({ opacity: 1 });
-        setOpacityPic({ opacity: 1});
+        setOpacityBack({ opacity: 1, backgroundColor: "rgba(0, 0, 0, 0.716)" });
         setModalStyle({ left: "0"});
         await new Promise((resolve, reject) => setTimeout(resolve, 200));
         document.body.style.overflow = toggleWindow ? 'auto' : 'hidden';
         document.body.style.paddingRight = toggleWindow ? '0px' : '17px';
+        await new Promise((resolve, reject) => setTimeout(resolve, 50));
+        setOpacityBack({ opacity: 1, backgroundColor: "white"});
 
     }
 
     async function hideDetails() {
         document.body.style.overflow = toggleWindow ? 'auto' : 'hidden';
         document.body.style.paddingRight = toggleWindow ? '0px' : '17px';
-        setOpacityBack({ opacity: 1 });
-        setOpacityPic({ opacity: 1 });
+        setOpacityBack({ opacity: 1, backgroundColor: "rgba(0, 0, 0, 0.716)" });
         setModalStyle({ left: "0" });
         await new Promise((resolve, reject) => setTimeout(resolve, 200));
-        setOpacityBack({ opacity: 0 });
-        setOpacityPic({ opacity: 0 });
+        setOpacityBack({ opacity: 0, backgroundColor: "rgba(0, 0, 0, 0.716)" });
+        await new Promise((resolve, reject) => setTimeout(resolve, 10));
         setModalStyle({ left: "100vw" });
         await new Promise((resolve, reject) => setTimeout(resolve, 400));
         setToggleWindow(false);
@@ -82,7 +76,6 @@ function MinQueuesBlock() {
                 <QueuesDetailsWindow
                     hideDetails={hideDetails}
                     opacityBack={opacityBack}
-                    opacityPic={opacityPic}
                     modalStyle={modalStyle}
                     currentQueue={currentQueue}
                 />

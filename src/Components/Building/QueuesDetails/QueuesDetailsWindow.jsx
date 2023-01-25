@@ -10,14 +10,14 @@ import DetailsModul from "./DetailsModul.jsx";
 
 function QueuesDetailsWindow(props) {
 
-const isItQueue = true;
+    const isItQueue = true;
 
     return (
         <>
-            <div className='wraper-details'>
+            <div className='wraper-details'
+                style={props.modalStyle}>
                 <div
                     className="fullsize-content"
-                    style={props.modalStyle}
                 >
                     <QueuesDetailsHeader
                         hideDetails={props.hideDetails}
@@ -27,11 +27,11 @@ const isItQueue = true;
                         isItQueue={isItQueue}
                     />
                 </div>
-                <div
-                    className='fullsize-details-background'
-                    style={props.opacityBack}
-                ></div>
             </div>
+            <div
+                className='fullsize-details-background'
+                style={props.opacityBack}
+            ></div>
         </>
 
     );
