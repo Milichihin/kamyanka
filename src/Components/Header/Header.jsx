@@ -1,4 +1,3 @@
-import Logo from './Logo/Logo.jsx';
 import Navigation from './Navigation/Navigation.jsx';
 import { useState } from 'react';
 

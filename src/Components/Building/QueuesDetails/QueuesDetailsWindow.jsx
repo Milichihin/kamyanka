@@ -1,16 +1,19 @@
-// import './QueuesDetailsWindow.css';
-// import '../../Conception/Gallery/gallery.css';
 import './QueuesDetailsContent.css';
-import { queuesDescription } from '../../../Data/text.js';
-import { useState } from 'react';
-import PreviousArrow from '../../Controls/PreviousArrow.jsx';
-import NextArrow from '../../Controls/NextArrow.jsx';
-import QueuesDetailsHeader from "./QueuesDetailsHeader.jsx";
+import QueuesDetailsHeaderRight from "./QueuesDetailsHeaderRight.jsx";
 import DetailsModul from "./DetailsModul.jsx";
 
 function QueuesDetailsWindow(props) {
 
     const isItQueue = true;
+
+    let header;
+
+    if (window.outerHeight < 450) {
+        header = <QueuesDetailsHeaderRight
+            hideDetails={props.hideDetails}
+        />;
+    }
+
 
     return (
         <>
@@ -19,9 +22,9 @@ function QueuesDetailsWindow(props) {
                 <div
                     className="fullsize-content"
                 >
-                    <QueuesDetailsHeader
-                        hideDetails={props.hideDetails}
-                    />
+                    <>
+                        {header}
+                    </>
                     <DetailsModul
                         currentQueue={props.currentQueue}
                         isItQueue={isItQueue}

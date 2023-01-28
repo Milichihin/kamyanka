@@ -6,7 +6,6 @@ function PicGrid(props) {
     
     return (
         <ResponsiveMasonry
-            // columnsCountBreakPoints={{ 450: 2, 500: 3, 800: 4 }}
             columnsCountBreakPoints={(props.isItQueue)?{ 800: 2 }:{ 450: 2, 500: 3, 800: 4 }}
         >
             <Masonry gutter='10px'>

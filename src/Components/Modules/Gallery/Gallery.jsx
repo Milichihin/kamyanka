@@ -23,12 +23,6 @@ function Gallery(props) {
             });
     };
 
-    // const screenHeight = window.screen.height;
-
-    // window.screen.addEventListener("orientationchange", function () {
-    //     screenHeight = window.screen.height;
-    // });
-
     async function viewImage(link) {
         setModal(!modal);
         setPicLink(link);
@@ -39,15 +33,6 @@ function Gallery(props) {
         setOpacityBack({ opacity: 0.85 });
         setOpacityPic({ opacity: 1 });
         setOpacityButtons({ opacity: 1 });
-
-        // if (screenHeight < 450) {
-        //     await new Promise((resolve, reject) => setTimeout(resolve, 400));
-        // }
-
-        // document.body.style.overflow = modal ? 'auto' : 'hidden';
-        // document.body.style.paddingRight = modal ? '0px' : '17px';
-        // document.getElementById("fix-menu").style.paddingRight = modal ? '0px' : '17px';
-
     };
 
     async function changeImage(action) {
@@ -85,31 +70,10 @@ function Gallery(props) {
             setOpacityBack({ opacity: 0 });
             setOpacityButtons({ opacity: 0 });
             setModal(!modal);
-            // if (screenHeight > 650) await new Promise((resolve, reject) => setTimeout(resolve, 200));
             await new Promise((resolve, reject) => setTimeout(resolve, 200));
             setPicLink("");
-
-            // document.body.style.overflow = modal ? 'auto' : 'hidden';
-            // document.body.style.paddingRight = modal ? '0px' : '17px';
-            // document.getElementById("fix-menu").style.paddingRight = modal ? '0px' : '17px';
         }
     };
-
-    // document.body.addEventListener('keyup', function (e) {
-
-    //     setModal(!modal);
-
-    //     var key = e.keyCode;
-
-    //         if (key == 27) {
-    //             setPicLink("");
-    //         };
-
-    //     document.body.style.overflow = modal ? 'auto' : 'hidden';
-    //     document.body.style.paddingRight = modal ? '0px' : '17px';
-    //     document.getElementById("fix-menu").style.paddingRight = modal ? '0px' : '17px';
-
-    // }, false);
 
     return (
         <>

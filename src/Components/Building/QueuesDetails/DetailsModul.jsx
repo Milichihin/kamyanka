@@ -1,13 +1,12 @@
 import './QueuesDetailsContent.css';
-// import { queuesDescription } from '../../../Data/text.js';
-import { useState } from 'react';
 import Gallery from '../../Modules/Gallery/Gallery.jsx'
 
 function DetailsModul(props) {
-    const [currentQueue, setCurrentQueue] = useState(props.currentQueue);
-    // const [picture, setPicture] = useState(currentQueue.photos[0]);
-    const [images, setImages] = useState(currentQueue.photos);
-    const [discriptionOpacity, setDiscriptionOpacity] = useState({ opacity: 1 });
+    
+    const currentQueue = props.currentQueue;
+    const images = currentQueue.photos;
+    const discriptionOpacity = { opacity: 1 };
+
 
     return (
         <>

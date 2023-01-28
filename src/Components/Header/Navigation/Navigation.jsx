@@ -4,8 +4,14 @@ import { useState } from 'react';
 import Logo from '../Logo/Logo.jsx';
 import { closeButton } from '../../../Data/images.js';
 import { logovertical } from '../../../Data/images.js';
+import ButtonQueueOver from "../../Modules/Buttons/ButtonQueueOver.jsx";
+import { useContext } from "react";
+import { HeaderContext } from "../../../Context.js";
+
 
 function Navigation(props) {
+
+    const [backButtonStyle, burgerStyle] = useContext(HeaderContext);
 
     const [active, setActive] = useState(props.navArray.Greating);
     const [showBurger, setShowBurger] = useState(false);
@@ -40,7 +46,7 @@ function Navigation(props) {
 
             <div className='desktop-menu-fix' >
                 <div className='fix-wrap' style={props.fixNav ? { top: 0, opacity: 1 } : { top: -50, opacity: 0 }} >
-                    <div  id='fix-menu' className="nav-container">
+                    <div id='fix-menu' className="nav-container">
                         <Logo fixNav={props.fixNav} />
                         {
                             Object.values(props.navArray).map((menuItem, i) => (
@@ -56,11 +62,9 @@ function Navigation(props) {
                     </div>
                 </div>
             </div>
-            
+
             <div className='mobile-menu'>
                 <div className='fix-wrap'>
-                    <Logo fixNav={props.fixNav} />
-                    <div className='burger-icon' onClick={() => setBurger()} >&#9776;</div>
                     {
                         <div className="nav-container" style={showBurger ? { top: 0 } : { top: "-100%" }}>
                             <div className='cross-container' onClick={() => setBurger()}>
@@ -83,6 +87,15 @@ function Navigation(props) {
                             </div>
                         </div>
                     }
+                    <Logo fixNav={props.fixNav} />
+                    <div
+                        style={burgerStyle}
+                        className='burger-icon'
+                        onClick={() => setBurger()}
+                    >
+                        &#9776;
+                    </div>
+                    <ButtonQueueOver />
                 </div>
             </div>
         </>

@@ -1,5 +1,5 @@
 :root {
-    --menu-height: 70px;
+    --menu-height: 80px;
 }
 
 .wraper-details {
@@ -102,41 +102,10 @@
 .details-header img {
     height: 30px;
     margin-right: 25px;
-}
-
-.back-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 30px;
     margin-left: 25px;
-    border-radius: 3px;
-    width: 80px;
-    
-    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.12);
-    -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.12);
-    -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.12);
-    background-position: center;
-    transition: all 0.3s;
 }
 
-  .back-button:hover {
-    background: #ffffff radial-gradient(circle, transparent 1%, #ffffff 1%) center/15000%;
-  }
-
-  .back-button:active {
-    background-color: #424242;
-    background-size: 100%;
-    transition: all 0s;
-  }
-
-
-.back-button p {
-    margin: 0;
-    font-size: 1.2em;
-}
-
-.rigth-description{
+.rigth-description {
     margin-bottom: 70px;
 }
 
@@ -161,8 +130,17 @@
 }
 
 @media (max-width: 450px) {
-    
+
     .queue-description-mini {
         min-height: 780px;
+    }
+}
+
+@media (max-height: 450px) {
+    .details-header {
+        height: 50px;
+        box-shadow: -1px 26px 25px -19px rgb(148 148 148 / 50%);
+        -webkit-box-shadow: -1px 26px 25px -19px rgb(148 148 148 / 50%);
+        -moz-box-shadow: -1px 26px 25px -19px rgb(148 148 148 / 50%);
     }
 }

@@ -14,9 +14,6 @@ function Advantages(props) {
         setHeading(advantage);
     }
 
-    console.log("advantagesList[heading]");
-    console.log(advantagesList[heading]);
-
     return (
         <>
             <a className='anchor-padding' name={props.anchor} ></a>
@@ -36,9 +33,6 @@ function Advantages(props) {
                             ))
                         }
                     </div>
-                    {/* <p className='description' style={opacity}>
-                        {advantagesList[heading]}
-                    </p> */}
                     <p className='description' style={opacity}>
                         {
                             advantagesList[heading].map((paragraph) => (

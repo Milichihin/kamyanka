@@ -66,7 +66,6 @@ function Principle(props) {
                 >
                     <p>{howItWorks.button}</p>
                 </div>
-                {/* <p>{screenHeight}, {screenWidth}</p> */}
                 {
                     modal &&
                     <>
