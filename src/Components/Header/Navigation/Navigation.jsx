@@ -11,7 +11,7 @@ import { HeaderContext } from "../../../Context.js";
 
 function Navigation(props) {
 
-    const [backButtonStyle, burgerStyle] = useContext(HeaderContext);
+    const [backButtonStyle, burgerStyle, headerZindex, setHeaderZindex] = useContext(HeaderContext);
 
     const [active, setActive] = useState(props.navArray.Greating);
     const [showBurger, setShowBurger] = useState(false);
@@ -64,7 +64,7 @@ function Navigation(props) {
             </div>
 
             <div className='mobile-menu'>
-                <div className='fix-wrap'>
+                <div className='fix-wrap' style={headerZindex}>
                     {
                         <div className="nav-container" style={showBurger ? { top: 0 } : { top: "-100%" }}>
                             <div className='cross-container' onClick={() => setBurger()}>

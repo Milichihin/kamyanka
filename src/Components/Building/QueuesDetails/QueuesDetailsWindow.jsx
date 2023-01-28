@@ -8,7 +8,7 @@ function QueuesDetailsWindow(props) {
 
     let header;
 
-    if (window.outerHeight < 450) {
+    if (window.outerHeight < 450 && window.outerWidth > 800) {
         header = <QueuesDetailsHeaderRight
             hideDetails={props.hideDetails}
         />;

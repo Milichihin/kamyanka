@@ -17,6 +17,7 @@ function App() {
   const [modalStyle, setModalStyle] = useState({ left: "-100vw" });
   const [backButtonStyle, setBackButtonStyle] = useState({ marginRight: "-200px"  });
   const [burgerStyle, setBurgerStyle] = useState({ marginRight: "20px" });
+  const [headerZindex, setHeaderZindex] = useState({ zIndex: "3", top: "0" });
 
   async function showDetails() {
     setOpacityBack({ opacity: 0, backgroundColor: "rgba(0, 0, 0, 0.716)" });
@@ -54,7 +55,7 @@ function App() {
 
   return (
     <QueueContext.Provider value={[showDetails, hideDetails, toggleWindow, opacityBack, modalStyle]}>
-      <HeaderContext.Provider value={[backButtonStyle, burgerStyle]}>
+      <HeaderContext.Provider value={[backButtonStyle, burgerStyle, headerZindex, setHeaderZindex]}>
         <div className="App">
           <Header navArray={navArray} />
           <Conception anchor={navArray.Greating} />

@@ -3,8 +3,12 @@ import './gallery.css';
 import { useState } from 'react';
 import ModalGallery from './ModalGallery.jsx'
 import PicGrid from './PicGrid.jsx'
+import { useContext } from "react";
+import { HeaderContext } from "../../../Context.js";
 
 function Gallery(props) {
+
+    const [backButtonStyle, burgerStyle, headerZindex, setHeaderZindex] = useContext(HeaderContext);
 
     const [modal, setModal] = useState(false);
     const [picLink, setPicLink] = useState("");
@@ -30,6 +34,7 @@ function Gallery(props) {
         setOpacityPic({ opacity: 0 });
         setOpacityButtons({ opacity: 0 });
         await new Promise((resolve, reject) => setTimeout(resolve, 10));
+        setHeaderZindex({ zIndex: "3", top: "-85px"  });
         setOpacityBack({ opacity: 0.85 });
         setOpacityPic({ opacity: 1 });
         setOpacityButtons({ opacity: 1 });
@@ -66,11 +71,16 @@ function Gallery(props) {
         }
 
         if (!action) {
+            setOpacityPic({ opacity: 1 });
+            setOpacityBack({ opacity: 0.85 });
+            setOpacityButtons({ opacity: 1 });
+            await new Promise((resolve, reject) => setTimeout(resolve, 100));
+            setHeaderZindex({ zIndex: "3", top: "0px" });
             setOpacityPic({ opacity: 0 });
             setOpacityBack({ opacity: 0 });
             setOpacityButtons({ opacity: 0 });
-            setModal(!modal);
             await new Promise((resolve, reject) => setTimeout(resolve, 200));
+            setModal(!modal);
             setPicLink("");
         }
     };

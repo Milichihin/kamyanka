@@ -43,6 +43,10 @@
         -moz-box-shadow: -1px 26px 28px -23px rgb(148 148 148 / 50%);
         /* z-index: 2; */
         z-index: 3;
+        -webkit-transition-property: all 0.5s;
+        -webkit-transition: all 0.5s;
+        transition-property: all 0.5s;
+        transition: all 0.5s;
     }
 
     .mobile-menu .nav-container {
