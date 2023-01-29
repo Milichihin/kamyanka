@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kamyanka/static/css/main.e58edc93.css",
+    "main.js": "/kamyanka/static/js/main.ff536017.js",
+    "index.html": "/kamyanka/index.html",
+    "main.e58edc93.css.map": "/kamyanka/static/css/main.e58edc93.css.map",
+    "main.ff536017.js.map": "/kamyanka/static/js/main.ff536017.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e58edc93.css",
+    "static/js/main.ff536017.js"
+  ]
+}
