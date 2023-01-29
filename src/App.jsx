@@ -15,15 +15,15 @@ function App() {
   const [toggleWindow, setToggleWindow] = useState(false);
   const [opacityBack, setOpacityBack] = useState({ opacity: 0, backgroundColor: "rgba(0, 0, 0, 0.716)" });
   const [modalStyle, setModalStyle] = useState({ left: "-100vw" });
-  const [backButtonStyle, setBackButtonStyle] = useState({ marginRight: "-200px"  });
+  const [backButtonStyle, setBackButtonStyle] = useState({ marginRight: "-500px"  });
   const [burgerStyle, setBurgerStyle] = useState({ marginRight: "20px" });
-  const [headerZindex, setHeaderZindex] = useState({ zIndex: "3", top: "0" });
+  const [headerVisible, setHeaderVisible] = useState({ zIndex: "3", top: "0" });
 
   async function showDetails() {
     setOpacityBack({ opacity: 0, backgroundColor: "rgba(0, 0, 0, 0.716)" });
     setModalStyle({ left: "-100vw" });
     setToggleWindow(true);
-    setBurgerStyle({ marginRight: "-50px" });
+    setBurgerStyle({ marginRight: "-500px" });
     await new Promise((resolve, reject) => setTimeout(resolve, 10));
     setBackButtonStyle({ marginRight: "-70px" });
     setOpacityBack({ opacity: 1, backgroundColor: "rgba(0, 0, 0, 0.716)" });
@@ -44,7 +44,7 @@ function App() {
     await new Promise((resolve, reject) => setTimeout(resolve, 200));
     setOpacityBack({ opacity: 0, backgroundColor: "rgba(0, 0, 0, 0.716)" });
     await new Promise((resolve, reject) => setTimeout(resolve, 10));
-    setBackButtonStyle({ marginRight: "-200px" });
+    setBackButtonStyle({ marginRight: "-500px" });
     setBurgerStyle({ marginRight: "20px" });
     setModalStyle({ left: "-100vw" });
     await new Promise((resolve, reject) => setTimeout(resolve, 400));
@@ -55,7 +55,7 @@ function App() {
 
   return (
     <QueueContext.Provider value={[showDetails, hideDetails, toggleWindow, opacityBack, modalStyle]}>
-      <HeaderContext.Provider value={[backButtonStyle, burgerStyle, headerZindex, setHeaderZindex]}>
+      <HeaderContext.Provider value={[backButtonStyle, burgerStyle, headerVisible, setHeaderVisible]}>
         <div className="App">
           <Header navArray={navArray} />
           <Conception anchor={navArray.Greating} />

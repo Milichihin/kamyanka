@@ -8,7 +8,7 @@ import { HeaderContext } from "../../../Context.js";
 
 function Gallery(props) {
 
-    const [backButtonStyle, burgerStyle, headerZindex, setHeaderZindex] = useContext(HeaderContext);
+    const [backButtonStyle, burgerStyle, headerVisible, setHeaderVisible] = useContext(HeaderContext);
 
     const [modal, setModal] = useState(false);
     const [picLink, setPicLink] = useState("");
@@ -34,7 +34,7 @@ function Gallery(props) {
         setOpacityPic({ opacity: 0 });
         setOpacityButtons({ opacity: 0 });
         await new Promise((resolve, reject) => setTimeout(resolve, 10));
-        setHeaderZindex({ zIndex: "3", top: "-85px"  });
+        setHeaderVisible({ zIndex: "3", top: "-85px"  });
         setOpacityBack({ opacity: 0.85 });
         setOpacityPic({ opacity: 1 });
         setOpacityButtons({ opacity: 1 });
@@ -75,7 +75,7 @@ function Gallery(props) {
             setOpacityBack({ opacity: 0.85 });
             setOpacityButtons({ opacity: 1 });
             await new Promise((resolve, reject) => setTimeout(resolve, 100));
-            setHeaderZindex({ zIndex: "3", top: "0px" });
+            setHeaderVisible({ zIndex: "3", top: "0px" });
             setOpacityPic({ opacity: 0 });
             setOpacityBack({ opacity: 0 });
             setOpacityButtons({ opacity: 0 });

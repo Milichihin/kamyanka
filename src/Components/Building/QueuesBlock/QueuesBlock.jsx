@@ -9,9 +9,17 @@ function QueuesBlock() {
     const [currentQueue, setCurrentQueue] = useState(queuesDescription[0]);
     const [picture, setPicture] = useState(currentQueue.photos[0]);
     const [discriptionOpacity, setDiscriptionOpacity] = useState({ opacity: 1 });
+    const [queueOpacity, setQueueOpacity] = useState({ opacity: 1 });
 
-    function chooseQueue(item) {
+
+    async function chooseQueue(item) {
         if (item !== currentQueue) {
+
+            setQueueOpacity({ opacity: 1 })
+            await new Promise((resolve, reject) => setTimeout(resolve, 10));
+            setQueueOpacity({ opacity: 0 })
+            await new Promise((resolve, reject) => setTimeout(resolve, 100));
+            setQueueOpacity({ opacity: 1 })
             setPicture(item.photos[0]);
             setCurrentQueue(item);
             setDiscriptionOpacity({ opacity: 1 })
@@ -65,40 +73,42 @@ function QueuesBlock() {
                     </p>
                 ))}
             </div>
-            <div className='queue-window'>
-                <>
-                    <img className='queue-image' src={picture} />
-                    {
-                        (currentQueue !== queuesDescription[0]) &&   
-                        <div className="blacking" style={discriptionOpacity}></div>
-                    }
-                </>
+            <div className='queue-window-wraper'>
+                <div className='queue-window'>
+                    <>
+                        <img className='queue-image' src={picture} />
+                        {
+                            (currentQueue !== queuesDescription[0]) &&
+                            <div className="blacking" style={discriptionOpacity}></div>
+                        }
+                    </>
 
-                <div className='queue-description'>
-                    <div>
-                        <p className='title-pad'>{currentQueue.deadline}</p>
-                        <p className='title-pad'>{currentQueue.type}</p>
-                        <p className='title-pad'>{currentQueue.number}</p>
-                    </div>
-                    <div className='queue-subdescription' >
-                        <p style={discriptionOpacity}>{currentQueue.description}</p>
-                        <div className='details' style={discriptionOpacity}>
-                            {
-                                currentQueue.details &&
-                                currentQueue.details.map((item) => (
-                                    <div className='detail-item'>
-                                        <p>- {item[1]}</p>
-                                    </div>
+                    <div className='queue-description'>
+                        <div className='title-pad-wraper' style={queueOpacity}>
+                            <p className='title-pad'>{currentQueue.deadline}</p>
+                            <p className='title-pad'>{currentQueue.type}</p>
+                            <p className='title-pad'>{currentQueue.number}</p>
+                        </div>
+                        <div className='queue-subdescription' style={queueOpacity}>
+                            <p style={discriptionOpacity}>{currentQueue.description}</p>
+                            <div className='details' style={discriptionOpacity}>
+                                {
+                                    currentQueue.details &&
+                                    currentQueue.details.map((item) => (
+                                        <div className='detail-item'>
+                                            <p>- {item[1]}</p>
+                                        </div>
 
-                                ))
-                            }
+                                    ))
+                                }
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <PreviousArrow  onClick={changeImage}/>
-                <NextArrow  onClick={changeImage}/>
 
+                    <PreviousArrow onClick={changeImage} />
+                    <NextArrow onClick={changeImage} />
+
+                </div>
             </div>
         </>
     );

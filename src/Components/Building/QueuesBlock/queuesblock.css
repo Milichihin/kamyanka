@@ -1,3 +1,10 @@
+.queue-window-wraper{
+    display: flex;
+}
+
+.next{
+    position: absolute;
+}
 .queue-list {
     margin: 0;
     padding: 0;
@@ -34,6 +41,7 @@
 
 .queue-window {
     display: flex;
+    width: 100%;
 }
 
 .queue-image {
@@ -59,6 +67,12 @@
     margin: 20px 40px 0 40px;
 }
 
+.title-pad-wraper{
+    -webkit-transition-property: all;
+    -webkit-transition: all 0.3s;
+    transition-property: all;
+    transition: all 0.3s;
+}
 
 .title-pad {
     background-color: #7BC085;
@@ -76,12 +90,24 @@
     width: fit-content; 
 }
 
+.queue-subdescription{
+    -webkit-transition-property: all;
+    -webkit-transition: all 0.5s;
+    transition-property: all;
+    transition: all 0.5s;
+}
+
 .queue-subdescription p {
     margin-top: 25px;
     margin-bottom: 0;
     margin-left: 10px;
     font-size: 1.2em;
     width: 90%;
+
+    -webkit-transition-property: all;
+    -webkit-transition: all 0.5s;
+    transition-property: all;
+    transition: all 0.5s;
 }
 
 
@@ -91,6 +117,11 @@
     min-height: 220px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    -webkit-transition-property: all;
+    -webkit-transition: all 0.5s;
+    transition-property: all;
+    transition: all 0.5s;
 }
 
 .details p {

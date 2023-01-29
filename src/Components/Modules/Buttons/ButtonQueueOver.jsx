@@ -6,7 +6,7 @@ import { QueueContext, HeaderContext } from "../../../Context.js";
 function ButtonQueueOver(props) {
     
     const [showDetails, hideDetails, toggleWindow, opacityBack, modalStyle] = useContext(QueueContext);
-    const [backButtonStyle, burgerStyle, headerZindex, setHeaderZindex] = useContext(HeaderContext);
+    const [backButtonStyle, burgerStyle, headerVisible, setHeaderVisible] = useContext(HeaderContext);
 
     return (
         <div
