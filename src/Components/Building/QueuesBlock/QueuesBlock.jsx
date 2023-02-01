@@ -85,9 +85,15 @@ function QueuesBlock() {
 
                     <div className='queue-description'>
                         <div className='title-pad-wraper' style={queueOpacity}>
-                            <p className='title-pad'>{currentQueue.deadline}</p>
-                            <p className='title-pad'>{currentQueue.type}</p>
-                            <p className='title-pad'>{currentQueue.number}</p>
+                            <div className='title-pad'>
+                                <p>{currentQueue.deadline}</p>
+                            </div>
+                            <div className='title-pad'>
+                                <p>{currentQueue.type}</p>
+                            </div>
+                            <div className='title-pad'>
+                                <p>{currentQueue.number}</p>
+                            </div>
                         </div>
                         <div className='queue-subdescription' style={queueOpacity}>
                             <p style={discriptionOpacity}>{currentQueue.description}</p>

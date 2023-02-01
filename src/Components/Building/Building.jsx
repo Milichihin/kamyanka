@@ -8,9 +8,19 @@ function Building(props) {
     let queueBlock;
 
 
-    if (window.outerHeight < 450) {
+    // if (window.outerHeight < 450) {
+    //     queueBlock = <MinQueuesBlockRight />;
+    // } else if (window.outerWidth < 700) {
+    //     queueBlock = <MinQueuesBlockRight />;
+    // } else {
+    //     queueBlock = <QueuesBlock />;
+    // }
+
+    if (window.outerWidth <= 700) {
         queueBlock = <MinQueuesBlockRight />;
-    } else if (window.outerWidth < 450) {
+    } else if (window.outerHeight <= 560) {
+        queueBlock = <MinQueuesBlockRight />;
+    } else if (window.outerWidth <= 700 && window.outerHeight <= 450) {
         queueBlock = <MinQueuesBlockRight />;
     } else {
         queueBlock = <QueuesBlock />;

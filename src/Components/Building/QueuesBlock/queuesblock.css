@@ -76,9 +76,12 @@
 
 .title-pad {
     background-color: #7BC085;
+    width: fit-content;
+}
+
+.title-pad p{
     font-weight: 700;
     font-size: 2em;
-    width: 250px;
     padding-left: 10px;
     padding-right: 10px;
 }
