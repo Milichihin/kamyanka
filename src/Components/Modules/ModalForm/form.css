@@ -36,7 +36,7 @@
 }
 
 @media (max-height: 450px) {
-  .modal {        
+  .modal {
       height: 100%;
       width: 100%;
   }
@@ -98,29 +98,50 @@ form {
   height: 80%;
 }
 
-
-.button {
+.submit-wraper{
+  position: relative;
   height: 50px;
   display: flex;
   justify-content: center;
-  color: white;
   width: 100%;
-  cursor: pointer;
+}
+
+.button{
   font-size: 1.2em;
-  background: #b8ae71;
   border-style: none;
   border-radius: 0px;
+  background: #b8af7100;
+  color: white;
+  cursor: pointer;
+}
+
+.input-submit  {
+  position: absolute;
+  height: 50px;
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  background: #b8ae71;
+
+  -webkit-box-shadow: 0px 10px 24px -7px rgba(0,0,0,0.42);
+  -moz-box-shadow: 0px 10px 24px -7px rgba(0,0,0,0.42);
+  box-shadow: 0px 10px 24px -7px rgba(0,0,0,0.42);
+
+  -webkit-transition-property: all;
+  -webkit-transition: all ease 0.2s;
+  transition-property: all;
+  transition: all ease 0.2s;
+}
+
+/* .input-submit:active {
+  margin-top: 5px;
   -webkit-box-shadow: 0px 0px 24px -7px rgba(0,0,0,0.42);
   -moz-box-shadow: 0px 0px 24px -7px rgba(0,0,0,0.42);
   box-shadow: 0px 0px 24px -7px rgba(0,0,0,0.42);
-  
-  -webkit-transition-property: all;
-  -webkit-transition: all ease 0.51s;
-  transition-property: all;
-  transition: all ease 0.51s;
-}
+} */
 
-.button:hover {
+.input-submit:hover {
+  margin-top: 5px;
   background-color: #817941;
 }
 

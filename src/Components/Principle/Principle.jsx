@@ -64,7 +64,9 @@ function Principle(props) {
                     className='button-wrap'
                     onClick={() => showModal()}
                 >
-                    <p>{howItWorks.button}</p>
+                    <div className='hover-feature'>
+                        <p>{howItWorks.button}</p>
+                    </div>
                 </div>
                 {
                     modal &&

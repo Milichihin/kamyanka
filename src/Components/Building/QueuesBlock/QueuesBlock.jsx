@@ -1,33 +1,34 @@
 import './queuesblock.css';
 import { queuesDescription } from '../../../Data/text.js';
 import { useState } from 'react';
-import PreviousArrow from '../../Controls/PreviousArrow.jsx';
-import NextArrow from '../../Controls/NextArrow.jsx';
+import QueueWraper from './QueueWraper.jsx';
 
 function QueuesBlock() {
 
+    const queueOpacity = { opacity: 1 };
     const [currentQueue, setCurrentQueue] = useState(queuesDescription[0]);
+    const [prevQueue, setPrevQueue] = useState(currentQueue);
     const [picture, setPicture] = useState(currentQueue.photos[0]);
+    const [prevPicture, setPrevPicture] = useState(picture);
     const [discriptionOpacity, setDiscriptionOpacity] = useState({ opacity: 1 });
-    const [queueOpacity, setQueueOpacity] = useState({ opacity: 1 });
-
+    const [prevOpacity, setPrevOpacity] = useState({ opacity: 1});
 
     async function chooseQueue(item) {
         if (item !== currentQueue) {
-
-            setQueueOpacity({ opacity: 1 })
-            await new Promise((resolve, reject) => setTimeout(resolve, 10));
-            setQueueOpacity({ opacity: 0 })
-            await new Promise((resolve, reject) => setTimeout(resolve, 100));
-            setQueueOpacity({ opacity: 1 })
-            setPicture(item.photos[0]);
-            setCurrentQueue(item);
             setDiscriptionOpacity({ opacity: 1 })
+            setCurrentQueue(item);
+            setPicture(item.photos[0]);
+            setPrevOpacity({ opacity: 0 })
+            await new Promise((resolve, reject) => setTimeout(resolve, 200));
+            setPrevQueue(item);
+            setPrevPicture(item.photos[0]);
+            setPrevOpacity({ opacity: 1 })
         }
     }
 
     function changeImage(action) {
 
+        setPrevOpacity({ opacity: 0 })
         let i = currentQueue.photos.indexOf(picture);
 
         if (action === 'next-img') {
@@ -74,47 +75,19 @@ function QueuesBlock() {
                 ))}
             </div>
             <div className='queue-window-wraper'>
-                <div className='queue-window'>
-                    <>
-                        <img className='queue-image' src={picture} />
-                        {
-                            (currentQueue !== queuesDescription[0]) &&
-                            <div className="blacking" style={discriptionOpacity}></div>
-                        }
-                    </>
-
-                    <div className='queue-description'>
-                        <div className='title-pad-wraper' style={queueOpacity}>
-                            <div className='title-pad'>
-                                <p>{currentQueue.deadline}</p>
-                            </div>
-                            <div className='title-pad'>
-                                <p>{currentQueue.type}</p>
-                            </div>
-                            <div className='title-pad'>
-                                <p>{currentQueue.number}</p>
-                            </div>
-                        </div>
-                        <div className='queue-subdescription' style={queueOpacity}>
-                            <p style={discriptionOpacity}>{currentQueue.description}</p>
-                            <div className='details' style={discriptionOpacity}>
-                                {
-                                    currentQueue.details &&
-                                    currentQueue.details.map((item) => (
-                                        <div className='detail-item'>
-                                            <p>- {item[1]}</p>
-                                        </div>
-
-                                    ))
-                                }
-                            </div>
-                        </div>
-                    </div>
-
-                    <PreviousArrow onClick={changeImage} />
-                    <NextArrow onClick={changeImage} />
-
-                </div>
+                <QueueWraper
+                    queue={currentQueue}
+                    picture={picture}
+                    discriptionOpacity={discriptionOpacity}
+                    opacity={queueOpacity}
+                />
+                <QueueWraper
+                    queue={prevQueue}
+                    picture={prevPicture}
+                    discriptionOpacity={discriptionOpacity}
+                    opacity={prevOpacity}
+                    onClick={changeImage}
+                />
             </div>
         </>
     );

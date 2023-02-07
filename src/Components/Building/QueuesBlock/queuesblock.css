@@ -1,5 +1,8 @@
 .queue-window-wraper{
     display: flex;
+    position: relative;
+    height: 500px;
+    overflow: hidden;
 }
 
 .next{
@@ -42,6 +45,15 @@
 .queue-window {
     display: flex;
     width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-transition-property: all;
+    -webkit-transition: all 0.3s ease 0s;
+    transition-property: all;
+    transition: all 0.3s ease 0s;
 }
 
 .queue-image {
@@ -57,6 +69,11 @@
     background-color: rgba(0, 0, 0, 0.497);
     height: 500px;
     width: 100%;
+    
+    -webkit-transition-property: all;
+    -webkit-transition: all 0.5s;
+    transition-property: all;
+    transition: all 0.5s;
 }
 
 .queue-description {
@@ -69,17 +86,26 @@
 
 .title-pad-wraper{
     -webkit-transition-property: all;
-    -webkit-transition: all 0.3s;
+    -webkit-transition: all 0.3s ease 0s;
     transition-property: all;
-    transition: all 0.3s;
+    transition: all 0.3s ease 0s;
+    position: relative;
 }
 
 .title-pad {
     background-color: #7BC085;
-    width: fit-content;
+    width: fit-content;}
+
+/* .prev {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.title-pad p{
+.prev .title-pad {
+} */
+
+.title-pad p {
     font-weight: 700;
     font-size: 2em;
     padding-left: 10px;
@@ -92,6 +118,7 @@
     margin-bottom: 0;
     width: fit-content; 
 }
+
 
 .queue-subdescription{
     -webkit-transition-property: all;

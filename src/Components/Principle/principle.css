@@ -2,7 +2,9 @@
     margin: 0;
 }
 
+
 .button-wrap {
+    position: relative;
     display: flex;
     justify-content: center;
     margin-left: 20px;
@@ -13,23 +15,34 @@
     text-align: center;
     min-height: 50px;
     align-items: center;
-    background-color: #7BC085;
     color: white;
     box-shadow: -1px 26px 28px -23px rgba(0, 0, 0, 1);
     -webkit-box-shadow: -1px 26px 28px -23px rgba(0, 0, 0, 1);
     -moz-box-shadow: -1px 26px 28px -23px rgba(0, 0, 0, 1);
     cursor: pointer;
-    -webkit-transition-property: all;
-    -webkit-transition: all ease 0.5s;
-    transition-property: all;
-    transition: all ease 0.5s;
 }
 
 .button-wrap p {
     color: white;
 }
 
-.button-wrap:hover {
+.hover-feature{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #7BC085;
+    -webkit-transition-property: all;
+    -webkit-transition: all ease 0.3s;
+    transition-property: all;
+    transition: all ease 0.3s;
+}
+
+.hover-feature:hover {
+    margin-top: 5px;
     background-color: #857f59;
 }
 

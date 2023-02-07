@@ -3,6 +3,16 @@ import CloseCross from '../../Controls/CloseCross.jsx';
 
 function ModalForm(props) {
 
+    let formData = new FormData(document.forms.sendform);
+
+
+    // отправим данные
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "./setMailData.php");
+    xhr.send(formData);
+
+    xhr.onload = () => alert(formData);
+
     return (
         <>
             <div className={`${"fullsize-wraper"} ${"modal-form"}`}>
@@ -13,7 +23,9 @@ function ModalForm(props) {
                 >
                     <>
                         <h3>{props.howItWorks.form.header}</h3>
-                        <form method="post" action="https://formspree.io/milichihin@gmail.com" target="_blank">
+                        <form name="sendform" method="post" action="./smtpSandBox2.php">
+                        {/* <form method="post" action="https://formspree.io/milichihin@gmail.com" target="_blank"> */}
+                        {/* <form method="post" action="send.php" target="_blank"> */}
                             <input
                                 type="text"
                                 name="name"
@@ -36,12 +48,16 @@ function ModalForm(props) {
                                 className={`${"textarea"} ${"input-field"}`}>
 
                             </textarea>
-                            <input
-                                type="submit"
-                                value={props.howItWorks.form.buttonValue}
-                                className="button">
+                            <div className='submit-wraper'>
+                                <div className='input-submit'>
+                                    <input
+                                        type="submit"
+                                        value={props.howItWorks.form.buttonValue}
+                                        className="button">
 
-                            </input>
+                                    </input>
+                                </div>
+                            </div>
                         </form>
                         <h3 style={{ fontWeight: '300' }}>{props.howItWorks.form.ps} </h3>
                     </>
