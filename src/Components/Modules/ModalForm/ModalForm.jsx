@@ -37,7 +37,7 @@ function ModalForm(props) {
                                     name="name"
                                     placeholder={props.howItWorks.form.namePlaceholder}
                                     className="input-field"
-                                    // required
+                                    required
                                 >
                                 </input>
                                 <ValidationError
@@ -46,12 +46,12 @@ function ModalForm(props) {
                                     errors={state.errors}
                                 />
                                 <input
-                                    // id="email"
+                                    id="contact"
                                     type="text"
                                     name="contact"
                                     placeholder={props.howItWorks.form.emailPlaceholder}
                                     className="input-field"
-                                    // required
+                                    required
                                 >
                                 </input>
                                 <ValidationError
@@ -66,7 +66,7 @@ function ModalForm(props) {
                                     rows="5" cols="21"
                                     placeholder={props.howItWorks.form.textareaPlaceholder}
                                     className={`${"textarea"} ${"input-field"}`}
-                                    // required
+                                    required
                                 >
                                 </textarea>
                                 <ValidationError
@@ -78,7 +78,7 @@ function ModalForm(props) {
                                     <div className='input-submit'>
                                         <input
                                             type="submit"
-                                            // disabled={state.submitting}
+                                            disabled={state.submitting}
                                             value={props.howItWorks.form.buttonValue}
                                             className="button">
 
