@@ -15,7 +15,7 @@ function App() {
   const [toggleWindow, setToggleWindow] = useState(false);
   const [opacityBack, setOpacityBack] = useState({ opacity: 0, backgroundColor: "rgba(0, 0, 0, 0.716)" });
   const [modalStyle, setModalStyle] = useState({ left: "-100vw" });
-  const [backButtonStyle, setBackButtonStyle] = useState({ marginRight: "-500px"  });
+  const [backButtonStyle, setBackButtonStyle] = useState({ marginRight: "-500px" });
   const [burgerStyle, setBurgerStyle] = useState({ marginRight: "20px" });
   const [headerVisible, setHeaderVisible] = useState({ zIndex: "3", top: "0" });
 
@@ -54,18 +54,18 @@ function App() {
 
 
   return (
-    <QueueContext.Provider value={[showDetails, hideDetails, toggleWindow, opacityBack, modalStyle]}>
-      <HeaderContext.Provider value={[backButtonStyle, burgerStyle, headerVisible, setHeaderVisible]}>
-        <div className="App">
-          <Header navArray={navArray} />
-          <Conception anchor={navArray.Greating} />
-          <Building anchor={navArray.Building} />
-          <Principle anchor={navArray.Principle} />
-          <Advantages anchor={navArray.Advantages} />
-          <Contacts anchor={navArray.Contacts} />
-        </div>
-      </HeaderContext.Provider>
-    </QueueContext.Provider>
+      <QueueContext.Provider value={[showDetails, hideDetails, toggleWindow, opacityBack, modalStyle]}>
+        <HeaderContext.Provider value={[backButtonStyle, burgerStyle, headerVisible, setHeaderVisible]}>
+          <div className="App">
+            <Header navArray={navArray} />
+            <Conception anchor={navArray.Greating} />
+            <Building anchor={navArray.Building} />
+            <Principle anchor={navArray.Principle} />
+            <Advantages anchor={navArray.Advantages} />
+            <Contacts anchor={navArray.Contacts} />
+          </div>
+        </HeaderContext.Provider>
+      </QueueContext.Provider>
   );
 }
 

@@ -4,7 +4,15 @@ import { useForm, ValidationError } from '@formspree/react';
 
 function ModalForm(props) {
 
-    const [state, handleSubmit] = useForm("xgebaywr");
+    const [state, handleSubmit] = useForm("xgebaywr", {
+        data: {
+          subject: 'Заповнена форма з сайту KAMYANKA',
+          pageTitle: function() {
+            // This function will be evaluated at submission time
+            return document.title;
+          }
+        }
+      });
 
     return (
         <>
@@ -24,12 +32,13 @@ function ModalForm(props) {
                             <h3>{props.howItWorks.form.header}</h3>
                             <form onSubmit={handleSubmit} >
                                 <input
-                                    // type="text"
+                                    type="text"
                                     id="name"
                                     name="name"
                                     placeholder={props.howItWorks.form.namePlaceholder}
-                                    className="input-field">
-
+                                    className="input-field"
+                                    // required
+                                >
                                 </input>
                                 <ValidationError
                                     prefix="Name"
@@ -37,26 +46,28 @@ function ModalForm(props) {
                                     errors={state.errors}
                                 />
                                 <input
-                                    id="email"
-                                    type="email"
+                                    // id="email"
+                                    type="text"
                                     name="email"
                                     placeholder={props.howItWorks.form.emailPlaceholder}
-                                    className="input-field">
-
+                                    className="input-field"
+                                    // required
+                                >
                                 </input>
                                 <ValidationError
-                                    prefix="Email"
+                                    prefix="Contact"
                                     field="email"
                                     errors={state.errors}
                                 />
                                 <textarea
                                     id="message"
                                     name="message"
-                                    // type="text"
+                                    type="text"
                                     rows="5" cols="21"
                                     placeholder={props.howItWorks.form.textareaPlaceholder}
-                                    className={`${"textarea"} ${"input-field"}`}>
-
+                                    className={`${"textarea"} ${"input-field"}`}
+                                    // required
+                                >
                                 </textarea>
                                 <ValidationError
                                     prefix="Message"
@@ -67,7 +78,7 @@ function ModalForm(props) {
                                     <div className='input-submit'>
                                         <input
                                             type="submit"
-                                            disabled={state.submitting}
+                                            // disabled={state.submitting}
                                             value={props.howItWorks.form.buttonValue}
                                             className="button">
 
