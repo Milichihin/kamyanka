@@ -48,7 +48,7 @@ function ModalForm(props) {
                                 <input
                                     // id="email"
                                     type="text"
-                                    name="email"
+                                    name="contact"
                                     placeholder={props.howItWorks.form.emailPlaceholder}
                                     className="input-field"
                                     // required
@@ -56,7 +56,7 @@ function ModalForm(props) {
                                 </input>
                                 <ValidationError
                                     prefix="Contact"
-                                    field="email"
+                                    field="contact"
                                     errors={state.errors}
                                 />
                                 <textarea
