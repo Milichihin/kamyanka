@@ -145,8 +145,12 @@ form {
   background-color: #817941;
 }
 
-
-
+.thanks{
+  -webkit-transition-property: all;
+  -webkit-transition: all ease 0.5s;
+  transition-property: all;
+  transition: all ease 0.5s;
+}
 
 @media (max-height: 450px) {
 

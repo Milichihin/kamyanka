@@ -1,18 +1,28 @@
 import './form.css';
 import CloseCross from '../../Controls/CloseCross.jsx';
 import { useForm, ValidationError } from '@formspree/react';
+import { useState } from 'react';
 
 function ModalForm(props) {
 
     const [state, handleSubmit] = useForm("xgebaywr", {
         data: {
-          subject: 'Заповнена форма з сайту KAMYANKA',
-          pageTitle: function() {
-            // This function will be evaluated at submission time
-            return document.title;
-          }
+            subject: 'Заповнена форма з сайту KAMYANKA',
+            pageTitle: function() {
+                // This function will be evaluated at submission time
+                return document.title;
+            }
         }
-      });
+    });
+
+    const [thanksOpacity, setThanksOpacity] = useState({opacity: 0});
+
+    async function showThanks() {
+        await new Promise((resolve, reject) => setTimeout(resolve, 100));
+        setThanksOpacity({opacity: 0});
+        await new Promise((resolve, reject) => setTimeout(resolve, 500));
+        setThanksOpacity({opacity: 1});
+    }
 
     return (
         <>
@@ -24,7 +34,12 @@ function ModalForm(props) {
                 >
                     {
                         state.succeeded &&
-                        <h1>{props.howItWorks.form.thanks}</h1>
+                        <h1
+                            className='thanks'
+                            style={thanksOpacity}
+                        >
+                            {props.howItWorks.form.thanks}
+                        </h1>
                     }
                     {
                         !state.succeeded &&
@@ -75,13 +90,15 @@ function ModalForm(props) {
                                     errors={state.errors}
                                 />
                                 <div className='submit-wraper'>
-                                    <div className='input-submit'>
+                                    <div className='input-submit'
+                                    >
                                         <input
                                             type="submit"
                                             disabled={state.submitting}
                                             value={props.howItWorks.form.buttonValue}
-                                            className="button">
-
+                                            className="button"
+                                            onClick={showThanks}
+                                        >
                                         </input>
                                     </div>
                                 </div>
