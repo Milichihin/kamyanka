@@ -1,7 +1,8 @@
 import './principle.css';
 import { howItWorks } from '../../Data/text.js';
 import { useState } from 'react';
-import ModalForm from '../Modules/ModalForm/ModalForm.jsx';
+// import ModalForm from '../Modules/ModalForm/ModalFormFormspree.jsx';
+import ModalForm from '../Modules/ModalForm/ModalFormFormDataPHP.jsx';
 
 function Principle(props) {
 
