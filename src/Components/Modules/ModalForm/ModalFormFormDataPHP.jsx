@@ -21,62 +21,33 @@ function ModalForm(props) {
 
     async function  handleSubmit(){
 
+        showThanks();
 
-        await new Promise((resolve, reject) => setTimeout(resolve, 10));
         console.log('зашли в хендлерсабмит');
-        await new Promise((resolve, reject) => setTimeout(resolve, 10));
-            console.log('xhr.readyState = ' + xhr.readyState);
-            console.log('xhr.status = ' + xhr.status);
         
         let formData = new FormData(oldForm);
-        await new Promise((resolve, reject) => setTimeout(resolve, 10));
-        console.log('xhr.readyState = ' + xhr.readyState);
-        console.log('xhr.status = ' + xhr.status);
 
         let xhr = new XMLHttpRequest();
-        await new Promise((resolve, reject) => setTimeout(resolve, 10));
-        console.log('xhr.readyState = ' + xhr.readyState);
-        console.log('xhr.status = ' + xhr.status);
 
-        // xhr.onreadystatechange = function () {
+        xhr.onreadystatechange = function () {
             
-        //     console.log('пока не отправлено');
-        //     console.log('xhr.readyState = ' + xhr.readyState);
-        //     console.log('xhr.status = ' + xhr.status);
+            console.log('пока не отправлено');
+            console.log('xhr.readyState = ' + xhr.readyState);
+            console.log('xhr.status = ' + xhr.status);
 
-        //     if (xhr.readyState === 4) {
-        //         console.log('отправляется');
-        //         console.log('xhr.readyState = ' + xhr.readyState);
-        //         if (xhr.status === 200) {
-        //             console.log('отправлено');
-        //             console.log('xhr.status = ' + xhr.status);
-        //         }
-        //     }
-        // }
+            if (xhr.readyState === 4) {
+                console.log('отправляется');
+                console.log('xhr.readyState = ' + xhr.readyState);
+                if (xhr.status === 200) {
+                    console.log('отправлено');
+                    console.log('xhr.status = ' + xhr.status);
+                }
+            }
+        }
 
         xhr.open('POST', 'smtpSandBox2.php', true);
-        await new Promise((resolve, reject) => setTimeout(resolve, 10));
-        console.log('xhr.readyState = ' + xhr.readyState);
-        console.log('xhr.status = ' + xhr.status);
         xhr.send(formData);
-        await new Promise((resolve, reject) => setTimeout(resolve, 10));
-        console.log('xhr.readyState = ' + xhr.readyState);
-        console.log('xhr.status = ' + xhr.status);
 
-        // showThanks();
-        console.log('дошли до showThanks()');
-        setIsSend(true);
-        await new Promise((resolve, reject) => setTimeout(resolve, 100));
-        console.log('xhr.readyState = ' + xhr.readyState);
-        console.log('xhr.status = ' + xhr.status);
-        setThanksOpacity({opacity: 0});
-        await new Promise((resolve, reject) => setTimeout(resolve, 500));
-        console.log('xhr.readyState = ' + xhr.readyState);
-        console.log('xhr.status = ' + xhr.status);
-        setThanksOpacity({opacity: 1});
-        await new Promise((resolve, reject) => setTimeout(resolve, 10));
-        console.log('xhr.readyState = ' + xhr.readyState);
-        console.log('xhr.status = ' + xhr.status);
         oldForm.reset();
     }
 
