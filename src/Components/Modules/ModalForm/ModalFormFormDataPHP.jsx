@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 function ModalForm(props) {
 
+    const [isSUbmited, setSUbmited] = useState(false);
     const [isSend, setIsSend] = useState(false);
     const [thanksOpacity, setThanksOpacity] = useState({ opacity: 0 });
 
@@ -20,6 +21,7 @@ function ModalForm(props) {
     }
 
     async function  handleSubmit(){
+
 
         showThanks();
 
