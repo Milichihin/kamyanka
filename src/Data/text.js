@@ -71,7 +71,7 @@ export const howItWorks = {
         header: "Залиште, будь ласка, будь-які свої контактні дані і ми зв'яжимося з вами",
         namePlaceholder: "Ваше ім'я",
         emailPlaceholder: "Ваш імейл або телефон",
-        textareaPlaceholder: "Напишіть, якому каналу комунікації Ви віддаєте перевагу? \n(Email, Telegram, Viber, Whatsup, Skype, Голосовий телефонний зв'язок)",
+        textareaPlaceholder: "Якому каналу комунікації Ви віддаєте перевагу? \n(Email, Telegram, Viber, Whatsup, телефон)",
         buttonValue: "НАДІСЛАТИ",
         ps: "Або напишіть нам, коли Вам буде зручно. Наші контакти - в самому кінці сайту",
         sending: "в процесі...",

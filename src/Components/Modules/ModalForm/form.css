@@ -50,7 +50,8 @@
 
 .modal form,
 input,
-textarea {
+textarea,
+.textarea  {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -64,7 +65,7 @@ textarea {
   -webkit-transition: opacity 0.4s;
   transition-property: all;
   transition: opacity 0.4s;
-  font-size: 0.9em;
+  font-size: 15px;
   border-style: none;
   outline: none;
   border-width: 3px;
@@ -100,6 +101,7 @@ form {
 
 .submit-wraper{
   position: relative;
+  align-items: center;
   height: 50px;
   display: flex;
   justify-content: center;
@@ -117,7 +119,8 @@ form {
 
 .input-submit  {
   position: absolute;
-  height: 50px;
+  /* height: 50px; */
+  height: 100%;
   display: flex;
   width: 100%;
   cursor: pointer;
@@ -146,8 +149,6 @@ form {
 }
 
 .thanks{
-
-
   position: absolute;
   width: 90%;
   opacity: 0;
@@ -188,6 +189,9 @@ form {
     min-height: 90px;
     height: auto;
   }
+  .submit-wraper {
+    height: 100%;
+  }
 }
 
 
@@ -204,5 +208,9 @@ form {
   .modal form {
       height: 40%;
       width: 100%;
+  }
+
+  .input-submit  {
+    height: 50px;
   }
 }
