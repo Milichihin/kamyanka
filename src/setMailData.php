@@ -28,7 +28,7 @@ $milichihinTest1Cred = [
 
 $recipients = [
     'milichihin@gmail.com',
-    'milichihiny@gmail.com'
+    // 'milichihiny@gmail.com'
     // 'test.user1.milichihin@gmail.com',
 ];
 

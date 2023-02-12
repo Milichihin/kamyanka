@@ -20,7 +20,7 @@ function ModalForm(props) {
         let formData = new FormData(oldForm);
         let xhr = new XMLHttpRequest();
 
-        xhr.open('POST', 'smtpSandBox2.php', true);
+        xhr.open('POST', 'sendMail.php', true);
         xhr.send(formData);
 
         xhr.onreadystatechange = function () {

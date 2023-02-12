@@ -1,13 +1,6 @@
 <?php
 
 include __DIR__ . '/vendor/autoload.php';
-include './setMailData.php';
-
-global $milichihinTest1Cred;
-global $recipients;
-global $subject;
-global $body;
-
 
 
 function sendMail(
@@ -83,13 +76,4 @@ function sendMail(
     // printf("Sent %d messages\n", $numSent);
     // echo 'Time: ' . $time . PHP_EOL;
 }
-
-sendMail(
-    $milichihinTest1Cred,
-    $recipients,
-    $subject,
-    $body,
-    // $attach,
-    // $tags
-);
 
