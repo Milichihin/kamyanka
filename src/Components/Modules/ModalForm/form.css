@@ -146,10 +146,30 @@ form {
 }
 
 .thanks{
+
+
+  position: absolute;
+  width: 90%;
+  opacity: 0;
+
   -webkit-transition-property: all;
-  -webkit-transition: all ease 0.5s;
+  -webkit-transition: all ease 0.4s;
   transition-property: all;
-  transition: all ease 0.5s;
+  transition: all ease 0.4s;
+}
+
+.formwraper{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+
+  -webkit-transition-property: all;
+  -webkit-transition: all ease 0.4s;
+  transition-property: all;
+  transition: all ease 0.4s;
 }
 
 @media (max-height: 450px) {

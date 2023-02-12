@@ -4,51 +4,42 @@ import { useState } from 'react';
 
 function ModalForm(props) {
 
-    const [isSUbmited, setSUbmited] = useState(false);
+    const [isSubmited, setSubmited] = useState(false);
     const [isSend, setIsSend] = useState(false);
-    const [thanksOpacity, setThanksOpacity] = useState({ opacity: 0 });
+    const [formOpacity, setFormsOpacity] = useState({ opacity: 1 });
+    // const [thanksOpacity, setThanksOpacity] = useState({ opacity: 0 });
+    // const [sendingOpacity, setSendingOpacity] = useState({ opacity: 1 });
+
 
     const oldForm = document.forms.sendform;
 
+    async function handleSubmit() {
 
-    async function showThanks() {
-        console.log('дошли до showThanks()');
-        setIsSend(true);
-        await new Promise((resolve, reject) => setTimeout(resolve, 100));
-        setThanksOpacity({opacity: 0});
-        await new Promise((resolve, reject) => setTimeout(resolve, 500));
-        setThanksOpacity({opacity: 1});
-    }
+        setSubmited(true);
 
-    async function  handleSubmit(){
-
-
-        showThanks();
-
-        console.log('зашли в хендлерсабмит');
-        
         let formData = new FormData(oldForm);
-
         let xhr = new XMLHttpRequest();
-
-        xhr.onreadystatechange = function () {
-            
-            console.log('пока не отправлено');
-            console.log('xhr.readyState = ' + xhr.readyState);
-            console.log('xhr.status = ' + xhr.status);
-
-            if (xhr.readyState === 4) {
-                console.log('отправляется');
-                console.log('xhr.readyState = ' + xhr.readyState);
-                if (xhr.status === 200) {
-                    console.log('отправлено');
-                    console.log('xhr.status = ' + xhr.status);
-                }
-            }
-        }
 
         xhr.open('POST', 'smtpSandBox2.php', true);
         xhr.send(formData);
+
+        xhr.onreadystatechange = function () {
+
+            // if (xhr.readyState === 4) {
+            //     console.log('отправляется');
+            //     console.log('xhr.readyState = ' + xhr.readyState);
+            //     if (xhr.status === 200) {
+            //         console.log('отправлено');
+            //         console.log('xhr.status = ' + xhr.status);
+            //     }
+            // }
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    setIsSend(true);
+                    
+                }
+            }
+        }
 
         oldForm.reset();
     }
@@ -61,24 +52,31 @@ function ModalForm(props) {
                     className="modal"
                     style={props.modalStyle}
                 >
-                    {
-                        isSend &&
+                    <>
                         <h1
                             className='thanks'
-                            style={thanksOpacity}
+                            style={isSubmited&&!isSend?{opacity: "1"}:{opacity: "0"}}
+                        >
+                            {props.howItWorks.form.sending}
+                        </h1>:
+                        <h1
+                            className='thanks'
+                            style={isSend?{opacity: "1"}:{opacity: "0"}}
                         >
                             {props.howItWorks.form.thanks}
                         </h1>
-                    }
+                    </>
                     {
-                        !isSend &&
-                        <>
+                        !isSubmited &&
+                        <div
+                            className='formwraper'
+                            style={formOpacity}
+                        >
                             <h3>{props.howItWorks.form.header}</h3>
                             <form
                                 onSubmit={handleSubmit}
                                 name="sendform"
                                 method="post"
-                            // action="./smtpSandBox2.php"
                             >
                                 <input
                                     type="text"
@@ -107,15 +105,14 @@ function ModalForm(props) {
                                         <input
                                             type="submit"
                                             value={props.howItWorks.form.buttonValue}
-                                            className="button"                                            
-                                            // onClick={showThanks}
+                                            className="button"
                                         >
                                         </input>
                                     </div>
                                 </div>
                             </form>
                             <h3 style={{ fontWeight: '300' }}>{props.howItWorks.form.ps} </h3>
-                        </>
+                        </div>
                     }
                 </div>
                 <CloseCross styles={props.opacityPic} onClick={props.hideModal} />
