@@ -21,8 +21,7 @@ function Greating(props) {
                 className="section-block"
             >
                 <p style={{ marginTop: '40px' }}>
-                    <span style={{ fontWeight: '700', fontSize: "1.1em", color: "red"}}>{greating.boldText}</span>{greating.text}
-                    <br/><br/><span>{greating.boldText}</span>
+                    <span style={{ fontWeight: '700', fontSize: "1.1em"}}>{greating.boldText}</span>{greating.text}
                 </p>
             </div>
         </div>
