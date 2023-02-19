@@ -1,0 +1,130 @@
+.min-queue-list {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0 0 0;
+    padding: 0;
+    height: 50px;
+    color: #7BC085;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.min-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 400;
+    border-color: #7bc08500;
+    border-top-style: solid;
+    -webkit-transition-property: all;
+    -webkit-transition: border-color 0.3s;
+    transition-property: all;
+    transition: border-color 0.3s;
+    font-size: 1.3em;
+    color: #b7ad72;;
+}
+
+.min-queue-list p {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.active-select {
+    /* border-color: #7BC085; */
+    color: #525252;
+    -webkit-transition-property: all;
+    -webkit-transition: all 0.3s;
+    transition-property: all;
+    transition: all 0.3s;
+}
+
+.min-detail-picactive-select{
+    background-position: center;
+    background-size: cover;
+    background-color: #5b563e;
+    background-blend-mode: overlay;
+    -webkit-transition-property: all;
+    -webkit-transition: all 0.3s;
+    transition-property: all;
+    transition: all 0.3s;
+}
+
+.min-detail-picactive-select {
+    color: white;
+}
+
+.min-queue {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.min-detail-pic {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    background-color: #7BC085;
+    opacity: 1;
+    -webkit-transition-property: all;
+    -webkit-transition: all 0.5s;
+    transition-property: all;
+    transition: all 0.5s;
+}
+
+.min-detail-pic::after{
+    opacity: 0;
+}
+
+.min-queue p:nth-child(2) {
+    color: white;
+}
+
+.min-queue p {
+    height: 50px;
+}
+
+
+.min-queue-list p{
+    margin: 10px;
+    width: 150px;
+    justify-content: center;
+}
+
+
+
+
+@media (max-width: 450px) {
+
+    .min-select{
+        margin: 0 20px;
+    }
+
+    .min-queue-list{
+        margin: 140px 0 75px 0;
+        font-size: 1em;
+    }
+
+    .min-queue-list p{
+        font-size: 1em;
+        width: 100%;
+    }
+}
+
+@media (max-height: 450px) {
+
+    .min-queue-list{
+        margin: 0 0 25px 0;
+        height: auto;
+    }
+
+    .min-queue-list p{
+        width: 30%;
+    }
+
+
+}

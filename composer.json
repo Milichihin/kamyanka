@@ -1,0 +1,11 @@
+{
+    "name": "qa/kamyanka",
+    "autoload": {
+        "psr-4": {
+            "Qa\\Kamyanka\\": "src/"
+        }
+    },
+    "require": {
+        "swiftmailer/swiftmailer": "^6.0"
+    }
+}

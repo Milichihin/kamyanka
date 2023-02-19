@@ -1,0 +1,118 @@
+.advantage-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    min-height: 350px;
+    z-index: 1;
+}
+
+
+
+.advantage-container p{
+    font-size: 1.1em;
+}
+
+.advantages{
+    margin: 20px 0 20 px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    max-height: 700px;
+    min-width: 40%;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+.advantage {
+    cursor: pointer;
+    margin: 0;
+    color: #b7ad72;
+    border-bottom-style: solid;
+    -webkit-border-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    -webkit-transition-property: all;
+    -webkit-transition: border-color 0.5s;
+    transition-property: all;
+    transition: border-color 0.5s;
+}
+
+.active-advantage {
+    border-width: 3px;
+    border-bottom-style: solid;
+    -webkit-border-color: rgb(82, 82, 82);
+    border-color: rgb(82, 82, 82);
+    -webkit-transition-property: all;
+    -webkit-transition: border-color 0.5s;
+    transition-property: all;
+    transition: border-color 0.5s;
+    color: rgb(82, 82, 82);
+}
+
+.active-advantage > p{
+    color: rgb(82, 82, 82);
+}
+
+.description {
+    margin-left: 40px;
+    margin-bottom: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+.description p{
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.section-block h2{
+    margin: 30px 0 0 0;
+}
+
+@media (max-height: 450px) { 
+    .advantages{
+        min-height: 300px;
+        max-height: 100px;
+    }
+
+    .advantage-container{
+        min-height: auto;
+        margin-top: 50px;
+    }
+
+    .advantage-container p{
+        font-size: 1.1em;
+    }
+
+    .section-block h2 {
+        margin: 0;
+    }
+ }
+
+ @media (max-width: 450px) {
+    .advantages{
+        min-width: 30%;
+    }
+
+    .advantage-container .advantages p{
+        font-size: 1em;
+    }
+
+    .advantage-container .description {
+        font-size: 0.8em;
+    }
+
+    .advantage-container{
+        height: 500px;
+    }
+
+    .subtitle{
+        margin-top: 10px;
+        margin-bottom: 70px;
+    }
+    
+}

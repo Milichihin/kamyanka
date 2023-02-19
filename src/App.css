@@ -1,0 +1,61 @@
+.App {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  max-width: 800px;
+  align-items: center;
+}
+
+h2{
+  margin: 30px 0 20px 0;
+  font-size: 3em;
+  font-weight: 900;
+  color: rgb(82, 82, 82)
+}
+
+.section-block {
+  margin: 20px 20px 50px 20px;
+  position: relative;
+}
+
+p {
+  margin: 0 0 40px 0;
+  color: rgb(82, 82, 82);
+  font-size: x-large;
+}
+
+@media (max-width: 700px) and (max-height: 450px) {
+  .section-block {
+    margin-top: 45px;
+  }
+}
+
+@media (max-height: 450px) { 
+  .section-block {
+    margin-top: 30px;
+  }
+
+  .section-block p {
+    margin-bottom: 0;
+  }
+  
+}
+
+@media (max-width: 450px) {
+
+  h2{
+    font-size: 2.5em;
+  }
+
+  .section-block {
+    margin-bottom: 20px;
+    width: auto;
+  }
+
+  .App {
+    position: absolute;
+    width: 100vw;
+  }
+}
+

@@ -1,0 +1,27 @@
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    height: 54px;
+    margin: 20px 0;
+}
+
+/* .logo-fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-fix img {
+    height: 50px;
+    margin: 0;
+} */
+
+.fix-wrap img{
+    height: 30px;
+    margin: 0 20px 0 20px;
+}

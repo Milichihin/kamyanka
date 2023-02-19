@@ -1,0 +1,29 @@
+.conception{
+    height: 250px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.subtitle {
+    display: flex;
+    align-content: flex-end;
+    align-items: end;
+    margin-bottom: 25px;
+}
+
+.subtitle p:nth-child(1){
+    width: 50%;
+    text-align: end;
+}
+
+.subtitle p:nth-child(2){
+    font-size:4em;
+    font-weight: 900;
+    margin: 0 0 0 10px;
+    color: #7BC085;
+}
+
+.subtitle p:nth-child(3){
+    margin: 0 0 40px 10px;
+}
