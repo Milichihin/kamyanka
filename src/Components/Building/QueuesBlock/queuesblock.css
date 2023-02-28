@@ -1,13 +1,14 @@
-.queue-window-wraper{
+.queue-window-wraper {
     display: flex;
     position: relative;
     height: 500px;
     overflow: hidden;
 }
 
-.next{
+.next {
     position: absolute;
 }
+
 .queue-list {
     margin: 0;
     padding: 0;
@@ -30,7 +31,7 @@
     transition-property: all;
     transition: border-color 0.3s;
     font-size: 1.3em;
-    color: #b7ad72;;
+    color: #b7ad72;
 }
 
 .active-select {
@@ -69,7 +70,7 @@
     background-color: rgba(0, 0, 0, 0.497);
     height: 500px;
     width: 100%;
-    
+
     -webkit-transition-property: all;
     -webkit-transition: all 0.5s;
     transition-property: all;
@@ -84,7 +85,7 @@
     margin: 20px 40px 0 40px;
 }
 
-.title-pad-wraper{
+.title-pad-wraper {
     -webkit-transition-property: all;
     -webkit-transition: all 0.3s ease 0s;
     transition-property: all;
@@ -94,7 +95,8 @@
 
 .title-pad {
     background-color: #7BC085;
-    width: fit-content;}
+    width: fit-content;
+}
 
 /* .prev {
     position: absolute;
@@ -116,11 +118,11 @@
     color: white;
     margin-top: 10px;
     margin-bottom: 0;
-    width: fit-content; 
+    width: fit-content;
 }
 
 
-.queue-subdescription{
+.queue-subdescription {
     -webkit-transition-property: all;
     -webkit-transition: all 0.5s;
     transition-property: all;
@@ -181,11 +183,12 @@
     .details {
         font-size: 0.8em;
         margin: 10px 20px 5px 15px;
+        width: auto;
     }
 
     .details .detail-item p {
         margin: 0 0 3px 0;
-        font-size: 0.8em;
+        font-size: inherit;
     }
 
     .details {
@@ -199,7 +202,15 @@
     }
 
     .title-pad {
-        width: 190px;
+        width: 250px;
+    }
+
+    .title-pad p {
+        font-size: x-large;
+    }
+
+    .queue-window-wraper {
+        height: 250px;
     }
 }
 
@@ -213,10 +224,11 @@
         margin: 30px 0 70px 0;
     }
 
-    .select{
+    .select {
         margin: 0 20px;
     }
-    .queue-list{
+
+    .queue-list {
         margin-bottom: 20px;
     }
 
@@ -231,10 +243,9 @@
         margin: 20px 0;
         min-height: auto;
     }
-    
+
     .queue-subdescription .detail-item p {
         margin: 0;
         font-size: 0.8em;
     }
-
 }

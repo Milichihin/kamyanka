@@ -58,7 +58,7 @@ function ModalForm(props) {
                             style={isSubmited&&!isSend?{opacity: "1"}:{opacity: "0"}}
                         >
                             {props.howItWorks.form.sending}
-                        </h1>:
+                        </h1>
                         <h1
                             className='thanks'
                             style={isSend?{opacity: "1"}:{opacity: "0"}}
