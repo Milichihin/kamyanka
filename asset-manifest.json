@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/kamyanka/static/css/main.fa281051.css",
-    "main.js": "/kamyanka/static/js/main.37cfd757.js",
-    "index.html": "/kamyanka/index.html",
-    "main.fa281051.css.map": "/kamyanka/static/css/main.fa281051.css.map",
-    "main.37cfd757.js.map": "/kamyanka/static/js/main.37cfd757.js.map"
+    "main.css": "/static/css/main.9dcdcc34.css",
+    "main.js": "/static/js/main.0b631b9e.js",
+    "index.html": "/index.html",
+    "main.9dcdcc34.css.map": "/static/css/main.9dcdcc34.css.map",
+    "main.0b631b9e.js.map": "/static/js/main.0b631b9e.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa281051.css",
-    "static/js/main.37cfd757.js"
+    "static/css/main.9dcdcc34.css",
+    "static/js/main.0b631b9e.js"
   ]
 }
